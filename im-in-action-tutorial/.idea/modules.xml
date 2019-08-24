@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" filepath="$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" filepath="$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-sample-websocket/spring-boot-sample-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-sample-websocket/spring-boot-sample-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/spring-boot-server-send-event-webflux.iml" filepath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/spring-boot-server-send-event-webflux.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/spring-boot-server-send-event-webmvc.iml" filepath="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/spring-boot-server-send-event-webmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" />
@@ -19,7 +18,6 @@
       <module fileurl="file://$PROJECT_DIR$/tcp-chat/tcp-chat.iml" filepath="$PROJECT_DIR$/tcp-chat/tcp-chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/udp-chat-client/udp-chat-client.iml" filepath="$PROJECT_DIR$/udp-chat-client/udp-chat-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" filepath="$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/websocket-spring-demo/websocket-spring-demo.iml" filepath="$PROJECT_DIR$/websocket-spring-demo/websocket-spring-demo.iml" />
     </modules>
   </component>
 </project>

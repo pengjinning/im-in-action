@@ -10,7 +10,6 @@
         <module name="spring-boot-server-send-event-webflux" />
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
-        <module name="spring-boot-sample-websocket" />
         <module name="spring-boot-websocket-stomp-mini" />
         <module name="spring-boot-polling" />
         <module name="spring-boot-websocket-stomp-sockjs" />
@@ -19,7 +18,6 @@
         <module name="tcp-chat" />
         <module name="udp-chat-client" />
         <module name="spring-boot-websocket" />
-        <module name="websocket-spring-demo" />
         <module name="spring-boot-chat" />
       </profile>
       <profile name="Annotation profile for spring-boot-websocket-stomp-sockjs-rabbitmq" enabled="true">
