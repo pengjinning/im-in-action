@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-server-send-event-webmvc" />
+        <module name="spring-boot-server-send-event-webflux" />
+        <module name="udp-chat-server" />
+        <module name="spring-boot-sample-websocket" />
+        <module name="spring-boot-websocket-stomp-mini" />
+        <module name="spring-boot-polling" />
+        <module name="netty-websocket" />
+        <module name="spring-boot-websocket-stomp-sockjs" />
+        <module name="spring-boot-long-polling" />
+        <module name="spring-boot-stomp" />
+        <module name="tcp-chat" />
+        <module name="spring-boot-websocket" />
+        <module name="websocket-spring-demo" />
+        <module name="spring-boot-chat" />
+      </profile>
+      <profile name="Annotation profile for spring-boot-websocket-stomp-sockjs-rabbitmq" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
+      </profile>
+      <profile name="Annotation profile for ByteDesk Spring Boot Projects" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-websocket-stomp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="binary-chat" target="1.7" />
+      <module name="im-in-action-tutorial" target="1.5" />
+      <module name="java-server-websocket-client" target="1.7" />
+      <module name="Java-WebSocket" target="1.6" />
+      <module name="java-websocket" target="1.7" />
+      <module name="java-websocket-chat" target="1.7" />
+      <module name="json-chat" target="1.7" />
+      <module name="netty-websocket" target="1.7" />
+      <module name="protobuf-chat" target="1.7" />
+      <module name="server-send-event" target="1.8" />
+      <module name="shiro-test" target="1.8" />
+      <module name="spring-boot-chat" target="1.8" />
+      <module name="spring-boot-long-polling" target="1.8" />
+      <module name="spring-boot-polling" target="1.8" />
+      <module name="spring-boot-sample-websocket" target="1.8" />
+      <module name="spring-boot-sample-websocket-tomcat" target="1.8" />
+      <module name="spring-boot-sample-websocket-undertow" target="1.8" />
+      <module name="spring-boot-server-send-event-webflux" target="1.8" />
+      <module name="spring-boot-server-send-event-webmvc" target="1.8" />
+      <module name="spring-boot-stomp" target="1.8" />
+      <module name="spring-boot-websocket" target="1.8" />
+      <module name="spring-boot-websocket-stomp" target="1.8" />
+      <module name="spring-boot-websocket-stomp-mini" target="1.8" />
+      <module name="spring-boot-websocket-stomp-sockjs" target="1.8" />
+      <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" target="1.8" />
+      <module name="spring-websocket-portfolio" target="1.8" />
+      <module name="tcp-chat" target="1.7" />
+      <module name="text-chat" target="1.7" />
+      <module name="udp-chat-server" target="1.7" />
+      <module name="websocket-spring-demo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-long-polling" options="-parameters" />
+      <module name="spring-boot-polling" options="-parameters" />
+      <module name="spring-boot-sample-websocket" options="-parameters" />
+      <module name="spring-boot-server-send-event-webflux" options="-parameters" />
+      <module name="spring-boot-server-send-event-webmvc" options="-parameters" />
+      <module name="spring-boot-websocket" options="-parameters" />
+      <module name="spring-boot-websocket-stomp" options="-parameters" />
+      <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" options="-parameters" />
+    </option>
+  </component>
+</project>
