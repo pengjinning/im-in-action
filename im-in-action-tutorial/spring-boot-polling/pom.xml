@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>io.xiaper</groupId>
-	<artifactId>polling</artifactId>
+	<artifactId>spring-boot-polling</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>polling</name>

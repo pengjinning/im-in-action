@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_36_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/SecureChatServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/SecureChatServerInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/src/main/resources/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udp-chat-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/udp-chat-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-long-polling/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-long-polling/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-polling/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,11 +80,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/resources/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-polling/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -128,8 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server-send-event/src/main/java/io/xiaper/sse/model/ChatRoomEntry.java" />
-        <option value="$PROJECT_DIR$/polling/pom.xml" />
         <option value="$PROJECT_DIR$/polling/src/main/java/io/xiaper/polling/PollingApplication.java" />
         <option value="$PROJECT_DIR$/server-send-event-servlet/src/main/java/io/xiaper/sse/controller/SSEController.java" />
         <option value="$PROJECT_DIR$/server-send-event-webflux/src/main/java/io/xiaper/sse/ServerSendEventApplication.java" />
@@ -179,6 +185,8 @@
         <option value="$PROJECT_DIR$/udp-chat-server/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/resources/index.html" />
+        <option value="$PROJECT_DIR$/spring-boot-polling/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-long-polling/pom.xml" />
       </list>
     </option>
   </component>
@@ -217,10 +225,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
+    <option name="x" value="72" />
     <option name="y" value="23" />
-    <option name="width" value="1455" />
-    <option name="height" value="848" />
+    <option name="width" value="1299" />
+    <option name="height" value="953" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -580,7 +588,7 @@
       <workItem from="1551191036764" duration="1887000" />
       <workItem from="1551193314829" duration="171000" />
       <workItem from="1551233259066" duration="59000" />
-      <workItem from="1566607795633" duration="5111000" />
+      <workItem from="1566607795633" duration="6480000" />
     </task>
     <servers />
   </component>
@@ -605,7 +613,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97426000" />
+    <option name="totallyTimeSpent" value="98795000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,10 +625,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="23" width="1438" height="1012" extended-state="0" />
+    <frame x="72" y="23" width="1299" height="953" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.25931233" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.283214" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -633,7 +641,7 @@
       <window_info anchor="bottom" id="LuaCheck" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3271028" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2820513" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15119047" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -668,8 +676,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tcp-chat/src/main/java/io/xiaper/MyClientSocket.java" />
-    <entry file="file://$PROJECT_DIR$/spring-websocket-portfolio/src/main/java/org/springframework/samples/portfolio/config/WebSocketConfig.java" />
     <entry file="file://$PROJECT_DIR$/spring-websocket-portfolio/src/main/java/org/springframework/samples/portfolio/config/WebSecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/spring-websocket-portfolio/src/main/java/org/springframework/samples/portfolio/config/WebSecurityInitializer.java" />
     <entry file="file://$PROJECT_DIR$/spring-websocket-portfolio/src/test/java/org/springframework/samples/portfolio/web/tomcat/IntegrationPortfolioTests.java" />
@@ -835,13 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-polling/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -945,8 +944,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/resources/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/websocket-spring-demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="65" column="18" lean-forward="true" selection-start-line="65" selection-start-column="18" selection-end-line="65" selection-end-column="18" />
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
