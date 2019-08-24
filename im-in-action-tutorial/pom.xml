@@ -21,14 +21,13 @@
 
 	<modules>
 
+		<module>netty-websocket</module>
 
 		<module>spring-boot-long-polling</module>
 		<module>spring-boot-polling</module>
-		<module>netty-websocket</module>
 		<module>spring-boot-server-send-event-webflux</module>
 		<module>spring-boot-server-send-event-webmvc</module>
-		<module>tcp-chat</module>
-		<module>udp-chat-server</module>
+
 
 		<module>spring-boot-sample-websocket</module>
 		<module>spring-boot-websocket</module>
@@ -38,6 +37,9 @@
 		<module>spring-boot-websocket-stomp-sockjs</module>
 		<module>spring-boot-websocket-stomp-sockjs-rabbitmq</module>
 
+		<module>tcp-chat</module>
+		<module>udp-chat-client</module>
+		<module>udp-chat-server</module>
 		<module>websocket-spring-demo</module>
 
 

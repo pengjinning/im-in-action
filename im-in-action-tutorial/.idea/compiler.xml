@@ -9,14 +9,15 @@
         <module name="spring-boot-server-send-event-webmvc" />
         <module name="spring-boot-server-send-event-webflux" />
         <module name="udp-chat-server" />
+        <module name="netty-websocket" />
         <module name="spring-boot-sample-websocket" />
         <module name="spring-boot-websocket-stomp-mini" />
         <module name="spring-boot-polling" />
-        <module name="netty-websocket" />
         <module name="spring-boot-websocket-stomp-sockjs" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
         <module name="tcp-chat" />
+        <module name="udp-chat-client" />
         <module name="spring-boot-websocket" />
         <module name="websocket-spring-demo" />
         <module name="spring-boot-chat" />
@@ -42,7 +43,7 @@
       <module name="java-websocket" target="1.7" />
       <module name="java-websocket-chat" target="1.7" />
       <module name="json-chat" target="1.7" />
-      <module name="netty-websocket" target="1.7" />
+      <module name="netty-websocket" target="1.5" />
       <module name="protobuf-chat" target="1.7" />
       <module name="server-send-event" target="1.8" />
       <module name="shiro-test" target="1.8" />
@@ -63,6 +64,7 @@
       <module name="spring-websocket-portfolio" target="1.8" />
       <module name="tcp-chat" target="1.7" />
       <module name="text-chat" target="1.7" />
+      <module name="udp-chat-client" target="1.7" />
       <module name="udp-chat-server" target="1.7" />
       <module name="websocket-spring-demo" target="1.8" />
     </bytecodeTargetLevel>
