@@ -183,9 +183,7 @@
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-websocket-stomp/spring-boot-stomp (2).iml" />
         <option value="$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" />
-        <option value="$PROJECT_DIR$/spring-boot-websocket-stomp-mini/spring-boot-stomp (1).iml" />
         <option value="$PROJECT_DIR$/tcp-chat/tcp-chat.iml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
         <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_3.xml" />
@@ -291,11 +289,6 @@
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-websocket-stomp-sockjs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -311,6 +304,7 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -553,7 +547,7 @@
       <workItem from="1551191036764" duration="1887000" />
       <workItem from="1551193314829" duration="171000" />
       <workItem from="1551233259066" duration="59000" />
-      <workItem from="1566607795633" duration="295000" />
+      <workItem from="1566607795633" duration="632000" />
     </task>
     <servers />
   </component>
@@ -578,7 +572,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92610000" />
+    <option name="totallyTimeSpent" value="92947000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,6 +585,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="142" y="157" width="1389" height="788" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.33927247" />
       <window_info id="Capture Tool" order="1" />
@@ -619,7 +614,7 @@
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="bottom" id="Tail" order="15" />
-      <window_info anchor="right" id="Maven" visible="true" weight="0.32962137" />
+      <window_info anchor="right" id="Maven" weight="0.32962137" />
       <window_info anchor="right" id="Flutter Outline" />
       <window_info anchor="right" id="Flutter Inspector" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
