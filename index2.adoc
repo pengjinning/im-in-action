@@ -1,0 +1,104 @@
+= IM实战-IM In Action 草稿2
+bytedesk(c) 2019 jackning
+Version 2.0, 2019-06-19
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:sectnums:
+:toc: left
+:toclevels: 4
+:toc-title: IM从0到1
+:experimental:
+:description: 打造企业级即时通讯系统
+:keywords: 微服务 SpringBoot SpringCloud
+:imagesdir: ./img
+:sectlinks:
+
+从零开始构建一套基于微服务的即使通讯系统
+
+== 前言
+
+作为一个处于创业一线的老程序员,仅仅写文档对我来说就是一件无比痛苦的事情,更不用说要写一本书了,但思索良久,还是打算动笔了.原因可以总结为以下几点:
+
+* 总结过去. 当多少年后回想往事的时候, 能有个吹牛逼的资本
+* 使新人少踩坑.市场上缺少专门的书籍, 希望自己踩过的坑,能成为别人的垫脚石
+* 介绍推广本人推出的开源即时通讯解决方案xiaper.io
+* 路线: 模仿轮子->改造轮子->为我所用
+
+本书重在实战,即使跳过前面的"基础篇"和"安全篇",也可以毫不费力的阅读"实战篇".
+
+== 基础篇
+
+=== netty
+
+=== mqtt
+
+=== websocket
+
+stomp
+
+sockjs
+
+=== protobuf
+
+
+== 中间篇
+
+
+=== 建立长连接(修路)
+
+
+
+=== 定义通信协议(定义交通规则)
+
+
+
+
+
+=== 消息格式(步行/自行车/机动车/装甲车)
+
+
+
+
+
+== 实战篇
+
+=== server
+
+=== android
+
+=== ios
+
+=== web/h5
+
+=== 小程序
+
+
+== 其他
+
+=== 安全篇
+
+- https/ssl
+
+- 传输协议
+
+* 文本传输
+* 二进制
+* protobuf
+* 加密
+* 端到端
+
+=== 压力测试
+
+=== 总体架构
+
+
+
+
+
+
+
+
+
+
+

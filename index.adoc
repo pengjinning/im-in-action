@@ -1,6 +1,6 @@
-= IM实战-IM In Action 草稿2
+= IM实战-IM In Action
 bytedesk(c) 2019 jackning
-Version 2.0, 2019-06-19
+Version 1.1, 2019-01-10
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
@@ -13,84 +13,462 @@ Version 2.0, 2019-06-19
 :keywords: 微服务 SpringBoot SpringCloud
 :imagesdir: ./img
 :sectlinks:
+:operation-curl-request-title: Example request
+:operation-http-response-title: Example response
 
 从零开始构建一套基于微服务的即使通讯系统
 
-== 前言
+== 写在前面
 
-作为一个处于创业一线的老程序员,仅仅写文档对我来说就是一件无比痛苦的事情,更不用说要写一本书了,但思索良久,还是打算动笔了.原因可以总结为以下几点:
-
-* 总结过去. 当多少年后回想往事的时候, 能有个吹牛逼的资本
-* 使新人少踩坑.市场上缺少专门的书籍, 希望自己踩过的坑,能成为别人的垫脚石
-* 介绍推广本人推出的开源即时通讯解决方案xiaper.io
-* 路线: 模仿轮子->改造轮子->为我所用
-
-本书重在实战,即使跳过前面的"基础篇"和"安全篇",也可以毫不费力的阅读"实战篇".
-
-== 基础篇
-
-=== netty
-
-=== mqtt
-
-=== websocket
-
-stomp
-
-sockjs
-
-=== protobuf
+打造银行级企业即时通讯
 
 
-== 中间篇
+== 协议选型
 
 
-=== 建立长连接(修路)
+=== 概述
+
+* TCP协议层
+
+=== 短连接
+
+==== 轮询/短轮询
+
+短轮询：利用ajax定期向服务器请求，无论数据是否更新立马返回数据，高并发情况下可能会对服务器和带宽造成压力
 
 
 
-=== 定义通信协议(定义交通规则)
+==== 长轮询
+
+* comet
+
+利用comet不断向服务器发起请求，服务器将请求暂时挂起，直到有新的数据的时候才返回，相对短轮询减少了请求次数；
+
+==== HTTP长连接
+
+==== Http持久连接Keep-Alive
+
+* 持久连接是使用同一个TCP连接来发送和接收多个HTTP请求/应答，而不是为每一个新的请求/应答打开新的连接的方法。
+
+==== 分块编码
+
+* 参考^1^
+
+
+==== Server Send Event(SSE)
+
+服务端推送（Server Send Event），在客户端发起一次请求后会保持该连接，服务器端基于该连接持续向客户端发送数据，从HTML5开始加入。
+
+
+===== WebMVC
+
+
+===== WebFlux
+
+
+=== 长连接
+
+
+==== 概述^3^
+
+* 为什么需要长连接
+* 长连接何时会断开
+* 如何建立稳定长连接
+* mars智能心跳机制
+* 长连接数据协议及加密
+* 长连接通道建设及容灾
+
+==== Flash Socket
+
+
+==== WebSocket
+
+
+
+* 全双工（Full Duplex）是通讯传输的一个术语。 通信允许数据在两个方向上同时传输，它在能力上相当于两个单工通信方式的结合。 全双工指可以同时（瞬时）进行信号的双向传输（A→B且B→A）。
+* 单工就是在只允许甲方向乙方传送信息，而乙方不能向甲方传送 。（比喻汽车的单行道。）
+
+这是也是一种保持连接的技术，并且是双向的，从HTML5开始加入，并非完全基于HTTP，适合于频繁和较大流量的双向通讯场景。
+
+. 概要
+. 详情
+. 小结
+. 引用
+
+==== PubSub
+
+publisher/subscriber 发布订阅者模式
+
+socket.io和stomp协议均基于pubsub模式
+rabbitmq和activemq也基于pubsub模式
+redis也含有pubsub功能
+
+
+优点:
+
+. 松耦合
+. 可扩展
+
+
+缺点:
+
+
+
+
+. https://zh.wikipedia.org/wiki/%E5%8F%91%E5%B8%83/%E8%AE%A2%E9%98%85[发布订阅wiki]
+. https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern[pubsub]
+. https://en.wikipedia.org/wiki/Message_queue[消息队列wiki]
+
+
+
+==== XMPP
+
+. 概要
+. 详情
+
+.. web实例
+
+.. android实例
+
+.. ios实例
+
+
+.. ejabberd集群部署
+.. ejabberd插件开发
+
+
+. 小结
+. 引用
+
+* https://xmpp.org/[xmpp.org]
+* https://www.ejabberd.im/[ejabberd]
+* https://github.com/igniterealtime/Smack[android smack]
+* https://github.com/robbiehanson/XMPPFramework[ios framework]
+
+
+==== Socket.io
+
+. 概要
+. 详情
+
+.. web实例
+
+.. android实例
+
+.. ios实例
+
+. 小结
+. 引用
+
+* https://socket.io/[socket.io]
+* https://socket.io/docs/[docs]
+* https://socket.io/get-started/chat/[getting started]
+* https://socket.io/blog/native-socket-io-and-android/[android]
+* https://socket.io/blog/socket-io-on-ios/[ios]
+* https://github.com/NetEase/pomelo/wiki[pomelo]
+
+
+==== STOMP
+
+Why do we need STOMP? Well, WebSocket is just a communication protocol. It doesn’t define things like - How to send a message only to users who are subscribed to a particular topic, or how to send a message to a particular user. We need STOMP for these functionalities.
+
+. 概要
+. 详情
+
+.. web实例
+.. pc实例:electron
+
+
+image::image/message-flow-simple-broker.png[]
+
+image::image/message-flow-broker-relay.png[]
+
+. 小结
+. 引用
+
+* https://stomp.github.io/index.html[stomp]
+* https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#websocket-stomp[spring stomp]
+
+
+
+
+==== MQTT
+
+. 概要
+
+为什么要在 TCP 协议之上再封装一层 MQTT 协议呢？
+举个例子，如果你要用 TCP 协议做一个即时聊天室，那么你：
+
+* 首先写一个服务器程序，监听某个端口，这样客户端就能连接上来了。
+* 然后大家就能向你的服务器发送数据了。但是你不希望随便谁都能连接你的服务器并且往你的服务器里发东西，于是你写了一个注册页面，让别人先去注册账号，然后他们在客户端创建连接时发送的第一个TCP报文必须包含了账号密码。这样当你收到第一个报文之后，你就能判断这个连接是否合法了。
+* 但是发过来的账号密码，具体摆在报文什么位置，也得事先约定好吧，不然怎么知道哪几位是账号哪几位是密码，于是你要求：第一个字节为1，用来告诉你这是一个请求连接的报文。然后第二个字节是报文剩下的长度（这个没啥异议，粘包处理必备），然后是“饼干熊最帅”这样一个固定的字符串（没啥意思，就是开心），后面紧跟着就是账号，然后是密码。但是账号有多长呢，所以账号第一个字节是账号的长度，剩下才是账号内容，这样就解决了“账号有多长”的问题了，密码同理。
+* 如果账号密码不匹配就断开连接并且返回一句“xxxx off”，如果创建连接后半天不发送任何东西也断开连接。
+* 现在大家的客户端都连接上来了，你在服务器保存了一个`账号:socket`的map，能通过任何一个账号找到这个人的socket并向他发送信息。接下来大家要开始聊天了。
+* 在聊天室中，一个人发送的消息其他人都能收到，所以你添加了聊天室的概念，用户首先去你的web页面创建聊天室，然后会得到一个聊天室的ID。然后用户要加入聊天室，必须先发送一个加入聊天室的报文。然后你要求报文第一个字节为2代表加入聊天室的请求报文，然后是报文剩余长度，然后是聊天室ID，聊天室ID有多长？我们还是用第一个字节代表长度，剩下的内容为具体ID的形式来搞定。
+* 现在有多个用户加入了聊天室，其中每个用户又都加入了多个聊天室。假设现在大家在聊天室A中开始聊天。用户甲向服务器发送消息，然后你发现你不知道这条消息是请求连接还是要加入聊天室还是干啥，所以发送消息也应该定义一种报文类型。于是你要求发送消息的报文的第一个字节为3，那么这个报文是发送到哪个聊天室的呢？于是你要求报文后面跟上聊天室ID，最后是具体的消息内容。
+* 服务器收到第一个字节为3的消息，就知道这是一个聊天消息。然后根据上面带的聊天室ID以及你在服务器存储的用户和聊天室的关系，找到了这个聊天室里的所有人，然后你就把消息发给这里面的所有人了。
+
+. 详情
 
 
 
 
 
-=== 消息格式(步行/自行车/机动车/装甲车)
+
+.. web
+
+.. android
+
+.. ios
+
+. 小结
+
+. 引用
+
+* https://www.hivemq.com/mqtt-essentials/[mqtt essentials]
+* https://github.com/mcxiaoke/mqtt/blob/master/mqtt/01-Introduction.md[mqtt协议中文版]
 
 
 
 
 
-== 实战篇
-
-=== server
-
-=== android
-
-=== ios
-
-=== web/h5
-
-=== 小程序
+==== 私有通讯协议-基于腾讯mars
 
 
-== 其他
 
-=== 安全篇
+==== 协议对比图
 
-- https/ssl
 
-- 传输协议
 
-* 文本传输
-* 二进制
-* protobuf
-* 加密
-* 端到端
 
-=== 压力测试
+== Netty
 
-=== 总体架构
+
+
+
+== Web即时通讯
+
+* stomp+sockjs
+* 文本
+* 图片
+* 音视频
+
+== 安卓端即时通讯
+
+* mqtt
+* 离线消息推送
+
+== iOS端即时通讯
+
+* mqtt
+* 离线消息推送
+
+== 小程序即时通讯
+
+* stomp
+
+== PC客户端即时通讯
+
+* stomp+sockjs
+. electron
+. windows
+. mac
+
+== 服务器端实现
+
+. sh脚本运行
+. maven库
+. docker服务器
+. 与第三方服务器间交互
+
+=== 分布式集群
+
+==== 架构设计
+
+==== 负载均衡
+
+nginx+lvs(F5)+dns
+
+==== MySQL/Oracle
+
+
+==== Redis
+
+. 与Xiaper整合集群部署方案
+
+
+
+==== RabbitMQ
+
+. 与Xiaper整合集群部署方案
+
+. HAProxy
+
+
+
+==== ActiveMQ
+
+. 与Xiaper整合集群部署方案
+
+
+===== Zookeeper
+
+. 与Xiaper整合集群部署方案
+
+
+
+
+
+=== Spring boot
+
+
+=== 微服务
+
+==== Spring Cloud
+
+. spring cloud config结合携程apollo
+
+
+==== Docker
+
+
+
+== 端到端加密
+
+
+结合非对称加密算法RSA和对称加密算法AES来对数据进行加密传输
+
+. 防止 DNS 污染、帐号安全、第三方服务器鉴权、单点登录等等
+
+* Signal
+
+image::image/whatsapp_end_to_end.jpg[]
+
+
+
+
+* [line-through]#telegram#
+* Matrix/Roit: 去中心化
+
+
+. https://github.com/signalapp[Signal]
+. https://signal.org/docs/[Signal Protocol]
+. https://core.telegram.org/mtproto[Telegram Protocol]
+. https://matrix.org/blog/home/[Matrix-Riot]
+. https://zh.wikipedia.org/wiki/%E7%AB%AF%E5%88%B0%E7%AB%AF%E5%8A%A0%E5%AF%86[端到端加密]
+
+
+
+== 应用案例
+
+=== 推送云
+
+
+=== 即时通讯云
+
+多租户
+
+=== 云客服
+
+* 多租户
+* 呼叫中心
+
+
+== Xiaper简介
+
+. 企业级开源即使通讯解决方案
+
+
+
+== 写在最后
+
+
+=== 其他
+
+==== IM历史演变
+
+飞鸽传书
+
+
+==== protobuf
+
+==== 对接公众号/小程序
+
+==== nodejs:
+. electron/qt/javafx跨平台客户端
+. vuejs
+
+==== Flutter跨平台
+
+
+==== 文字聊天/图片聊天/语音聊天/语音对讲/视频WebRTC
+
+==== QQ/微信/钉钉通讯协议
+
+==== 阅后即焚
+
+==== 消息撤回
+
+==== 粉丝/关注/好友/黑名单/备注+标签
+
+==== 群聊:群管理
+
+==== 扫二维码登录
+
+==== 互动白板
+
+==== 实时音视频,发语音
+
+==== 小米/华为/魅族/fcm推送
+
+==== 表情解析
+
+==== 断线重连
+
+==== Qos机制
+
+==== 会话置顶/标记未读
+
+==== 心跳保活
+
+==== ping/pong: 用途/设计/实现
+
+==== 流量/耗电
+
+==== 不通过各个客户端做介绍,而是将功能模块作为切入点, 同时嵌入各个模块的代码
+
+==== 服务器端通过websocket/http与im服务器交互
+
+==== 单元测试
+
+==== 压力测试
+. JMeter
+
+==== 电商演示:产品参数
+
+==== kubernetes-k8s
+
+==== SPDY
+
+==== 长连接的复用
+
+==== 弹幕
+
+==== 直播答题
+
+==== 游戏世界概念: 全服务器广播, 游戏IM服务器
+
+==== Cloud Native
+
+
+== 引用:
+. java web高级编程
+. jmeter:https://dzone.com/articles/5-ways-to-load-test-popular-chat-plugins-with-jmet
+. Android 架构之长连接技术:https://juejin.im/post/5c6234426fb9a049e7029555
+. 微信团队原创分享：Android版微信后台保活实战分享(进程保活篇): http://www.52im.net/thread-210-1-1.html
+. 微信团队原创分享：Android版微信后台保活实战分享(网络保活篇):http://www.52im.net/thread-209-1-1.html
+. HTTP长连接说明: https://cloud.tencent.com/document/product/214/4149
+
 
 
 
