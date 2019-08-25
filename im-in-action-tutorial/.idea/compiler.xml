@@ -10,12 +10,15 @@
         <module name="spring-boot-server-send-event-webflux" />
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
+        <module name="demo (2)" />
         <module name="spring-boot-polling" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
+        <module name="spring-boot-netty-socketio" />
         <module name="tcp-chat" />
         <module name="udp-chat-client" />
+        <module name="demo (1)" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-websocket-stomp" />
         <module name="netty-http" />
@@ -36,6 +39,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="binary-chat" target="1.7" />
+      <module name="demo (1)" target="1.6" />
+      <module name="demo (2)" target="1.6" />
       <module name="im-in-action-tutorial" target="1.5" />
       <module name="java-server-websocket-client" target="1.7" />
       <module name="Java-WebSocket" target="1.6" />
@@ -50,6 +55,7 @@
       <module name="spring-boot-chat" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
       <module name="spring-boot-messaging-stomp-websocket" target="1.8" />
+      <module name="spring-boot-netty-socketio" target="1.8" />
       <module name="spring-boot-polling" target="1.8" />
       <module name="spring-boot-sample-websocket" target="1.8" />
       <module name="spring-boot-sample-websocket-tomcat" target="1.8" />
@@ -74,6 +80,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-long-polling" options="-parameters" />
       <module name="spring-boot-messaging-stomp-websocket" options="-parameters" />
+      <module name="spring-boot-netty-socketio" options="-parameters" />
       <module name="spring-boot-polling" options="-parameters" />
       <module name="spring-boot-sample-websocket" options="-parameters" />
       <module name="spring-boot-server-send-event-webflux" options="-parameters" />
