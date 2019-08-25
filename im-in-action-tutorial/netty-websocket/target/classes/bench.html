@@ -13,7 +13,7 @@
     Message size:
     <input type="text" id="messageSize" value="1024"/><br>
     Number of messages:
-    <input type="text" id="nrMessages" value="10"/><br>
+    <input type="text" id="nrMessages" value="1"/><br>
     Data Type:
     <input type="radio" name="type" id="typeText" value="text" checked>text
     <input type="radio" name="type" id="typeBinary" value="binary">binary<br>
@@ -54,10 +54,10 @@
     if (window.WebSocket) {
         //
         socket = new WebSocket('ws://' + location.host + '/websocket');
-        //
         socket.binaryType = 'arraybuffer';
         //
         socket.onmessage = function (event) {
+            console.log("onmessage: ", event);
             //
             if (verifiyResponses) {
                 //
@@ -86,7 +86,6 @@
                 }
             }
             rcvdMessages++;
-            //
             if (rcvdMessages == totalMessages) {
                 //
                 onFinished();
@@ -97,12 +96,12 @@
         };
         //
         socket.onopen = function (event) {
-            //
+            console.log("onopen: ", event);
             connectionLabel.innerHTML = "Connected";
         };
         //
         socket.onclose = function (event) {
-            //
+            console.log("onclose:", event);
             benchRunning = false;
             connectionLabel.innerHTML = "Disconnected";
         };
@@ -112,6 +111,7 @@
     }
 
     function onInvalidResponse(sent, recvd) {
+        console.log("onInvalidResponse: ", sent, recvd);
         socket.close();
         alert("Error: Sent data did not match the received data!");
     }
@@ -121,6 +121,7 @@
     }
 
     function createBenchData() {
+        //
         if (isBinary) {
             // 二进制数据
             benchData = new Uint8Array(messageSize);
@@ -129,10 +130,10 @@
             }
         } else {
             // 文本数据
-            benchData = "";
-            for (var i = 0; i < messageSize; i++) {
-                benchData += String.fromCharCode(Math.floor(Math.random() * (123 - 65) + 65));
-            }
+            benchData = "Hello World";
+            // for (var i = 0; i < messageSize; i++) {
+            //     benchData += String.fromCharCode(Math.floor(Math.random() * (123 - 65) + 65));
+            // }
         }
     }
 
@@ -140,6 +141,7 @@
         if (!window.WebSocket || benchRunning) {
             return;
         }
+        //
         if (socket.readyState == WebSocket.OPEN) {
             isBinary = document.getElementById('typeBinary').checked;
             isSingle = document.getElementById('modeSingle').checked;
@@ -158,9 +160,12 @@
             startTime = new Date();
             //
             if (isSingle) {
+                // 发送一条
                 socket.send(benchData);
             } else {
-                for (var i = 0; i < totalMessages; i++) socket.send(benchData);
+                // 循环发送
+                for (var i = 0; i < totalMessages; i++)
+                    socket.send(benchData);
             }
         } else {
             alert("The socket is not open.");
@@ -175,10 +180,15 @@
         output.value = output.value + '\nPerformance: ' + messagesPerS + ' Messages/s';
         output.value = output.value + ' in each direction';
         output.value = output.value + '\nRound trip: ' + 1000.0 / messagesPerS + 'ms';
+        //
         var throughput = messageSize * totalMessages / duration;
         var throughputText;
-        if (isBinary) throughputText = throughput / (1024 * 1024) + ' MB/s';
-        else throughputText = throughput / (1000 * 1000) + ' MChars/s';
+        //
+        if (isBinary)
+            throughputText = throughput / (1024 * 1024) + ' MB/s';
+        else
+            throughputText = throughput / (1000 * 1000) + ' MChars/s';
+        //
         output.value = output.value + '\nThroughput: ' + throughputText;
         output.value = output.value + ' in each direction';
         benchRunning = false;

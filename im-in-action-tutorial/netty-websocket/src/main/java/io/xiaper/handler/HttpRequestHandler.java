@@ -1,4 +1,4 @@
-package io.xiaper;
+package io.xiaper.handler;
 
 import io.netty.channel.*;
 import io.netty.handler.codec.http.*;

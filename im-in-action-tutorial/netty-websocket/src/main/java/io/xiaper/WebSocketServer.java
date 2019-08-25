@@ -2,17 +2,16 @@ package io.xiaper;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
-import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
-import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.http.HttpObjectAggregator;
-import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
-import io.netty.handler.stream.ChunkedWriteHandler;
+import io.netty.handler.ssl.SslContext;
+import io.netty.handler.ssl.SslContextBuilder;
+import io.netty.handler.ssl.util.SelfSignedCertificate;
+import io.xiaper.initializer.WebSocketServerInitializer;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -23,16 +22,22 @@ public class WebSocketServer {
 
     static final boolean SSL = System.getProperty("ssl") != null;
 
-//    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "4080"));
+    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "3091"));
 
     /**
      * 启动服务
      *
-     * @throws InterruptedException
+     * @throws Exception
      */
-    public void start() throws InterruptedException {
-        //
-        int port = 3091;
+    public void start() throws Exception {
+        // Configure SSL.
+        final SslContext sslCtx;
+        if (SSL) {
+            SelfSignedCertificate ssc = new SelfSignedCertificate();
+            sslCtx = SslContextBuilder.forServer(ssc.certificate(), ssc.privateKey()).build();
+        } else {
+            sslCtx = null;
+        }
 
         // Configure the server.
         final EventLoopGroup bossGroup = new NioEventLoopGroup(1);
@@ -46,25 +51,12 @@ public class WebSocketServer {
                     .option(ChannelOption.SO_BACKLOG, 1024)
                     .channel(NioServerSocketChannel.class)
                     .handler(new LoggingHandler(LogLevel.INFO))
-                    .childHandler(new ChannelInitializer<SocketChannel>() {
-                        @Override
-                        protected void initChannel(SocketChannel ch) throws Exception {
-                            ch.pipeline()
-                                .addLast(new HttpServerCodec())
-                                //把多个消息转换为一个单一的FullHttpRequest或是FullHttpResponse
-                                .addLast(new HttpObjectAggregator(65536))
-                                //大文件支持
-                                .addLast(new ChunkedWriteHandler())
-                                //
-                                .addLast(new HttpRequestHandler())
-                                // websocket
-                                .addLast(new WebSocketServerHandler());
-                        }
-                    });
+                    // 处理器
+                    .childHandler(new WebSocketServerInitializer(sslCtx));
 
-            final Channel ch = b.bind(port).sync().channel();
+            final Channel ch = b.bind(PORT).sync().channel();
 
-            log.info("Welcome To HttpServer on port [{}]", port);
+            log.info("Welcome To HttpServer on port [{}]", PORT);
 
             ch.closeFuture().sync();
 
@@ -77,7 +69,7 @@ public class WebSocketServer {
     /**
      * 启动服务器
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         try {
             new WebSocketServer().start();
         } catch (InterruptedException e) {

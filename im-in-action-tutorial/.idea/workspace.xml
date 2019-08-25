@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_simple_1_7_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/WebSocketServerFrameHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/initializer/WebSocketServerInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/HttpRequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/HttpRequestHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/netty-websocket/target/classes/bench.html" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket/target/classes/bench.html" afterDir="false" />
     </list>
@@ -84,35 +84,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="301">
+              <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1972#3044#0" expanded="true" />
-                <element signature="e#3043#3044#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#handleHttpRequest#0;class#WebSocketServerHandler#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/initializer/WebSocketServerInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="e#1370#1371#0" expanded="true" />
+                <element signature="e#1406#1407#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/WebSocketServerFrameHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1821#1822#0" expanded="true" />
+                <element signature="e#1848#1849#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/HttpRequestHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="295">
+              <caret line="127" column="51" lean-forward="true" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -152,6 +173,7 @@
       <find>\n</find>
       <find>100000</find>
       <find>onFinished</find>
+      <find>handshaker</find>
     </findStrings>
     <replaceStrings>
       <replace>com.xiaper</replace>
@@ -171,9 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/chapter12/package-info.java" />
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/package-info.java" />
-        <option value="$PROJECT_DIR$/udp-chat-server/pom.xml" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/resources/index.html" />
         <option value="$PROJECT_DIR$/spring-boot-polling/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-long-polling/pom.xml" />
@@ -218,10 +237,13 @@
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerBenchmarkPage.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/util/Constants.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/HttpRequestHandler.java" />
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java" />
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html" />
         <option value="$PROJECT_DIR$/netty-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketFrameHandler.java" />
+        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerInitializer.java" />
+        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/WebSocketServerFrameHandler.java" />
+        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java" />
       </list>
     </option>
   </component>
@@ -260,10 +282,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="304" />
-    <option name="y" value="152" />
-    <option name="width" value="1275" />
-    <option name="height" value="838" />
+    <option name="x" value="72" />
+    <option name="y" value="23" />
+    <option name="width" value="1312" />
+    <option name="height" value="814" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -334,7 +356,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
               <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="initializer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -610,7 +632,7 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.xiaper.*" />
+          <option name="PATTERN" value="io.xiaper.handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -872,7 +894,7 @@
       <workItem from="1566703486733" duration="42000" />
       <workItem from="1566703534648" duration="3830000" />
       <workItem from="1566725258330" duration="252000" />
-      <workItem from="1566730151503" duration="7651000" />
+      <workItem from="1566730151503" duration="10191000" />
     </task>
     <servers />
   </component>
@@ -897,7 +919,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120064000" />
+    <option name="totallyTimeSpent" value="122604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -912,7 +934,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.21489622" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.21489622" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -923,7 +945,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" side_tool="true" weight="0.2756874" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31347963" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993895" visible="true" weight="0.26436782" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" visible="true" weight="0.29467085" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -931,8 +953,8 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908162" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.30852342" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061053" side_tool="true" weight="0.30825496" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49915254" weight="0.31765935" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.28004178" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49915254" weight="0.33646813" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32908162" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -1004,12 +1026,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-websocket-stomp-sockjs-rabbitmq/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1302,13 +1318,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/HttpRequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/config/HttpConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-751">
@@ -1320,29 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="12" column="34" lean-forward="true" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1972#3044#0" expanded="true" />
-            <element signature="e#3043#3044#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#handleHttpRequest#0;class#WebSocketServerHandler#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1358,10 +1344,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="295">
+          <caret line="127" column="51" lean-forward="true" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.38.Final/netty-all-4.1.38.Final.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/HttpRequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/WebSocketServerFrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1821#1822#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/initializer/WebSocketServerInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1406#1407#0" expanded="true" />
           </folding>
         </state>
       </provider>
