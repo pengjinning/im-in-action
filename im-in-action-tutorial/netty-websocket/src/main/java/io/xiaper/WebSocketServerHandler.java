@@ -100,8 +100,6 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
     private void handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
 
-        log.info("handleWebSocketFrame");
-
         // Check for closing frame
         if (frame instanceof CloseWebSocketFrame) {
             log.info("CloseWebSocketFrame");

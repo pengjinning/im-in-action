@@ -33,8 +33,6 @@ public class WebSocketServer {
     public void start() throws InterruptedException {
         //
         int port = 3091;
-        //
-//        long start = System.currentTimeMillis();
 
         // Configure the server.
         final EventLoopGroup bossGroup = new NioEventLoopGroup(1);
