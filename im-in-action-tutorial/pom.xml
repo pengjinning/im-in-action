@@ -21,7 +21,6 @@
 	<modules>
 
 		<module>netty-websocket</module>
-		<module>spring-boot-messaging-stomp-websocket</module>
 
 		<module>spring-boot-long-polling</module>
 		<module>spring-boot-polling</module>

@@ -1,12 +1,16 @@
-package io.xiaper;
+package com.xiaper;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ *
+ * @author xiaper.com
+ */
 @SpringBootApplication
-public class WebSocketApplication {
+public class StompMiniApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebSocketApplication.class, args);
+        SpringApplication.run(StompMiniApplication.class, args);
     }
 }

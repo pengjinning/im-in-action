@@ -10,7 +10,6 @@
         <module name="spring-boot-server-send-event-webflux" />
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
-        <module name="spring-boot-messaging-stomp-websocket" />
         <module name="spring-boot-polling" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
