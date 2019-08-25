@@ -28,7 +28,6 @@
 		<module>spring-boot-server-send-event-webmvc</module>
 
 
-		<module>spring-boot-sample-websocket</module>
 		<module>spring-boot-websocket</module>
 
 		<module>spring-boot-websocket-stomp</module>
@@ -39,7 +38,6 @@
 		<module>tcp-chat</module>
 		<module>udp-chat-client</module>
 		<module>udp-chat-server</module>
-		<module>websocket-spring-demo</module>
 
 
 	</modules>

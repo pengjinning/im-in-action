@@ -10,27 +10,28 @@
         <module name="spring-boot-server-send-event-webflux" />
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
-        <module name="spring-boot-websocket-stomp-mini" />
         <module name="spring-boot-polling" />
-        <module name="spring-boot-websocket-stomp-sockjs" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
+        <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
         <module name="tcp-chat" />
         <module name="udp-chat-client" />
         <module name="spring-boot-websocket" />
+        <module name="spring-boot-websocket-stomp" />
+        <module name="netty-http" />
         <module name="spring-boot-chat" />
       </profile>
-      <profile name="Annotation profile for spring-boot-websocket-stomp-sockjs-rabbitmq" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-test-sources/test-annotations" />
+      <profile name="Annotation profile for spring-boot-websocket-stomp-mini" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
+        <module name="spring-boot-websocket-stomp-mini" />
       </profile>
       <profile name="Annotation profile for ByteDesk Spring Boot Projects" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-test-sources/test-annotations" />
+        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-websocket-stomp" />
+        <module name="spring-boot-websocket-stomp-sockjs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -41,6 +42,7 @@
       <module name="java-websocket" target="1.7" />
       <module name="java-websocket-chat" target="1.7" />
       <module name="json-chat" target="1.7" />
+      <module name="netty-http" target="1.7" />
       <module name="netty-websocket" target="1.5" />
       <module name="protobuf-chat" target="1.7" />
       <module name="server-send-event" target="1.8" />
@@ -76,6 +78,8 @@
       <module name="spring-boot-server-send-event-webmvc" options="-parameters" />
       <module name="spring-boot-websocket" options="-parameters" />
       <module name="spring-boot-websocket-stomp" options="-parameters" />
+      <module name="spring-boot-websocket-stomp-mini" options="-parameters" />
+      <module name="spring-boot-websocket-stomp-sockjs" options="-parameters" />
       <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" options="-parameters" />
     </option>
   </component>
