@@ -16,22 +16,17 @@ import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.stream.ChunkedWriteHandler;
-import io.xiaper.action.ExampleAction;
-import io.xiaper.config.HttpConfig;
-import io.xiaper.handler.ActionHandler;
-import io.xiaper.handler.HttpChunkContentCompressor;
 
 /**
  * HttpServer starter<br>
- * 用于启动服务器的主对象<br>
- * 使用HttpServer.start()启动服务器<br>
- * 服务的Action类和端口等设置在ServerSetting中设置
- *
- * @author Looly
  */
 public class WebSocketServer {
 
     private static final Log log = StaticLog.get();
+
+    static final boolean SSL = System.getProperty("ssl") != null;
+
+//    static final int PORT = Integer.parseInt(System.getProperty("port", SSL? "8443" : "4080"));
 
     /**
      * 启动服务
@@ -40,10 +35,13 @@ public class WebSocketServer {
      */
     public void start() throws InterruptedException {
         //
+        int port = 3091;
+        //
         long start = System.currentTimeMillis();
 
         // Configure the server.
         final EventLoopGroup bossGroup = new NioEventLoopGroup(1);
+
         final EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
@@ -60,20 +58,21 @@ public class WebSocketServer {
                                     .addLast(new HttpServerCodec())
                                     //把多个消息转换为一个单一的FullHttpRequest或是FullHttpResponse
                                     .addLast(new HttpObjectAggregator(65536))
-                                    //压缩Http消息
-                                    .addLast(new HttpChunkContentCompressor())
                                     //大文件支持
                                     .addLast(new ChunkedWriteHandler())
-                                    // 自定义
-                                    .addLast(new ActionHandler());
+                                    //
+                                    .addLast(new HttpRequestHandler())
+                                    // websocket
+                                    .addLast(new WebSocketServerHandler());
                         }
                     });
 
-            final Channel ch = b.bind(HttpConfig.getPort()).sync().channel();
+            final Channel ch = b.bind(port).sync().channel();
 
-            log.info("***** Welcome To HttpServer on port [{}], startting spend {}ms *****", HttpConfig.getPort(), DateUtil.spendMs(start));
+            log.info("***** Welcome To HttpServer on port [{}], startting spend {}ms *****", port, DateUtil.spendMs(start));
 
             ch.closeFuture().sync();
+
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
@@ -85,7 +84,6 @@ public class WebSocketServer {
      */
     public static void main(String[] args) {
         try {
-            HttpConfig.setAction("/example", ExampleAction.class);
             new WebSocketServer().start();
         } catch (InterruptedException e) {
             log.error("Http Server start error!", e);

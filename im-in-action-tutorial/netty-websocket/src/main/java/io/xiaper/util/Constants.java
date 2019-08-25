@@ -15,28 +15,10 @@
  * limitations under the License.
  */
 
-package io.xiaper.action;
+package io.xiaper.util;
 
-import io.xiaper.handler.Request;
-import io.xiaper.handler.Response;
+public class Constants {
 
-/**
- * Action对象用于处理业务流程，类似于Servlet对象<br>
- * 在启动服务器前必须将path和此Action加入到ServerSetting的ActionMap中<br>
- * 在浏览器中访问http://localhost:3090/example?a=b既可在页面上显示response a: b
- * @author Looly
- */
-public class ExampleAction implements Action{
+    public static final String WEBSOCKET_PATH = "/websocket";
 
-    /**
-     * http://localhost:3090/example?a=b
-     *
-     * @param request
-     * @param response
-     */
-    @Override
-    public void doAction(Request request, Response response) {
-        String a = request.getParam("a");
-        response.setContent("response a: " + a);
-    }
 }
