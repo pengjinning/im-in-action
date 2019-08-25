@@ -31,6 +31,7 @@
 </form>
 
 <script type="text/javascript">
+    //
     var benchRunning = false;
     var messageSize = 0;
     var totalMessages = 0;
@@ -44,20 +45,30 @@
     var socket;
     var output = document.getElementById('output');
     var connectionLabel = document.getElementById('connectionLabel');
+    //
     if (!window.WebSocket) {
+        //
         window.WebSocket = window.MozWebSocket;
     }
+    //
     if (window.WebSocket) {
+        //
         socket = new WebSocket('ws://' + location.host + '/websocket');
+        //
         socket.binaryType = 'arraybuffer';
+        //
         socket.onmessage = function (event) {
+            //
             if (verifiyResponses) {
+                //
                 if (isBinary) {
+                    // 二进制
                     if (!(event.data instanceof ArrayBuffer) ||
                         event.data.byteLength != benchData.byteLength) {
                         onInvalidResponse(benchData, event.data);
                         return;
                     } else {
+                        //
                         var v = new Uint8Array(event.data);
                         for (var j = 0; j < benchData.byteLength; j++) {
                             if (v[j] != benchData[j]) {
@@ -67,6 +78,7 @@
                         }
                     }
                 } else {
+                    // 文本
                     if (event.data != benchData) {
                         onInvalidResponse(benchData, event.data);
                         return;
@@ -74,20 +86,28 @@
                 }
             }
             rcvdMessages++;
+            //
             if (rcvdMessages == totalMessages) {
+                //
                 onFinished();
             } else if (isSingle) {
+                //
                 socket.send(benchData);
             }
         };
+        //
         socket.onopen = function (event) {
+            //
             connectionLabel.innerHTML = "Connected";
         };
+        //
         socket.onclose = function (event) {
+            //
             benchRunning = false;
             connectionLabel.innerHTML = "Disconnected";
         };
     } else {
+        //
         alert("Your browser does not support Web Socket.");
     }
 
@@ -102,11 +122,13 @@
 
     function createBenchData() {
         if (isBinary) {
+            // 二进制数据
             benchData = new Uint8Array(messageSize);
             for (var i = 0; i < messageSize; i++) {
                 benchData[i] += Math.floor(Math.random() * 255);
             }
         } else {
+            // 文本数据
             benchData = "";
             for (var i = 0; i < messageSize; i++) {
                 benchData += String.fromCharCode(Math.floor(Math.random() * (123 - 65) + 65));
@@ -124,12 +146,17 @@
             verifiyResponses = document.getElementById('verifiyResponses').checked;
             messageSize = parseInt(document.getElementById('messageSize').value);
             totalMessages = parseInt(document.getElementById('nrMessages').value);
-            if (isNaN(messageSize) || isNaN(totalMessages)) return;
+            //
+            if (isNaN(messageSize) || isNaN(totalMessages))
+                return;
+            //
             createBenchData();
+            //
             output.value = output.value + '\nStarting Benchmark';
             rcvdMessages = 0;
             benchRunning = true;
             startTime = new Date();
+            //
             if (isSingle) {
                 socket.send(benchData);
             } else {

@@ -28,11 +28,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-websocket-stomp-mini" />
       </profile>
-      <profile name="Annotation profile for demo (2)" enabled="true">
-        <sourceOutputDir name="../../netty-socketio-demo/server/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../netty-socketio-demo/server/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-      </profile>
       <profile name="Annotation profile for ByteDesk Spring Boot Projects" enabled="true">
         <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-test-sources/test-annotations" />
@@ -44,14 +39,14 @@
       <module name="binary-chat" target="1.8" />
       <module name="demo (1)" target="1.8" />
       <module name="demo (2)" target="1.8" />
-      <module name="im-in-action-tutorial" target="1.8" />
+      <module name="im-in-action-tutorial" target="1.5" />
       <module name="java-server-websocket-client" target="1.8" />
       <module name="Java-WebSocket" target="1.8" />
       <module name="java-websocket" target="1.8" />
       <module name="java-websocket-chat" target="1.8" />
       <module name="json-chat" target="1.8" />
-      <module name="netty-http" target="1.8" />
-      <module name="netty-websocket" target="1.8" />
+      <module name="netty-http" target="1.7" />
+      <module name="netty-websocket" target="1.5" />
       <module name="protobuf-chat" target="1.8" />
       <module name="server-send-event" target="1.8" />
       <module name="shiro-test" target="1.8" />
@@ -72,10 +67,10 @@
       <module name="spring-boot-websocket-stomp-sockjs" target="1.8" />
       <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" target="1.8" />
       <module name="spring-websocket-portfolio" target="1.8" />
-      <module name="tcp-chat" target="1.8" />
+      <module name="tcp-chat" target="1.7" />
       <module name="text-chat" target="1.8" />
-      <module name="udp-chat-client" target="1.8" />
-      <module name="udp-chat-server" target="1.8" />
+      <module name="udp-chat-client" target="1.7" />
+      <module name="udp-chat-server" target="1.7" />
       <module name="websocket-spring-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>

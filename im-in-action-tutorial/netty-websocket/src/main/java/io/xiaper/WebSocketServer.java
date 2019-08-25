@@ -1,8 +1,5 @@
 package io.xiaper;
 
-import cn.hutool.core.date.DateUtil;
-import cn.hutool.log.Log;
-import cn.hutool.log.StaticLog;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
@@ -16,13 +13,13 @@ import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.stream.ChunkedWriteHandler;
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * HttpServer starter<br>
  */
+@Slf4j
 public class WebSocketServer {
-
-    private static final Log log = StaticLog.get();
 
     static final boolean SSL = System.getProperty("ssl") != null;
 
@@ -37,7 +34,7 @@ public class WebSocketServer {
         //
         int port = 3091;
         //
-        long start = System.currentTimeMillis();
+//        long start = System.currentTimeMillis();
 
         // Configure the server.
         final EventLoopGroup bossGroup = new NioEventLoopGroup(1);
@@ -55,21 +52,21 @@ public class WebSocketServer {
                         @Override
                         protected void initChannel(SocketChannel ch) throws Exception {
                             ch.pipeline()
-                                    .addLast(new HttpServerCodec())
-                                    //把多个消息转换为一个单一的FullHttpRequest或是FullHttpResponse
-                                    .addLast(new HttpObjectAggregator(65536))
-                                    //大文件支持
-                                    .addLast(new ChunkedWriteHandler())
-                                    //
-                                    .addLast(new HttpRequestHandler())
-                                    // websocket
-                                    .addLast(new WebSocketServerHandler());
+                                .addLast(new HttpServerCodec())
+                                //把多个消息转换为一个单一的FullHttpRequest或是FullHttpResponse
+                                .addLast(new HttpObjectAggregator(65536))
+                                //大文件支持
+                                .addLast(new ChunkedWriteHandler())
+                                //
+                                .addLast(new HttpRequestHandler())
+                                // websocket
+                                .addLast(new WebSocketServerHandler());
                         }
                     });
 
             final Channel ch = b.bind(port).sync().channel();
 
-            log.info("***** Welcome To HttpServer on port [{}], startting spend {}ms *****", port, DateUtil.spendMs(start));
+            log.info("Welcome To HttpServer on port [{}]", port);
 
             ch.closeFuture().sync();
 

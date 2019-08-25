@@ -25,6 +25,7 @@ import io.netty.handler.codec.http.*;
 import io.netty.handler.codec.http.websocketx.*;
 import io.netty.util.CharsetUtil;
 import io.xiaper.util.Constants;
+import lombok.extern.slf4j.Slf4j;
 
 import static io.netty.handler.codec.http.HttpMethod.GET;
 import static io.netty.handler.codec.http.HttpResponseStatus.*;
@@ -33,6 +34,7 @@ import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
 /**
  * Handles handshakes and messages
  */
+@Slf4j
 public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> {
 
     private WebSocketServerHandshaker handshaker;
@@ -52,6 +54,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
     }
 
     private void handleHttpRequest(ChannelHandlerContext ctx, FullHttpRequest req) {
+        log.info("handleHttpRequest");
 
         // Handle a bad request.
         if (!req.decoderResult().isSuccess()) {
@@ -97,21 +100,26 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
 
     private void handleWebSocketFrame(ChannelHandlerContext ctx, WebSocketFrame frame) {
 
+        log.info("handleWebSocketFrame");
+
         // Check for closing frame
         if (frame instanceof CloseWebSocketFrame) {
+            log.info("CloseWebSocketFrame");
             handshaker.close(ctx.channel(), (CloseWebSocketFrame) frame.retain());
             return;
         }
         if (frame instanceof PingWebSocketFrame) {
+            log.info("PingWebSocketFrame");
             ctx.write(new PongWebSocketFrame(frame.content().retain()));
             return;
         }
         if (frame instanceof TextWebSocketFrame) {
-            // Echo the frame
+            log.info("TextWebSocketFrame");
             ctx.write(frame.retain());
             return;
         }
         if (frame instanceof BinaryWebSocketFrame) {
+            log.info("BinaryWebSocketFrame");
             // Echo the frame
             ctx.write(frame.retain());
         }
