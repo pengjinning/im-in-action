@@ -10,6 +10,7 @@
         <module name="spring-boot-server-send-event-webflux" />
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
+        <module name="spring-boot-messaging-stomp-websocket" />
         <module name="spring-boot-polling" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
@@ -49,6 +50,7 @@
       <module name="shiro-test" target="1.8" />
       <module name="spring-boot-chat" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
+      <module name="spring-boot-messaging-stomp-websocket" target="1.8" />
       <module name="spring-boot-polling" target="1.8" />
       <module name="spring-boot-sample-websocket" target="1.8" />
       <module name="spring-boot-sample-websocket-tomcat" target="1.8" />
@@ -72,6 +74,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-long-polling" options="-parameters" />
+      <module name="spring-boot-messaging-stomp-websocket" options="-parameters" />
       <module name="spring-boot-polling" options="-parameters" />
       <module name="spring-boot-sample-websocket" options="-parameters" />
       <module name="spring-boot-server-send-event-webflux" options="-parameters" />

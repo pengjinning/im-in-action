@@ -47,7 +47,9 @@ public class HttpServer {
         final EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
+
             final ServerBootstrap b = new ServerBootstrap();
+
             b.group(bossGroup, workerGroup)
                     .option(ChannelOption.SO_BACKLOG, 1024)
                     .channel(NioServerSocketChannel.class)
@@ -69,9 +71,11 @@ public class HttpServer {
                     });
 
             final Channel ch = b.bind(HttpConfig.getPort()).sync().channel();
+
             log.info("***** Welcome To HttpServer on port [{}], startting spend {}ms *****", HttpConfig.getPort(), DateUtil.spendMs(start));
 
             ch.closeFuture().sync();
+
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();

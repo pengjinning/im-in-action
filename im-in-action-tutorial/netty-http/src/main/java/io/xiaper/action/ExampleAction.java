@@ -39,4 +39,7 @@ public class ExampleAction implements Action{
         String a = request.getParam("a");
         response.setContent("response a: " + a);
     }
+
+
+
 }

@@ -8,9 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author xiaper.com
  */
 @SpringBootApplication
-public class Application {
+public class SpringBootWebSocketServer {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(SpringBootWebSocketServer.class, args);
 	}
 }
