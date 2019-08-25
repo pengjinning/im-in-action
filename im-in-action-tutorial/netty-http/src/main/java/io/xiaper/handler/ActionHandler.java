@@ -68,6 +68,7 @@ public class ActionHandler extends SimpleChannelInboundHandler<FullHttpRequest> 
      * @return boolean 是否继续
      */
     private boolean doFilter(Request request, Response response) {
+
         //全局过滤器
         Filter filter = HttpConfig.getFilter(HttpConfig.MAPPING_ALL);
         if (null != filter) {

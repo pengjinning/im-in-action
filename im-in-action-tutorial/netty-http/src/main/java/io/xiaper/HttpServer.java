@@ -36,10 +36,10 @@ public class HttpServer {
     /**
      * 启动服务
      *
-     * @param port 端口
      * @throws InterruptedException
      */
-    public void start(int port) throws InterruptedException {
+    public void start() throws InterruptedException {
+        //
         long start = System.currentTimeMillis();
 
         // Configure the server.
@@ -68,8 +68,9 @@ public class HttpServer {
                         }
                     });
 
-            final Channel ch = b.bind(port).sync().channel();
-            log.info("***** Welcome To HttpServer on port [{}], startting spend {}ms *****", port, DateUtil.spendMs(start));
+            final Channel ch = b.bind(HttpConfig.getPort()).sync().channel();
+            log.info("***** Welcome To HttpServer on port [{}], startting spend {}ms *****", HttpConfig.getPort(), DateUtil.spendMs(start));
+
             ch.closeFuture().sync();
         } finally {
             bossGroup.shutdownGracefully();
@@ -83,7 +84,7 @@ public class HttpServer {
     public static void main(String[] args) {
         try {
             HttpConfig.setAction("/example", ExampleAction.class);
-            new HttpServer().start(HttpConfig.getPort());
+            new HttpServer().start();
         } catch (InterruptedException e) {
             log.error("Http Server start error!", e);
         }
