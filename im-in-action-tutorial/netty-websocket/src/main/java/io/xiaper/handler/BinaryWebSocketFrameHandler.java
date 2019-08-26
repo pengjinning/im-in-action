@@ -15,6 +15,8 @@
  */
 package io.xiaper.handler;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.websocketx.*;
@@ -24,34 +26,19 @@ import lombok.extern.slf4j.Slf4j;
  * Handles handshakes and messages
  */
 @Slf4j
-public class WebSocketServerFrameHandler extends SimpleChannelInboundHandler<WebSocketFrame> {
+public class BinaryWebSocketFrameHandler extends SimpleChannelInboundHandler<BinaryWebSocketFrame> {
 
     @Override
-    public void channelRead0(ChannelHandlerContext ctx, WebSocketFrame frame) {
+    public void channelRead0(ChannelHandlerContext context, BinaryWebSocketFrame frame) {
+        //
+        log.info("服务器接收到二进制消息,消息长度:[{}]", frame.content().capacity());
+//        ByteBuf byteBuf = Unpooled.directBuffer(frame.content().capacity());
+//        byteBuf.writeBytes(frame.content());
+//        context.writeAndFlush(new BinaryWebSocketFrame(byteBuf));
 
-        // Check for closing frame
-        if (frame instanceof CloseWebSocketFrame) {
-            log.info("CloseWebSocketFrame");
-            return;
-        }
-
-        if (frame instanceof PingWebSocketFrame) {
-            log.info("PingWebSocketFrame");
-            ctx.write(new PongWebSocketFrame(frame.content().retain()));
-            return;
-        }
-
-        if (frame instanceof TextWebSocketFrame) {
-            log.info("TextWebSocketFrame");
-            ctx.write(frame.retain());
-            return;
-        }
-
-        if (frame instanceof BinaryWebSocketFrame) {
-            log.info("BinaryWebSocketFrame");
-            // Echo the frame
-            ctx.write(frame.retain());
-        }
+        log.info("BinaryWebSocketFrame");
+        // Echo the frame
+        context.write(frame.retain());
     }
 
     @Override

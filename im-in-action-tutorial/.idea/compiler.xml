@@ -46,7 +46,7 @@
       <module name="java-websocket-chat" target="1.8" />
       <module name="json-chat" target="1.8" />
       <module name="netty-http" target="1.7" />
-      <module name="netty-websocket" target="1.5" />
+      <module name="netty-websocket" target="8" />
       <module name="protobuf-chat" target="1.8" />
       <module name="server-send-event" target="1.8" />
       <module name="shiro-test" target="1.8" />
