@@ -160,12 +160,13 @@
      */
     function responseUserDecoder(obj) {
         var data = obj.data;
-
+        //
         var success = obj.success; // 成功的回调
         var fail = obj.fail; // 失败的回调
         var complete = obj.complete; // 成功或者失败都会回调
 
         protobuf.load("../proto/MessageDataProto.proto", function (err, root) {
+            //
             if (err) {
                 if (typeof fail === "function") {
                     fail(err)

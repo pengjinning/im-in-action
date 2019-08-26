@@ -29,10 +29,13 @@ public class ServerFrameHandler extends SimpleChannelInboundHandler<MessageData.
         System.out.println(msg.getUserName());
         System.out.println(msg.getAge());
         System.out.println(msg.getPassword());
+        //
         MessageData.ResponseUser bank = MessageData
                 .ResponseUser.newBuilder()
-                .setUserName("你好,请问有什么可以帮助你!")
-                .setAge(18).setPassword("11111").build();
+                .setUserName("你好,请问有什么可以帮助你?")
+                .setAge(18)
+                .setPassword("11111")
+                .build();
 
         channel.writeAndFlush(bank);
     }
