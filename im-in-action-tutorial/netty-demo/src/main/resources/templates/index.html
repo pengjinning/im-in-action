@@ -20,6 +20,7 @@
 
             //客户端收到服务器消息的时候就会执行这个回调方法
             socket.onmessage = function (event) {
+                console.log(event);
                 //
                 var ta = document.getElementById("responseText");
 
@@ -44,12 +45,16 @@
 
             //连接建立的回调函数
             socket.onopen = function (event) {
+                console.log(event);
+                //
                 var ta = document.getElementById("responseText");
                 ta.value = "连接开启";
             }
 
             //连接断掉的回调函数
             socket.onclose = function (event) {
+                console.log(event);
+                //
                 var ta = document.getElementById("responseText");
                 ta.value = ta.value + "\n" + "连接关闭";
                 // 5s后自动重连
