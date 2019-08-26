@@ -17,6 +17,7 @@ public class TestMain {
                 },
                 1024,
                 new YieldingWaitStrategy());
+
         // 创建一个屏障
         SequenceBarrier sequenceBarrier = ringBuffer.newBarrier();
         

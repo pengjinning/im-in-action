@@ -1,19 +1,9 @@
-package com.example.nettydemo.websocket2;
+package com.example.nettydemo.websocket;
 
 import com.example.nettydemo.protobuf.MessageData;
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.channel.group.ChannelGroup;
-import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
-import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
-import io.netty.handler.codec.http.websocketx.WebSocketFrame;
-import io.netty.util.concurrent.GlobalEventExecutor;
-
-import java.util.List;
 
 //处理文本协议数据，处理TextWebSocketFrame类型的数据，websocket专门处理文本的frame就是TextWebSocketFrame
 public class ServerFrameHandler extends SimpleChannelInboundHandler<MessageData.RequestUser> {

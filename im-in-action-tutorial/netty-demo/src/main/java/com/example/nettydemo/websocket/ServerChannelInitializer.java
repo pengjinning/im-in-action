@@ -1,4 +1,4 @@
-package com.example.nettydemo.websocket2;
+package com.example.nettydemo.websocket;
 
 import com.example.nettydemo.protobuf.MessageData;
 import com.google.protobuf.MessageLite;
