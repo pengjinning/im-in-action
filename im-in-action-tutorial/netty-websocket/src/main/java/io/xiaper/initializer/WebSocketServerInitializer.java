@@ -48,11 +48,12 @@ public class WebSocketServerInitializer extends ChannelInitializer<SocketChannel
         }
         // HttpRequestDecoder和HttpResponseEncoder的一个组合，针对http协议进行编解码
         pipeline.addLast(new HttpServerCodec());
-        // 把多个消息转换为一个单一的FullHttpRequest或是FullHttpResponse
+        // 将HttpMessage和HttpContents聚合到一个完成的 FullHttpRequest或FullHttpResponse中,具体是FullHttpRequest对象还是FullHttpResponse对象取决于是请求还是响应
+        // 需要放到HttpServerCodec这个处理器后面
         pipeline.addLast(new HttpObjectAggregator(65536));
         // 分块向客户端写数据，防止发送大文件时导致内存溢出
         pipeline.addLast(new ChunkedWriteHandler());
-        // 加载.html文件
+        // 自定义http handler，加载.html文件
         pipeline.addLast(new HttpRequestHandler());
         // webSocket 数据压缩扩展，当添加这个的时候WebSocketServerProtocolHandler的第三个参数需要设置成true
         pipeline.addLast(new WebSocketServerCompressionHandler());
@@ -62,8 +63,9 @@ public class WebSocketServerInitializer extends ChannelInitializer<SocketChannel
         // 处理close/ping/pong协议
         // 服务器端向外暴露的 web socket 端点，当客户端传递比较大的对象时，maxFrameSize参数的值需要调大
         pipeline.addLast(new WebSocketServerProtocolHandler(Constants.WEBSOCKET_PATH, null, true, 10485760));
-        // 自定义处理binary/text协议
+        // 自定义处理text协议
         pipeline.addLast(new TextWebSocketFrameHandler());
+        // 自定义处理binary协议
         pipeline.addLast(new BinaryWebSocketFrameHandler());
     }
 }

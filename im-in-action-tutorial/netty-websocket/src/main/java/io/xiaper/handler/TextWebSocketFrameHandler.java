@@ -15,6 +15,8 @@
  */
 package io.xiaper.handler;
 
+import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.websocketx.BinaryWebSocketFrame;
@@ -31,14 +33,30 @@ public class TextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextW
 
     @Override
     public void channelRead0(ChannelHandlerContext context, TextWebSocketFrame frame) {
+        //
+        log.info("接收到文本消息, 消息长度:[{}]", frame.content().capacity());
+        log.info("decode text content {}", frame.text());
 
-        log.info("TextWebSocketFrame");
         context.write(frame.retain());
     }
 
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) {
         ctx.flush();
+    }
+
+    @Override
+    public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        super.channelActive(ctx);
+        // 添加
+        log.info(" 客户端加入 [ {} ]", ctx.channel().id().asLongText());
+    }
+
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+        super.channelInactive(ctx);
+        // 移除
+        log.info(" 离线 [ {} ] ", ctx.channel().id().asLongText());
     }
 
     @Override
@@ -49,19 +67,19 @@ public class TextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextW
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        log.info("userEventTriggered");
+        log.info("text userEventTriggered");
         //
         if (evt instanceof WebSocketServerProtocolHandler.HandshakeComplete) {
-            log.info("web socket 握手成功。");
+            log.info("text web socket 握手成功。");
             //
             WebSocketServerProtocolHandler.HandshakeComplete handshakeComplete = (WebSocketServerProtocolHandler.HandshakeComplete) evt;
             String requestUri = handshakeComplete.requestUri();
-            log.info("requestUri:[{}]", requestUri);
+            log.info("text requestUri:[{}]", requestUri);
             //
             String subproTocol = handshakeComplete.selectedSubprotocol();
-            log.info("subproTocol:[{}]", subproTocol);
+            log.info("text subproTocol:[{}]", subproTocol);
             //
-            handshakeComplete.requestHeaders().forEach(entry -> log.info("header key:[{}] value:[{}]", entry.getKey(), entry.getValue()));
+            handshakeComplete.requestHeaders().forEach(entry -> log.info("text header key:[{}] value:[{}]", entry.getKey(), entry.getValue()));
         } else {
             super.userEventTriggered(ctx, evt);
         }

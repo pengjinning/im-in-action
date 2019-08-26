@@ -46,68 +46,75 @@
     var output = document.getElementById('output');
     var connectionLabel = document.getElementById('connectionLabel');
     //
-    if (!window.WebSocket) {
+    function connect() {
         //
-        window.WebSocket = window.MozWebSocket;
-    }
-    //
-    if (window.WebSocket) {
+        if (!window.WebSocket) {
+            window.WebSocket = window.MozWebSocket;
+        }
         //
-        socket = new WebSocket('ws://' + location.host + '/websocket');
-        socket.binaryType = 'arraybuffer';
-        //
-        socket.onmessage = function (event) {
-            console.log("onmessage: ", event);
+        if (window.WebSocket) {
             //
-            if (verifiyResponses) {
+            socket = new WebSocket('ws://' + location.host + '/websocket');
+            socket.binaryType = 'arraybuffer';
+            //
+            socket.onmessage = function (event) {
+                console.log("onmessage: ", event);
                 //
-                if (isBinary) {
-                    // 二进制
-                    if (!(event.data instanceof ArrayBuffer) ||
-                        event.data.byteLength != benchData.byteLength) {
-                        onInvalidResponse(benchData, event.data);
-                        return;
-                    } else {
-                        //
-                        var v = new Uint8Array(event.data);
-                        for (var j = 0; j < benchData.byteLength; j++) {
-                            if (v[j] != benchData[j]) {
-                                onInvalidResponse(benchData, event.data);
-                                return;
+                if (verifiyResponses) {
+                    //
+                    if (isBinary) {
+                        // 二进制
+                        if (!(event.data instanceof ArrayBuffer) ||
+                            event.data.byteLength != benchData.byteLength) {
+                            onInvalidResponse(benchData, event.data);
+                            return;
+                        } else {
+                            //
+                            var v = new Uint8Array(event.data);
+                            for (var j = 0; j < benchData.byteLength; j++) {
+                                if (v[j] != benchData[j]) {
+                                    onInvalidResponse(benchData, event.data);
+                                    return;
+                                }
                             }
                         }
-                    }
-                } else {
-                    // 文本
-                    if (event.data != benchData) {
-                        onInvalidResponse(benchData, event.data);
-                        return;
+                    } else {
+                        // 文本
+                        if (event.data != benchData) {
+                            onInvalidResponse(benchData, event.data);
+                            return;
+                        }
                     }
                 }
-            }
-            rcvdMessages++;
-            if (rcvdMessages == totalMessages) {
-                //
-                onFinished();
-            } else if (isSingle) {
-                //
-                socket.send(benchData);
-            }
-        };
-        //
-        socket.onopen = function (event) {
-            console.log("onopen: ", event);
-            connectionLabel.innerHTML = "Connected";
-        };
-        //
-        socket.onclose = function (event) {
-            console.log("onclose:", event);
-            benchRunning = false;
-            connectionLabel.innerHTML = "Disconnected";
-        };
-    } else {
-        //
-        alert("Your browser does not support Web Socket.");
+                rcvdMessages++;
+                if (rcvdMessages == totalMessages) {
+                    //
+                    onFinished();
+                } else if (isSingle) {
+                    //
+                    socket.send(benchData);
+                }
+            };
+            //
+            socket.onopen = function (event) {
+                console.log("onopen: ", event);
+                connectionLabel.innerHTML = "Connected";
+            };
+            //
+            socket.onclose = function (event) {
+                console.log("onclose:", event);
+                benchRunning = false;
+                connectionLabel.innerHTML = "Disconnected";
+                // 5s后自动重连
+                setTimeout(function () {
+                    console.log("reconnecting...");
+                    connect();
+                }, 5000);
+            };
+        } else {
+            //
+            alert("Your browser does not support Web Socket.");
+        }
     }
 
     function onInvalidResponse(sent, recvd) {
@@ -124,10 +131,12 @@
         //
         if (isBinary) {
             // 二进制数据
-            benchData = new Uint8Array(messageSize);
-            for (var i = 0; i < messageSize; i++) {
-                benchData[i] += Math.floor(Math.random() * 255);
-            }
+            benchData = new ArrayBuffer(12);
+            benchData[0] = "Hello World";
+            // benchData = new Uint8Array(messageSize);
+            // for (var i = 0; i < messageSize; i++) {
+            //     benchData[i] += Math.floor(Math.random() * 255);
+            // }
         } else {
             // 文本数据
             benchData = "Hello World";
@@ -193,6 +202,10 @@
         output.value = output.value + ' in each direction';
         benchRunning = false;
     }
+
+    // 建立长连接
+    connect();
+
 </script>
 </body>
 </html>
