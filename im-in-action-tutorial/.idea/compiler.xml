@@ -11,6 +11,7 @@
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
         <module name="spring-boot-polling" />
+        <module name="netty-demo" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
@@ -45,6 +46,7 @@
       <module name="java-websocket" target="1.8" />
       <module name="java-websocket-chat" target="1.8" />
       <module name="json-chat" target="1.8" />
+      <module name="netty-demo" target="1.8" />
       <module name="netty-http" target="1.7" />
       <module name="netty-websocket" target="8" />
       <module name="protobuf-chat" target="1.8" />
@@ -76,6 +78,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="netty-demo" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
       <module name="spring-boot-messaging-stomp-websocket" options="-parameters" />
       <module name="spring-boot-netty-socketio" options="-parameters" />

@@ -132,7 +132,8 @@
         if (isBinary) {
             // 二进制数据
             benchData = new ArrayBuffer(12);
-            benchData[0] = "Hello World";
+            benchData[0] = text2Binary("Hello World");
+            console.log('binary data: ', benchData);
             // benchData = new Uint8Array(messageSize);
             // for (var i = 0; i < messageSize; i++) {
             //     benchData[i] += Math.floor(Math.random() * 255);
@@ -201,6 +202,12 @@
         output.value = output.value + '\nThroughput: ' + throughputText;
         output.value = output.value + ' in each direction';
         benchRunning = false;
+    }
+
+    function text2Binary(string) {
+        return string.split('').map(function (char) {
+            return char.charCodeAt(0).toString(2);
+        }).join('');
     }
 
     // 建立长连接

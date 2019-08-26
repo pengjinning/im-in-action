@@ -21,6 +21,7 @@
 	<modules>
 
 
+		<module>netty-demo</module>
 		<module>netty-socketio/server</module>
 		<module>netty-websocket</module>
 		<module>spring-boot-netty-socketio</module>

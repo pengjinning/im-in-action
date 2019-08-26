@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-demo/netty-demo.iml" filepath="$PROJECT_DIR$/netty-demo/netty-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket/netty-websocket.iml" filepath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" filepath="$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" />
