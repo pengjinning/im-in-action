@@ -24,7 +24,7 @@ import java.util.List;
 import static io.netty.buffer.Unpooled.wrappedBuffer;
 
 
-public class ServerChannelInitializer extends ChannelInitializer<SocketChannel> {
+public class WebSocketServerChannelInitializer extends ChannelInitializer<SocketChannel> {
     
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
@@ -74,7 +74,7 @@ public class ServerChannelInitializer extends ChannelInitializer<SocketChannel> 
         pipeline.addLast(new ProtobufDecoder(MessageData.RequestUser.getDefaultInstance()));
         
         // websocket定义了传递数据的6中frame类型
-        pipeline.addLast(new ServerFrameHandler());
+        pipeline.addLast(new WebSocketServerFrameHandler());
         
     }
 }

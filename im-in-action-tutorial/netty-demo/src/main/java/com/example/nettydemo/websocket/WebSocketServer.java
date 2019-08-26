@@ -16,7 +16,7 @@ import javax.annotation.PreDestroy;
 
 @Slf4j
 @Component
-public class Server {
+public class WebSocketServer {
 
     private Channel serverChannel;
 
@@ -51,7 +51,7 @@ public class Server {
                 // 打印log
                 .handler(new LoggingHandler(LogLevel.INFO))
                 //
-                .childHandler(new ServerChannelInitializer());
+                .childHandler(new WebSocketServerChannelInitializer());
 
         serverChannel = serverBootstrap.bind("0.0.0.0", 8899).sync().channel();
 

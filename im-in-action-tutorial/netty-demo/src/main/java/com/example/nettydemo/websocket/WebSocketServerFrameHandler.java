@@ -6,7 +6,7 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
 //处理文本协议数据，处理TextWebSocketFrame类型的数据，websocket专门处理文本的frame就是TextWebSocketFrame
-public class ServerFrameHandler extends SimpleChannelInboundHandler<MessageData.RequestUser> {
+public class WebSocketServerFrameHandler extends SimpleChannelInboundHandler<MessageData.RequestUser> {
     
 //    private final ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/test/AgariBacktrack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/test/AgariIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket2/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket2/ServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket2/ServerFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerFrameHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerFrameHandler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -82,19 +78,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/Server.java">
+        <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerFrameHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/MessageDataProto.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-33">
+              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="76" column="39" lean-forward="true" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+              <folding>
+                <element signature="e#1970#2317#0" expanded="true" />
+                <element signature="e#2316#2317#0" expanded="true" />
+                <element signature="e#2362#3177#0" expanded="true" />
+                <element signature="e#3176#3177#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+            <state relative-caret-position="313">
+              <caret line="188" column="23" lean-forward="true" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -157,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/ChatServerInitializer.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/config/HttpConfig.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/handler/Response.java" />
         <option value="$PROJECT_DIR$/netty-http/src/main/java/io/xiaper/HttpServer.java" />
@@ -208,6 +236,7 @@
         <option value="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket2/ServerFrameHandler.java" />
         <option value="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java" />
         <option value="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/Server.java" />
+        <option value="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java" />
       </list>
     </option>
   </component>
@@ -942,7 +971,7 @@
       <workItem from="1566703534648" duration="3830000" />
       <workItem from="1566725258330" duration="252000" />
       <workItem from="1566730151503" duration="25116000" />
-      <workItem from="1566822108739" duration="970000" />
+      <workItem from="1566822108739" duration="2481000" />
     </task>
     <servers />
   </component>
@@ -967,7 +996,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138499000" />
+    <option name="totallyTimeSpent" value="140010000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -980,9 +1009,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.23382173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.25396827" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1074,27 +1102,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/static/js/protobuf.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="71525" selection-start-line="6" selection-start-column="71525" selection-end-line="6" selection-end-column="71525" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/ATestProto.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/MessageDataProto.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -1274,19 +1285,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerChannelInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-          <folding>
-            <element signature="e#1971#2318#0" expanded="true" />
-            <element signature="e#2317#2318#0" expanded="true" />
-            <element signature="e#2363#3178#0" expanded="true" />
-            <element signature="e#3177#3178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -1357,13 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerFrameHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1410,21 +1401,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
+        <state relative-caret-position="313">
+          <caret line="188" column="23" lean-forward="true" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#textarea#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#1;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="76" column="39" lean-forward="true" selection-start-line="76" selection-start-column="39" selection-end-line="76" selection-end-column="39" />
+          <folding>
+            <element signature="e#1970#2317#0" expanded="true" />
+            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#2362#3177#0" expanded="true" />
+            <element signature="e#3176#3177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerFrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/static/js/protobuf.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="71525" selection-start-line="6" selection-start-column="71525" selection-end-line="6" selection-end-column="71525" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/MessageDataProto.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
         </state>
       </provider>
     </entry>
