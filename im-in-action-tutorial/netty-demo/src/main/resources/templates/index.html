@@ -15,6 +15,7 @@
 
         //如果浏览器支持WebSocket
         if (window.WebSocket) {
+
             //参数就是与服务器连接的地址
             socket = new WebSocket("ws://localhost:8899/ws");
 
@@ -23,25 +24,27 @@
                 console.log(event);
                 //
                 var ta = document.getElementById("responseText");
-
                 // 解码
                 responseUserDecoder({
                     data: event.data,
                     success: function (responseUser) {
+                        //
                         var content = "客服小姐姐: " + responseUser.userName +
                             ", 小姐姐年龄: " + responseUser.age +
                             ", 密码: " + responseUser.password;
-
+                        //
                         ta.value = ta.value + "\n" + content;
                     },
                     fail: function (err) {
+                        //
                         console.log(err);
                     },
                     complete: function () {
+                        //
                         console.log("解码全部完成")
                     }
                 })
-            }
+            };
 
             //连接建立的回调函数
             socket.onopen = function (event) {
@@ -49,7 +52,7 @@
                 //
                 var ta = document.getElementById("responseText");
                 ta.value = "连接开启";
-            }
+            };
 
             //连接断掉的回调函数
             socket.onclose = function (event) {
@@ -62,14 +65,17 @@
                     console.log("reconnecting...");
                     connect();
                 }, 5000);
-            }
+            };
+
         } else {
+            //
             alert("浏览器不支持WebSocket！");
         }
     }
 
     //发送数据
     function send(message) {
+        //
         if (!window.WebSocket) {
             return;
         }
@@ -146,6 +152,7 @@
             var message = RequestUser.create(payload); // or use .fromObject if conversion is necessary
 
             // Encode a message to an Uint8Array (browser) or Buffer (node)
+            // var buffer = RequestUser.encode64(message).finish(); // for stomp
             var buffer = RequestUser.encode(message).finish();
 
             if (typeof success === "function") {
@@ -169,7 +176,7 @@
         var success = obj.success; // 成功的回调
         var fail = obj.fail; // 失败的回调
         var complete = obj.complete; // 成功或者失败都会回调
-
+        //
         protobuf.load("../proto/MessageDataProto.proto", function (err, root) {
             //
             if (err) {
@@ -183,11 +190,13 @@
             }
             // Obtain a message type
             var ResponseUser = root.lookupType("com.example.nettydemo.protobuf.ResponseUser");
-
+            //
             var reader = new FileReader();
             reader.readAsArrayBuffer(data);
             reader.onload = function (e) {
+                //
                 var buf = new Uint8Array(reader.result);
+                // var responseUser = ResponseUser.decode64(buf); // for stomp
                 var responseUser = ResponseUser.decode(buf);
 
                 if (typeof success === "function") {
@@ -197,11 +206,9 @@
                 if (typeof complete === "function") {
                     complete()
                 }
-
             }
         });
     }
-
     //
     connect();
 

@@ -18,7 +18,7 @@ import java.util.List;
 //处理文本协议数据，处理TextWebSocketFrame类型的数据，websocket专门处理文本的frame就是TextWebSocketFrame
 public class ServerFrameHandler extends SimpleChannelInboundHandler<MessageData.RequestUser> {
     
-    private final ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
+//    private final ChannelGroup channelGroup = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     
     //读到客户端的内容并且向客户端去写内容
     @Override
