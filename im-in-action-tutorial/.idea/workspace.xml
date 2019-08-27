@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/ServerFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerFrameHandler.java" afterDir="false" />
-    </list>
+    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-websocket/target/" />
@@ -98,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-33">
-              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="237">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -274,11 +270,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="35" />
-    <option name="y" value="110" />
-    <option name="width" value="1451" />
-    <option name="height" value="886" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="62" />
+    <option name="y" value="23" />
+    <option name="width" value="1409" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -971,7 +967,7 @@
       <workItem from="1566703534648" duration="3830000" />
       <workItem from="1566725258330" duration="252000" />
       <workItem from="1566730151503" duration="25116000" />
-      <workItem from="1566822108739" duration="2481000" />
+      <workItem from="1566822108739" duration="2487000" />
     </task>
     <servers />
   </component>
@@ -996,7 +992,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140010000" />
+    <option name="totallyTimeSpent" value="140016000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1008,9 +1004,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="35" y="110" width="1451" height="886" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.25396827" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.29524484" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1021,7 +1018,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" side_tool="true" weight="0.2756874" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31347963" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" visible="true" weight="0.24555904" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" weight="0.296343" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1451,8 +1448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="237">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
         </state>
       </provider>
     </entry>
