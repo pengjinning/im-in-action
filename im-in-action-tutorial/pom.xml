@@ -21,6 +21,7 @@
 	<modules>
 
 
+		<module>ajax-protobuf</module>
 		<module>netty-demo</module>
 		<module>netty-socketio/server</module>
 		<module>netty-websocket</module>

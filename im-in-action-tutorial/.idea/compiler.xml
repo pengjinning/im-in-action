@@ -8,19 +8,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-server-send-event-webmvc" />
         <module name="spring-boot-server-send-event-webflux" />
-        <module name="udp-chat-server" />
-        <module name="netty-websocket" />
-        <module name="spring-boot-polling" />
         <module name="netty-demo" />
+        <module name="netty-websocket" />
+        <module name="netty-http" />
+        <module name="spring-boot-polling" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
         <module name="spring-boot-netty-socketio" />
+        <module name="ajax-protobuf" />
         <module name="tcp-chat" />
         <module name="udp-chat-client" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-websocket-stomp" />
-        <module name="netty-http" />
+        <module name="udp-chat-server" />
         <module name="spring-boot-chat" />
       </profile>
       <profile name="Annotation profile for spring-boot-websocket-stomp-mini" enabled="true">
@@ -37,6 +38,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ajax-protobuf" target="1.8" />
       <module name="binary-chat" target="1.8" />
       <module name="demo (1)" target="1.8" />
       <module name="demo (2)" target="1.8" />

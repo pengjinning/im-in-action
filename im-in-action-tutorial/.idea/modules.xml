@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ajax-protobuf/ajax-protobuf.iml" filepath="$PROJECT_DIR$/ajax-protobuf/ajax-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-demo/netty-demo.iml" filepath="$PROJECT_DIR$/netty-demo/netty-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
