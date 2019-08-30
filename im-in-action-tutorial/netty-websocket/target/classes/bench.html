@@ -54,7 +54,7 @@
         //
         if (window.WebSocket) {
             //
-            socket = new WebSocket('ws://' + location.host + '/websocket');
+            socket = new WebSocket('ws://' + location.host + '/ws');
             socket.binaryType = 'arraybuffer';
             //
             socket.onmessage = function (event) {

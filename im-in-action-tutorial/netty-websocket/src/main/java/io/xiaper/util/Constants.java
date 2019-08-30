@@ -19,6 +19,6 @@ package io.xiaper.util;
 
 public class Constants {
 
-    public static final String WEBSOCKET_PATH = "/websocket";
+    public static final String WEBSOCKET_PATH = "/ws";
 
 }
