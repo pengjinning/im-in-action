@@ -55,7 +55,10 @@
         if (window.WebSocket) {
             //
             socket = new WebSocket('ws://' + location.host + '/ws');
-            socket.binaryType = 'arraybuffer';
+            // 收到的是 blob 数据
+            // socket.binaryType = "blob";
+            // 收到的是 ArrayBuffer 数据
+            // socket.binaryType = 'arraybuffer';
             //
             socket.onmessage = function (event) {
                 console.log("onmessage: ", event);
@@ -131,13 +134,13 @@
         //
         if (isBinary) {
             // 二进制数据
-            benchData = new ArrayBuffer(12);
-            benchData[0] = text2Binary("Hello World");
-            console.log('binary data: ', benchData);
-            // benchData = new Uint8Array(messageSize);
-            // for (var i = 0; i < messageSize; i++) {
-            //     benchData[i] += Math.floor(Math.random() * 255);
-            // }
+            // benchData = new ArrayBuffer(12);
+            // benchData = text2Binary("Hello World");
+            // console.log('binary data: ', benchData);
+            benchData = new Uint8Array(messageSize);
+            for (var i = 0; i < messageSize; i++) {
+                benchData[i] += Math.floor(Math.random() * 255);
+            }
         } else {
             // 文本数据
             benchData = "Hello World";
@@ -204,10 +207,14 @@
         benchRunning = false;
     }
 
-    function text2Binary(string) {
-        return string.split('').map(function (char) {
-            return char.charCodeAt(0).toString(2);
-        }).join('');
+    function text2Binary(str) {
+        var bytes = [];
+        for (var i = 0, len = str.length; i < len; ++i) {
+            var c = str.charCodeAt(i);
+            var byte = c & 0xff;
+            bytes.push(byte);
+        }
+        return bytes;
     }
 
     // 建立长连接

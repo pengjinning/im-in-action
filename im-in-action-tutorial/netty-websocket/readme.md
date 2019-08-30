@@ -23,3 +23,8 @@
     - socket.io支持text发送和解析
     - socket.io支持binary发送和解析
     - socket.io支持protobuf发送和解析
+
+- 附加选项
+    - 压缩传输
+    - 加密、解密
+    
