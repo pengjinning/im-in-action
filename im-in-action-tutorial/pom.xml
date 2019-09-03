@@ -20,21 +20,23 @@
 
 	<modules>
 
-
 		<module>ajax-protobuf</module>
 		<module>netty-demo</module>
 		<module>netty-socketio/server</module>
 		<module>netty-websocket</module>
-		<module>spring-boot-netty-socketio</module>
 
+		<module>reverse_ajaxpt1_source/comet-long-polling</module>
+		<module>reverse_ajaxpt1_source/comet-streaming</module>
+		<module>reverse_ajaxpt1_source/piggyback</module>
+		<module>reverse_ajaxpt1_source/polling</module>
+
+		<module>spring-boot-netty-socketio</module>
 		<module>spring-boot-long-polling</module>
 		<module>spring-boot-polling</module>
 		<module>spring-boot-server-send-event-webflux</module>
 		<module>spring-boot-server-send-event-webmvc</module>
 
-
 		<module>spring-boot-websocket</module>
-
 		<module>spring-boot-websocket-stomp</module>
 		<module>spring-boot-websocket-stomp-mini</module>
 		<module>spring-boot-websocket-stomp-sockjs</module>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="piggyback:war">
+    <output-path>$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>piggyback</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="piggyback-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="piggyback:war exploded" />
+    </root>
+  </artifact>
+</component>

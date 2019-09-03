@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="polling:war">
+    <output-path>$PROJECT_DIR$/reverse_ajaxpt1_source/polling/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>polling</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="polling-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="polling:war exploded" />
+    </root>
+  </artifact>
+</component>

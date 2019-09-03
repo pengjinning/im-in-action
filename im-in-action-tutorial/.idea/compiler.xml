@@ -10,18 +10,22 @@
         <module name="spring-boot-server-send-event-webflux" />
         <module name="netty-demo" />
         <module name="netty-websocket" />
-        <module name="netty-http" />
+        <module name="udp-chat-server" />
+        <module name="comet-streaming" />
         <module name="spring-boot-polling" />
+        <module name="polling" />
         <module name="spring-boot-long-polling" />
+        <module name="piggyback" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
+        <module name="comet-long-polling" />
         <module name="spring-boot-netty-socketio" />
         <module name="ajax-protobuf" />
         <module name="tcp-chat" />
         <module name="udp-chat-client" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-websocket-stomp" />
-        <module name="udp-chat-server" />
+        <module name="netty-http" />
         <module name="spring-boot-chat" />
       </profile>
       <profile name="Annotation profile for spring-boot-websocket-stomp-mini" enabled="true">
@@ -40,6 +44,8 @@
     <bytecodeTargetLevel>
       <module name="ajax-protobuf" target="1.8" />
       <module name="binary-chat" target="1.8" />
+      <module name="comet-long-polling" target="1.5" />
+      <module name="comet-streaming" target="1.5" />
       <module name="demo (1)" target="1.8" />
       <module name="demo (2)" target="1.8" />
       <module name="im-in-action-tutorial" target="1.5" />
@@ -51,6 +57,8 @@
       <module name="netty-demo" target="1.8" />
       <module name="netty-http" target="1.7" />
       <module name="netty-websocket" target="8" />
+      <module name="piggyback" target="1.5" />
+      <module name="polling" target="1.5" />
       <module name="protobuf-chat" target="1.8" />
       <module name="server-send-event" target="1.8" />
       <module name="shiro-test" target="1.8" />

@@ -2,6 +2,10 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ajax-protobuf" />
+    <file type="web" url="file://$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling" />
+    <file type="web" url="file://$PROJECT_DIR$/reverse_ajaxpt1_source/comet-streaming" />
+    <file type="web" url="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback" />
+    <file type="web" url="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling" />
     <file type="web" url="file://$PROJECT_DIR$/spring-websocket-portfolio" />
     <file type="web" url="file://$PROJECT_DIR$/websocket-spring-demo" />
   </component>

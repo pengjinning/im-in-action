@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="comet-long-polling:war">
+    <output-path>$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>comet-long-polling</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="comet-long-polling-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="comet-long-polling:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,23 @@
+
+https://www.ibm.com/developerworks/cn/web/wa-reverseajax1/index.html
+
+url:
+http://raytaylorlin.com/Tech/other/comet-intro/
+http://blog.csdn.net/coderjiang/article/details/8675120
+
+You must have Maven installed to run the projects:
+
+    http://maven.apache.org/
+
+Then cd to a sample
+
+    cd polling
+
+Then execute:
+
+    mvn jetty:run
+    mvn jetty:run -Djetty.port=9999
+
+And go to
+
+    http://localhost:8080/

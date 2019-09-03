@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>HTTP Polling</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+
+            if (!('XMLHttpRequest' in window && 'multipart' in window.XMLHttpRequest.prototype)) {
+                alert('Comet Http Streaming is not supported in your browser !');
+                throw new Error('Comet Http Streaming is not supported in your browser !');
+            }
+
+            function processEvents(events) {
+                if (events.length) {
+                    $('#logs').append('<span style="color: blue;">[client] ' + events.length + ' events</span><br/>');
+                } else {
+                    $('#logs').append('<span style="color: red;">[client] no event</span><br/>');
+                }
+                for (var i in events) {
+                    $('#logs').append('<span>[event] ' + events[i] + '</span><br/>');
+                }
+            }
+
+            var xhr = $.ajaxSettings.xhr();
+            xhr.multipart = true;
+            xhr.open('GET', 'ajax', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4) {
+                    processEvents($.parseJSON(xhr.responseText));
+                }
+            };
+            xhr.send(null);
+
+        });
+    </script>
+</head>
+<body>
+<div id="logs" style="font-family: monospace;">
+</div>
+</body>
+</html>
