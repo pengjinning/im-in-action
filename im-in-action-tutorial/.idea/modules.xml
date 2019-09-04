@@ -6,9 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/comet-long-polling.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/comet-long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/comet-streaming/comet-streaming.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-streaming/comet-streaming.iml" />
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-demo/netty-demo.iml" filepath="$PROJECT_DIR$/netty-demo/netty-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket/netty-websocket.iml" filepath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-websocket-protobuf/netty-websocket-protobuf.iml" filepath="$PROJECT_DIR$/netty-websocket-protobuf/netty-websocket-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" filepath="$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" />

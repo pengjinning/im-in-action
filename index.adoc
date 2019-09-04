@@ -179,9 +179,9 @@ Why do we need STOMP? Well, WebSocket is just a communication protocol. It doesn
 .. pc实例:electron
 
 
-image::image/message-flow-simple-broker.png[]
+//image::image/message-flow-simple-broker.png[]
 
-image::image/message-flow-broker-relay.png[]
+//image::image/message-flow-broker-relay.png[]
 
 . 小结
 . 引用
