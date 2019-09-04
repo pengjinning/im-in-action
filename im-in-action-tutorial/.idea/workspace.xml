@@ -2,48 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netty-im/netty-im.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/NettyDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/NettyDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/demo1/TranslatorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/demo1/TranslatorData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/chain/Handler1.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/chain/Handler1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/chain/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/chain/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/chain/Trade.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/chain/Trade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/chain/TradeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/chain/TradeFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/chain/TradePushlisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/chain/TradePushlisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/multi/Consumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/multi/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/disruptor/quickstart/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/TestMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protobuf/ATest.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protobuf/ATest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protobuf/MessageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protobuf/MessageData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protodemo/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protodemo/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protodemo/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protodemo/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protodemo/ClientInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protodemo/ClientInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protodemo/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protodemo/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protodemo/ServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protodemo/ServerChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/protodemo/ServerFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protodemo/ServerFrameHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/java/com/example/nettydemo/websocket/WebSocketServerFrameHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/websocket/WebSocketServerFrameHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/static/js/protobuf.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/static/js/protobuf.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/ATestProto.proto" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/static/proto/ATestProto.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/MessageDataProto.proto" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/static/proto/MessageDataProto.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/proto.bat" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/static/proto/proto.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/static/proto/proto.sh" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/static/proto/proto.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-demo/src/test/java/com/example/nettydemo/NettyDemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/netty-websocket-protobuf/src/test/java/com/example/nettydemo/NettyDemoApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../index.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../index2.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../index2.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
@@ -97,6 +64,8 @@
     <ignored path="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/target/" />
     <ignored path="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-streaming/target/" />
     <ignored path="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/target/" />
+    <ignored path="$PROJECT_DIR$/netty-websocket-protobuf/target/" />
+    <ignored path="$PROJECT_DIR$/netty-im/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,48 +95,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/initializer/WebSocketServerInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
-              <folding>
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1662#1663#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-websocket/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.38.Final/netty-all-4.1.38.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketProtocolHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -270,9 +198,9 @@
         <option value="$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/security/AES.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/security/AES256.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/reverse_ajaxpt1_source/README" />
         <option value="$PROJECT_DIR$/reverse_ajaxpt1_source/polling/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -310,11 +238,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="241" />
-    <option name="y" value="110" />
-    <option name="width" value="1314" />
-    <option name="height" value="889" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="117" />
+    <option name="y" value="23" />
+    <option name="width" value="1316" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -324,8 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,70 +262,25 @@
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-http" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-http" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-http" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -407,7 +288,7 @@
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -416,7 +297,7 @@
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -426,35 +307,13 @@
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-im" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="io" type="462c0819:PsiDirectoryNode" />
               <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="initializer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-websocket" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="im" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -465,6 +324,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -792,6 +653,7 @@
       <workItem from="1567493491876" duration="23000" />
       <workItem from="1567493585171" duration="1916000" />
       <workItem from="1567559283688" duration="2292000" />
+      <workItem from="1567602839463" duration="1189000" />
     </task>
     <servers />
   </component>
@@ -816,7 +678,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161273000" />
+    <option name="totallyTimeSpent" value="162462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,10 +690,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="144" width="1371" height="889" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.31376976" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.25091577" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -848,7 +709,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32908162" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908162" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30749354" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.1985371" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.28004178" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49915254" weight="0.33646813" />
@@ -923,17 +784,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/heigh/multi/TestMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/TestMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1143,13 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="16" column="64" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1217,13 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1258,27 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.38.Final/netty-all-4.1.38.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketProtocolHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.38.Final/netty-all-4.1.38.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="779">
@@ -1288,12 +1103,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/initializer/WebSocketServerInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="64" column="49" selection-start-line="64" selection-start-column="49" selection-end-line="64" selection-end-column="49" />
+        <state relative-caret-position="167">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding>
             <element signature="e#1626#1627#0" expanded="true" />
             <element signature="e#1662#1663#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-websocket/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.38.Final/netty-all-4.1.38.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketProtocolHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-im/src/main/java/io/xiaper/im/server/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>

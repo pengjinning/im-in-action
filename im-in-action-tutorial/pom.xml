@@ -21,9 +21,12 @@
 	<modules>
 
 		<module>ajax-protobuf</module>
-		<module>netty-demo</module>
+		<module>netty-http</module>
+		<module>netty-im</module>
+
 		<module>netty-socketio/server</module>
 		<module>netty-websocket</module>
+		<module>netty-websocket-protobuf</module>
 
 		<module>reverse_ajaxpt1_source/comet-long-polling</module>
 		<module>reverse_ajaxpt1_source/comet-streaming</module>
