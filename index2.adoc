@@ -35,6 +35,14 @@ comet
 
 === SPDY
 
+=== Long-Link
+
+长连接
+tcp
+全双工双向通信
+
+== 通信协议
+
 === WebSocket
 
 而传统的轮询方式（即采用http协议不断发送请求）的缺点：
@@ -64,8 +72,6 @@ image::assets/img/tcp_http_websocket.png[]
 - 网络状态检测
 - 延迟测量
 
-== 通信协议
-
 === STOMP
 
 - sockjs
@@ -84,25 +90,35 @@ image::assets/img/tcp_http_websocket.png[]
 
 - pubsub机制
 
-=== 私有协议
+
 
 
 == 通信内容
 
-=== netty
 
 === json
 
 === protobuf
 
-=== 建立长连接(修路)
-
-=== 定义通信协议(定义交通规则)
-
-=== 消息格式(步行/自行车/机动车/装甲车)
-
 
 == 造轮子篇
+
+=== 私有协议
+
+=== netty
+
+=== 建立长连接
+
+(修路)
+
+=== 定义通信协议
+
+(定义交通规则)
+
+=== 消息格式
+
+(步行/自行车/机动车/装甲车)
+
 
 === server
 
