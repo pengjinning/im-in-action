@@ -9,7 +9,7 @@ Version 2.0, 2019-06-19
 :toclevels: 4
 :toc-title: IM从0到1
 :experimental:
-:description: 打造企业级即时通讯系统
+:description: 基于SpringBoot打造IM和WebRTC应用
 :keywords: 微服务 SpringBoot SpringCloud
 :imagesdir: ./img
 :sectlinks:
@@ -18,7 +18,7 @@ Version 2.0, 2019-06-19
 
 == 前言
 
-本书重在实战,即使跳过前面的"基础篇"和"安全篇",也可以毫不费力的阅读"实战篇".
+水平有限,难免有错误疏漏之处,敬请指出
 
 == 通信方式
 
