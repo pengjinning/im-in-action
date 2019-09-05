@@ -24,7 +24,7 @@
 		<module>netty-http</module>
 		<module>netty-im</module>
 
-		<module>netty-socketio/server</module>
+		<module>netty-socketio</module>
 		<module>netty-websocket</module>
 		<module>netty-websocket-protobuf</module>
 

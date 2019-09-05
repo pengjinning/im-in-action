@@ -9,6 +9,7 @@
         <module name="spring-boot-server-send-event-webmvc" />
         <module name="spring-boot-server-send-event-webflux" />
         <module name="piggyback" />
+        <module name="netty-socketio" />
         <module name="netty-websocket" />
         <module name="netty-http" />
         <module name="netty-websocket-protobuf" />
@@ -57,6 +58,7 @@
       <module name="json-chat" target="1.8" />
       <module name="netty-http" target="1.7" />
       <module name="netty-im" target="1.8" />
+      <module name="netty-socketio" target="1.6" />
       <module name="netty-websocket" target="8" />
       <module name="netty-websocket-protobuf" target="1.8" />
       <module name="piggyback" target="1.5" />

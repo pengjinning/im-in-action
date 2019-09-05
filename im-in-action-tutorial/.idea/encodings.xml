@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/ajax-protobuf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-http" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-im" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty-socketio" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-socketio/server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-websocket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-websocket-protobuf" charset="UTF-8" />

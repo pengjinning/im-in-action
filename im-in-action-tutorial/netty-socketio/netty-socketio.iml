@@ -15,8 +15,8 @@
     <orderEntry type="library" name="Maven: io.netty:netty-common:4.0.25.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.0.25.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.0.25.Final" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.0.25.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.0.25.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.0.25.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport-native-epoll:4.0.25.Final" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.4.3" level="project" />
