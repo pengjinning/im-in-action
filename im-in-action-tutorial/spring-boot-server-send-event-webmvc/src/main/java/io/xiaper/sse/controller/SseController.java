@@ -50,7 +50,6 @@ public class SseController {
 //        return new ResponseEntity(emitter, HttpStatus.OK);
 //    }
 
-
     /**
      *
      * @return

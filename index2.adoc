@@ -9,7 +9,7 @@ Version 2.0, 2019-06-19
 :toclevels: 4
 :toc-title: IM从0到1
 :experimental:
-:description: 基于SpringBoot打造IM和WebRTC应用
+:description: 基于Spring Boot打造即时通讯和WebRTC应用
 :keywords: 微服务 SpringBoot SpringCloud
 :imagesdir: ./img
 :sectlinks:
