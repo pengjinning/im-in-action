@@ -18,7 +18,6 @@ import java.time.LocalTime;
 @RestController
 public class HelloController {
 
-
     /**
      * http://localhost:7001/hello
      *
@@ -28,7 +27,6 @@ public class HelloController {
     public Mono<String> hello() {
         return Mono.just("Welcome to reactive world ~");
     }
-
 
     /**
      * server send event(sse)

@@ -1,7 +1,5 @@
 package io.xiaper.sse;
 
-import io.xiaper.sse.model.MyEvent;
-import io.xiaper.sse.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -34,18 +32,6 @@ public class ServerSendEventApplicationTests {
 	}
 
 	@Test
-	public void webClientTest2() throws InterruptedException {
-		WebClient webClient = WebClient.builder().baseUrl("http://localhost:7001").build();
-		webClient
-				.get().uri("/user")
-				.accept(MediaType.APPLICATION_STREAM_JSON)
-				.exchange()
-				.flatMapMany(response -> response.bodyToFlux(User.class))
-				.doOnNext(System.out::println)
-				.blockLast();
-	}
-
-	@Test
 	public void webClientTest3() throws InterruptedException {
 		WebClient webClient = WebClient.create("http://localhost:7001");
 		webClient
@@ -56,20 +42,6 @@ public class ServerSendEventApplicationTests {
 				.log()
 				.take(10)
 				.blockLast();
-	}
-
-	@Test
-	public void webClientTest4() {
-		Flux<MyEvent> eventFlux = Flux.interval(Duration.ofSeconds(1))
-				.map(l -> new MyEvent(System.currentTimeMillis(), "message-" + l)).take(5);
-		WebClient webClient = WebClient.create("http://localhost:7001");
-		webClient
-				.post().uri("/events")
-				.contentType(MediaType.APPLICATION_STREAM_JSON)
-				.body(eventFlux, MyEvent.class)
-				.retrieve()
-				.bodyToMono(Void.class)
-				.block();
 	}
 
 

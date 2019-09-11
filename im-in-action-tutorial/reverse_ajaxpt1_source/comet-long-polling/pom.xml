@@ -28,6 +28,7 @@
             <version>3.0.20100224</version>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>org.testatoo.container</groupId>
             <artifactId>testatoo-container-jetty</artifactId>

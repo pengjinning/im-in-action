@@ -33,6 +33,9 @@ comet
 
 主要用于服务器向客户端广播或推送消息,而不需要任何交互,如新闻摘要/天气预报等
 
+单向: server to client
+
+
 === SPDY
 
 === Long-Link

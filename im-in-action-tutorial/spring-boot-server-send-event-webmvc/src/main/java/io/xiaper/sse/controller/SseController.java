@@ -27,7 +27,6 @@ public class SseController {
 
     private ExecutorService nonBlockingService = Executors.newCachedThreadPool();
 
-
     @RequestMapping(value="/push",produces="text/event-stream;charset=utf-8")
     @ResponseBody
     public String push() {
@@ -68,7 +67,6 @@ public class SseController {
         });
         return emitter;
     }
-
 
     @GetMapping("/srb")
     public ResponseEntity<StreamingResponseBody> handleRbe() {

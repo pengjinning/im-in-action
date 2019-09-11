@@ -21,6 +21,7 @@ public final class PiggybackServlet extends HttpServlet {
 
     private final Random random = new Random();
     private final BlockingQueue<String> messages = new LinkedBlockingQueue<String>();
+
     private final Thread generator = new Thread("Event generator") {
         @Override
         public void run() {
@@ -72,4 +73,5 @@ public final class PiggybackServlet extends HttpServlet {
         resp.getWriter().write(new JSONArray(messages).toString());
         resp.getWriter().flush();
     }
+
 }
