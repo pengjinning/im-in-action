@@ -166,7 +166,7 @@ image::assets/img/tcp_http_websocket.png[]
 * 二进制
 * protobuf
 
-==== 加密
+=== 加密
 
 * 传输加密
 * 存储加密
@@ -174,10 +174,13 @@ image::assets/img/tcp_http_websocket.png[]
 
 === 压力测试
 
-=== xiaper 对接第三方用户系统
+=== 对接第三方用户系统
 
 === 总体架构
 
+=== 高性能
+
+=== 高可用
 
 
 
