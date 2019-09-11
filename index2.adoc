@@ -29,7 +29,7 @@ Version 2.0, 2019-06-19
 comet
 反向ajax
 
-=== Server-Send-Event(SSE)
+=== Server-Send-Event
 
 主要用于服务器向客户端广播或推送消息,而不需要任何交互,如新闻摘要/天气预报等
 

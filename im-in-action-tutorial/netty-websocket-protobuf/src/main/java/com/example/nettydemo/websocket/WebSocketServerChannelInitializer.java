@@ -51,6 +51,7 @@ public class WebSocketServerChannelInitializer extends ChannelInitializer<Socket
         });
         // 协议包编码
         pipeline.addLast(new MessageToMessageEncoder<MessageLiteOrBuilder>() {
+
             @Override
             protected void encode(ChannelHandlerContext ctx, MessageLiteOrBuilder msg, List<Object> out) throws Exception {
 
