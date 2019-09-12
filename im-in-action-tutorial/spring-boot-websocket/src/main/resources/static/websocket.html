@@ -1,0 +1,305 @@
+<html>
+<head>
+    <title>Web Socket Performance Test</title>
+</head>
+<body>
+
+<h2>WebSocket Performance Test</h2>
+<label>Connection Status:</label>
+<label id="connectionLabel"></label><br/>
+
+<form onsubmit="return false;">
+    Message size:
+    <input type="text" id="messageSize" value="1024"/><br>
+    Number of messages:
+    <input type="text" id="nrMessages" value="1"/><br>
+    Data Type:
+    <input type="radio" name="type" id="typeText" value="text" checked>text
+    <input type="radio" name="type" id="typeBinary" value="binary">binary<br>
+    Mode:<br>
+    <input type="radio" name="mode" id="modeSingle" value="single" checked>
+    Wait for response after each messages<br>
+    <input type="radio" name="mode" id="modeAll" value="all">
+    Send all messages and then wait for all responses<br>
+    <input type="checkbox" id="verifiyResponses">Verify responded messages<br>
+    <input type="button" value="Start Benchmark" onclick="startBenchmark()"/>
+    <h3>Output</h3>
+    <textarea id="output" style="width:500px;height:200px;"></textarea>
+    <br>
+    <input type="button" value="Clear" onclick="clearText()">
+</form>
+
+<script type="text/javascript">
+    //
+    var THRESHOLD = 10240;
+    var benchRunning = false;
+    var messageSize = 0;
+    var totalMessages = 0;
+    var rcvdMessages = 0;
+    var isBinary = true;
+    var isSingle = true;
+    var verifiyResponses = false;
+    var benchData = null;
+    var startTime;
+    var endTime;
+    var socket;
+    var output = document.getElementById('output');
+    var connectionLabel = document.getElementById('connectionLabel');
+    //
+    function connect() {
+        //
+        if (!window.WebSocket) {
+            console.log('浏览器不支持websocket?')
+            window.WebSocket = window.MozWebSocket;
+        } else {
+            console.log('浏览器支持websocket')
+        }
+        //
+        if (window.WebSocket) {
+            //
+            // socket = new WebSocket('ws://127.0.0.1:3885/ws'); // ws
+            socket = new WebSocket('wss://127.0.0.1:3886/ws'); // wss
+            // 设置binaryType为 blob 数据(默认)
+            socket.binaryType = "blob";
+            // 设置binaryType为 ArrayBuffer 数据
+            // socket.binaryType = 'arraybuffer';
+            //
+            socket.onopen = function (event) {
+                console.log("onopen: ", event);
+                connectionLabel.innerHTML = "Connected";
+                // testBufferAmount()
+            };
+            //
+            socket.onmessage = function (event) {
+                // console.log("onmessage: ", event);
+                //
+                if (typeof event.data === 'string') {
+                    console.log('text message receive: ', event.data);
+                } else if (event.data instanceof Blob) {
+                    console.log('Blob message received: ', event.data);
+                    var blob = new Blob(event.data);
+                } else if (event.data instanceof ArrayBuffer) {
+                    console.log('ArrayBuffer message received: ', event.data);
+                    // event.data is an ArrayBuffer, Create a byte view of that object
+                    var data = new Uint8Array(event.data);
+                } else {
+                    console.log('other message receive: ', event.data);
+                }
+                //
+                //
+                // if (verifiyResponses) {
+                //     //
+                //     if (isBinary) {
+                //         // 二进制
+                //         if (!(event.data instanceof ArrayBuffer) ||
+                //             event.data.byteLength != benchData.byteLength) {
+                //             onInvalidResponse(benchData, event.data);
+                //             return;
+                //         } else {
+                //             //
+                //             var v = new Uint8Array(event.data);
+                //             for (var j = 0; j < benchData.byteLength; j++) {
+                //                 if (v[j] != benchData[j]) {
+                //                     onInvalidResponse(benchData, event.data);
+                //                     return;
+                //                 }
+                //             }
+                //         }
+                //     } else {
+                //         // 文本
+                //         if (event.data != benchData) {
+                //             onInvalidResponse(benchData, event.data);
+                //             return;
+                //         }
+                //     }
+                // }
+                // rcvdMessages++;
+                // if (rcvdMessages == totalMessages) {
+                //     //
+                    onFinished();
+                // } else if (isSingle) {
+                //     //
+                //     socket.send(benchData);
+                // }
+            };
+            // 如果收到一个error事件，可以预期将会很快收到一个close事件
+            // error事件处理程序是调用服务器重连逻辑以及处理来自websocket对象的异常的最佳场所
+            socket.onerror = function (event) {
+                console.log("onerror: ", event);
+                connectionLabel.innerHTML = "OnError";
+                // handleErrors(event)
+            };
+            //
+            socket.onclose = function (event) {
+                console.log("onclose:", event);
+                benchRunning = false;
+                connectionLabel.innerHTML = "Disconnected";
+                // 5s后自动重连
+                setTimeout(function () {
+                    console.log("reconnecting...");
+                    connect();
+                }, 5000);
+            };
+            // 另外一种方法
+            // socket.addEventListener('open', function(event) {
+            //     console.log('open listener: ', event);
+            // });
+            // socket.addEventListener('message', function(event) {
+            //     console.log('message listener: ', event);
+            // });
+            // socket.addEventListener('error', function(event) {
+            //     console.log('error listener: ', event);
+            // });
+            // socket.addEventListener('close', function(event) {
+            //     console.log('close listener: ', event);
+            // });
+        } else {
+            //
+            alert("Your browser does not support Web Socket.");
+        }
+    }
+
+    // 关闭长连接
+    function close() {
+        // 关闭长连接
+        // socket.close()
+        // 添加code和reason
+        socket.close(1000, "正常关闭")
+    }
+
+    function onInvalidResponse(sent, recvd) {
+        console.log("onInvalidResponse: ", sent, recvd);
+        socket.close();
+        alert("Error: Sent data did not match the received data!");
+    }
+
+    function clearText() {
+        output.value = "";
+    }
+
+    function createBenchData() {
+        //
+        if (isBinary) {
+            // 二进制数据
+            // 发送Blob数据
+            // FIXME: Uncaught TypeError: Failed to construct 'Blob': The provided value cannot be converted to a sequence.
+            // benchData = new Blob("Hello World");
+            // console.log('send binary data: ', benchData);
+            // 发送ArrayBuffer
+            benchData = new Uint8Array([8,7,6,5,4,3,2,1])
+            console.log('send binary data: ', benchData);
+            //
+            // benchData = new Uint8Array(messageSize);
+            // for (var i = 0; i < messageSize; i++) {
+            //     benchData[i] += Math.floor(Math.random() * 255);
+            // }
+        } else {
+            // 文本(字符串)数据
+            benchData = "Hello World";
+            // for (var i = 0; i < messageSize; i++) {
+            //     benchData += String.fromCharCode(Math.floor(Math.random() * (123 - 65) + 65));
+            // }
+        }
+    }
+
+    function startBenchmark(message) {
+        if (!window.WebSocket || benchRunning) {
+            return;
+        }
+        //
+        if (socket.readyState == WebSocket.OPEN) {
+            isBinary = document.getElementById('typeBinary').checked;
+            isSingle = document.getElementById('modeSingle').checked;
+            verifiyResponses = document.getElementById('verifiyResponses').checked;
+            messageSize = parseInt(document.getElementById('messageSize').value);
+            totalMessages = parseInt(document.getElementById('nrMessages').value);
+            //
+            if (isNaN(messageSize) || isNaN(totalMessages))
+                return;
+            //
+            createBenchData();
+            //
+            output.value = output.value + '\nStarting Benchmark';
+            rcvdMessages = 0;
+            benchRunning = true;
+            startTime = new Date();
+            // 发送二进制
+            // var array = new Float32Array(5);
+            // for(var i = 0; i < array.length; ++i) {
+            // array[i] = i / 2; }
+            // ws.send(array, { binary: true, mask: true });
+            //
+            if (isSingle) {
+                // 发送一条
+                // WebSocket.CONNECTING, 值：0，连接进行中，未建立长连接
+                // WebSocket.OPEN，值：1，长连接已经建立，可以发送消息
+                // WebSocket.CLOSING，值：2，连接正在进行关闭握手
+                // WebSocket.CLOSED，值：3，连接已经关闭，不能发送消息
+                // 需要等到监听到open事件之后，也即长连接建立成功之后，发送消息
+                if (socket.readyState === WebSocket.OPEN) {
+                    socket.send(benchData);
+                } else {
+                    console.log('未建立长连接，不能发送消息')
+                    // ignore data or enqueue data
+                }
+            } else {
+                // 循环发送
+                for (var i = 0; i < totalMessages; i++)
+                    socket.send(benchData);
+            }
+        } else {
+            alert("The socket is not open.");
+        }
+    }
+
+    function testBufferAmount() {
+        // attempt to send update every second
+        setInterval(function() {
+            // send only if the buffer is not null
+            // bufferedAmount对于限制应用想服务器端发送数据的速率，从而避免网络饱和很有作用
+            // 在关闭close长连接之前，bufferedAmount用来检查是否还有数据没有从应用发送到服务器
+            if (socket.bufferedAmount < THRESHOLD) {
+                console.log('test bufferedAmount: ', socket.bufferedAmount, ' readyState: ', socket.readyState)
+                socket.send(socket.readyState)
+            }
+        }, 1000);
+    }
+
+    function onFinished() {
+        endTime = new Date();
+        var duration = (endTime - startTime) / 1000.0;
+        output.value = output.value + '\nTest took: ' + duration + 's';
+        var messagesPerS = totalMessages / duration;
+        output.value = output.value + '\nPerformance: ' + messagesPerS + ' Messages/s';
+        output.value = output.value + ' in each direction';
+        output.value = output.value + '\nRound trip: ' + 1000.0 / messagesPerS + 'ms';
+        //
+        var throughput = messageSize * totalMessages / duration;
+        var throughputText;
+        //
+        if (isBinary)
+            throughputText = throughput / (1024 * 1024) + ' MB/s';
+        else
+            throughputText = throughput / (1000 * 1000) + ' MChars/s';
+        //
+        output.value = output.value + '\nThroughput: ' + throughputText;
+        output.value = output.value + ' in each direction';
+        benchRunning = false;
+    }
+
+    function text2Binary(str) {
+        var bytes = [];
+        for (var i = 0, len = str.length; i < len; ++i) {
+            var c = str.charCodeAt(i);
+            var byte = c & 0xff;
+            bytes.push(byte);
+        }
+        return bytes;
+    }
+
+    // 建立长连接
+    connect();
+
+</script>
+</body>
+</html>

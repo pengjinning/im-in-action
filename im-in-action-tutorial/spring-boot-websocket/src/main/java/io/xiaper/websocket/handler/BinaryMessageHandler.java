@@ -1,4 +1,4 @@
-package com.xiaper.websocket.handler;
+package io.xiaper.websocket.handler;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.BinaryMessage;

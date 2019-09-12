@@ -1,4 +1,4 @@
-package com.xiaper.websocket.handler;
+package io.xiaper.websocket.handler;
 
 import java.io.IOException;
 import java.util.List;

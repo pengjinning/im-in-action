@@ -2,34 +2,332 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/StockTransactionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/StockTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/service/StockTransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_async_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_8_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_reactivestreams_1_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_reactive_2_1_7_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_9_RELEASE.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-long-polling/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-polling/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/src/main/java/PiggybackServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/src/main/java/PiggybackServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/MyEventController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/dao/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/MyEvent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/repository/MyEventRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/test/java/io/xiaper/sse/ServerSendEventApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/test/java/io/xiaper/sse/ServerSendEventApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/java/io/xiaper/sse/controller/SseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/java/io/xiaper/sse/controller/SseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/build.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IButton.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IImage.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IInput.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IKit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IKitUtil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/ILabel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IPopover.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IPullRefresh.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IRefreshControl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IStyle.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/ISwitch.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/ITable.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/ITableRow.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/IKit/IView.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/curl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/curlbuild.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/curlrules.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/curlver.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/easy.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/mprintf.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/multi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/stdcheaders.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/deps/include/curl/typecheck-gcc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/AppDelegate.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/AppDelegate.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/Base.lproj/Main.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/ViewController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/ViewController.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/ios/ios/main.m" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/python/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/chat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/emoticons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/forever-iframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/js/chat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/js/icomet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/js/jquery-1.9.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/js/json2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/long-polling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/php/push.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/php/sign.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/sending.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/demo/web/sse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/INSTALL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/autogen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/bin/jemalloc.sh.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/bin/pprof" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/config.guess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/config.stamp.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/config.sub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/configure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/configure.ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/doc/html.xsl.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/doc/jemalloc.xml.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/doc/manpages.xsl.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/doc/stylesheet.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/arena.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/atomic.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/base.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/bitmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/chunk.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/chunk_dss.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/chunk_mmap.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/ckh.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/ctl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/extent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/hash.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/huge.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/jemalloc_internal.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/mb.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/mutex.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/private_namespace.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/prng.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/prof.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/ql.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/qr.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/quarantine.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/rb.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/rtree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/size_classes.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/stats.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/tcache.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/tsd.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/internal/util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/jemalloc.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/jemalloc/jemalloc_defs.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/msvc_compat/inttypes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/msvc_compat/stdbool.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/msvc_compat/stdint.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/include/msvc_compat/strings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/install-sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/atomic.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/base.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/bitmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/chunk.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/chunk_dss.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/chunk_mmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/ckh.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/ctl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/extent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/hash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/huge.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/jemalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/mb.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/mutex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/prof.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/quarantine.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/rtree.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/stats.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/tcache.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/tsd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/util.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/src/zone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/ALLOCM_ARENA.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/ALLOCM_ARENA.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/aligned_alloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/aligned_alloc.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/allocated.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/allocated.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/allocm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/allocm.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/bitmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/bitmap.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/jemalloc_test.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/mremap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/mremap.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/posix_memalign.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/posix_memalign.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/rallocm.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/rallocm.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/thread_arena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/thread_arena.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/thread_tcache_enabled.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/jemalloc-3.4.0/test/thread_tcache_enabled.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/ChangeLog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/Doxyfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/Makefile.nmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/WIN32-Code/event2/event-config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/WIN32-Code/tree.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/aclocal.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/arc4random.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/autogen.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/buffer.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/buffer_iocp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent_async.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent_filter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent_openssl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent_pair.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent_ratelim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/bufferevent_sock.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/changelist-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/compat/sys/queue.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/compile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/config.guess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/config.h.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/config.sub" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/configure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/configure.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/defer-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/depcomp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/devpoll.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/epoll.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/epoll_sub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evbuffer-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evdns.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evdns.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/event-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/event.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/event_iocp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/event_rpcgen.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/event_tagging.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evhttp.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evmap-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evport.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evrpc-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evrpc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evrpc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evsignal-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evthread-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evthread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evthread_pthread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evthread_win32.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evutil.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evutil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/evutil_rand.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/ht-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/http-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/http.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/buffer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/buffer_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/bufferevent.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/bufferevent_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/bufferevent_ssl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/bufferevent_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/dns.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/dns_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/dns_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/event.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/event_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/event_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/http.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/http_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/http_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/keyvalq_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/listener.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/rpc.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/rpc_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/rpc_struct.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/tag.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/tag_compat.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/include/event2/util.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/install-sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/iocp-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/ipv6-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/kqueue.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/libevent.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/libevent_openssl.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/libevent_pthreads.pc.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/listener.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/log-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/log.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/ltmain.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/m4/acx_pthread.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/m4/libtool.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/m4/ltoptions.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/m4/ltsugar.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/m4/ltversion.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/m4/lt~obsolete.m4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/make-event-config.sed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/minheap-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/missing" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/mm-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/poll.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/ratelim-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/Makefile.am" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/Makefile.in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/dns-example.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/event-test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/hello-world.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/http-server.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/le-proxy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/signal-test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/sample/time-test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/select.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/signal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/strlcpy-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/strlcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/util-internal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/whatsnew-2.0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/deps/libevent-2.0.21-stable/win32select.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/docs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/icomet.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/channel.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/channel.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/http_query.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/icomet-server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/presence.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/presence.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/server.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/server.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/server_config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/subscriber.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/comet/subscriber.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/presence/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/bytes.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/bytes.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/config.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/config.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/daemon.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/file.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/ip_filter.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/list.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/log.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/log.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/sorted_set.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/sorted_set.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/strings.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/test_sorted_set.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/src/util/thread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/test_icomet.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/tools/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/tools/benchmark.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/long-polling/icomet/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/xiaper/websocket/SpringBootWebSocketServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/io/xiaper/websocket/SpringBootWebSocketServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/xiaper/websocket/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/io/xiaper/websocket/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/xiaper/websocket/handler/BinaryMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/io/xiaper/websocket/handler/BinaryMessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/com/xiaper/websocket/handler/TextMessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-websocket/src/main/java/io/xiaper/websocket/handler/TextMessageHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../index2.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../index2.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
@@ -114,21 +412,79 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/java/io/xiaper/sse/controller/SseController.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+            <state relative-caret-position="165">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/PollingApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/src/main/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/index.html">
+        <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/src/main/java/PollingServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            <state relative-caret-position="105">
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+              <folding>
+                <element signature="e#678#686#0" expanded="true" />
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1328#1329#0" expanded="true" />
+                <element signature="e#1505#1513#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -190,9 +546,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerBenchmarkPage.java" />
-        <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/HttpRequestHandler.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerHandler.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketFrameHandler.java" />
         <option value="$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServerInitializer.java" />
@@ -225,8 +578,6 @@
         <option value="$PROJECT_DIR$/reverse_ajaxpt1_source/polling/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java" />
         <option value="$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/websocket/WebSocketServerChannelInitializer.java" />
         <option value="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/pom.xml" />
         <option value="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/src/main/webapp/index.html" />
@@ -241,6 +592,11 @@
         <option value="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/StockTransaction.java" />
         <option value="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/StockTransactionController.java" />
         <option value="$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/service/StockTransactionService.java" />
+        <option value="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/spring-boot-polling/readme.md" />
+        <option value="$PROJECT_DIR$/spring-boot-long-polling/readme.md" />
+        <option value="$PROJECT_DIR$/spring-boot-polling/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java" />
       </list>
     </option>
   </component>
@@ -279,10 +635,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="204" />
-    <option name="y" value="173" />
-    <option name="width" value="1386" />
-    <option name="height" value="815" />
+    <option name="x" value="76" />
+    <option name="y" value="57" />
+    <option name="width" value="1359" />
+    <option name="height" value="949" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -292,14 +648,66 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="reverse_ajaxpt1_source" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -364,6 +772,91 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -450,10 +943,141 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-websocket-stomp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -787,7 +1411,8 @@
       <workItem from="1568162631708" duration="1256000" />
       <workItem from="1568168354229" duration="16000" />
       <workItem from="1568171993216" duration="640000" />
-      <workItem from="1568208584975" duration="3933000" />
+      <workItem from="1568208584975" duration="4655000" />
+      <workItem from="1568247262601" duration="2130000" />
     </task>
     <servers />
   </component>
@@ -812,7 +1437,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173609000" />
+    <option name="totallyTimeSpent" value="176461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -824,10 +1449,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.22344323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.22405373" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -838,7 +1463,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" side_tool="true" weight="0.2756874" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31347963" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.498779" visible="true" weight="0.39184952" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" weight="0.22429906" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -920,67 +1545,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-socketio/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/error/403.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/error/404.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/websocket/WebSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/protobuf/ATest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEvent.java" />
     <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventFactory.java" />
     <entry file="file://$PROJECT_DIR$/netty-websocket-protobuf/src/main/java/com/example/nettydemo/disruptor/quickstart/OrderEventHandler.java" />
@@ -1043,19 +1607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/src/main/java/PollingServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-          <folding>
-            <element signature="e#678#686#0" expanded="true" />
-            <element signature="e#1291#1292#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1505#1513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/src/main/java/ReverseAjaxServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1085,13 +1636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/java/io/xiaper/sse/ServerSendEventWebMvcApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1110,49 +1654,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/repository/MyEventRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/MyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/dao/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/repository/MyEventRepository.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/repository/UserRepository.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/MyEvent.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/model/User.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/dao/UserService.java" />
     <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/handler/TimeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1160,20 +1666,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/MyEventController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/controller/MyEventController.java" />
     <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/src/main/java/io/xiaper/sse/ServerSendEventWebFluxApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1300,15 +1794,118 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/java/io/xiaper/sse/controller/SseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        <state relative-caret-position="265">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/websocket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        <state relative-caret-position="265">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/controller/PollingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/java/io/xiaper/polling/PollingApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/src/main/java/PollingServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#678#686#0" expanded="true" />
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1328#1329#0" expanded="true" />
+            <element signature="e#1505#1513#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
