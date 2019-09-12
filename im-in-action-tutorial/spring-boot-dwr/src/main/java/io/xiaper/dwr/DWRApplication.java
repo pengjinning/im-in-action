@@ -12,10 +12,20 @@ import java.util.Map;
 @SpringBootApplication
 public class DWRApplication {
 
+
     public static void main(String[] args) {
         SpringApplication.run(DWRApplication.class, args);
     }
 
+    /**
+     * 测试：
+     * http://localhost:4001
+     *
+     * 查看配置：
+     * http://localhost:4001/dwr/index.html
+     *
+     * @return
+     */
     @Bean
     public ServletRegistrationBean servletRegistrationBean() {
         ServletRegistrationBean registration = new ServletRegistrationBean(new DwrSpringServlet());

@@ -7,4 +7,5 @@ import org.springframework.context.annotation.ImportResource;
 @ImportResource(locations = "classpath:dwr-config.xml")
 public class DwrConfig {
 
+
 }
