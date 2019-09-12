@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/spring-boot-dwr/src/main/java/io/xiaper/dwr/DWRApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dwr/src/main/java/io/xiaper/dwr/DWRApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dwr/src/main/java/io/xiaper/dwr/config/DwrConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dwr/src/main/java/io/xiaper/dwr/config/DwrConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index2.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../index2.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -234,7 +233,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="76" />
     <option name="y" value="57" />
     <option name="width" value="1359" />
@@ -978,7 +977,7 @@
       <workItem from="1568168354229" duration="16000" />
       <workItem from="1568171993216" duration="640000" />
       <workItem from="1568208584975" duration="4655000" />
-      <workItem from="1568247262601" duration="6350000" />
+      <workItem from="1568247262601" duration="6934000" />
     </task>
     <servers />
   </component>
@@ -1003,7 +1002,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180681000" />
+    <option name="totallyTimeSpent" value="181265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1015,9 +1014,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="79" y="253" width="1293" height="725" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.1947497" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.30695444" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1028,7 +1027,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" side_tool="true" weight="0.2756874" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31347963" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" visible="true" weight="0.18077324" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.498779" weight="0.28360656" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
