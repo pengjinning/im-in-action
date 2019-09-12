@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" filepath="$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" filepath="$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" filepath="$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-netty-socketio/spring-boot-netty-socketio.iml" filepath="$PROJECT_DIR$/spring-boot-netty-socketio/spring-boot-netty-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />

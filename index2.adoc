@@ -26,24 +26,21 @@ Version 2.0, 2019-06-19
 
 === Long-Polling
 
-comet
-反向ajax
+
+==== 反向Ajax
+
+
+==== Comet
+
+
+==== DWR
+
 
 === Server-Send-Event
 
 主要用于服务器向客户端广播或推送消息,而不需要任何交互,如新闻摘要/天气预报等
 
 单向: server to client
-
-SSE 与 WebSocket 作用相似，都是建立浏览器与服务器之间的通信渠道，然后服务器向浏览器推送信息。
-
-总体来说，WebSocket 更强大和灵活。因为它是全双工通道，可以双向通信；SSE 是单向通道，只能服务器向浏览器发送，因为流信息本质上就是下载。如果浏览器向服务器发送信息，就变成了另一次 HTTP 请求。
-
-- SSE 使用 HTTP 协议，现有的服务器软件都支持。WebSocket 是一个独立协议。
-- SSE 属于轻量级，使用简单；WebSocket 协议相对复杂。
-- SSE 默认支持断线重连，WebSocket 需要自己实现。
-- SSE 一般只用来传送文本，二进制数据需要编码后传送，WebSocket 默认支持传送二进制数据。
-- SSE 支持自定义发送的消息类型。
 
 参考:
 https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
@@ -87,15 +84,16 @@ image::assets/img/tcp_http_websocket.png[]
 
 == 通信协议
 
+=== IRC
+
+=== XMPP
+
 === STOMP
 
 - sockjs
 
 === Socket.io
 
-=== IRC
-
-=== XMPP
 
 === MQTT
 

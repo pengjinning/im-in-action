@@ -9,13 +9,13 @@
         <module name="spring-boot-server-send-event-webmvc" />
         <module name="spring-boot-server-send-event-webflux" />
         <module name="piggyback" />
-        <module name="netty-socketio" />
         <module name="netty-websocket" />
-        <module name="netty-http" />
+        <module name="udp-chat-server" />
         <module name="netty-websocket-protobuf" />
         <module name="comet-streaming" />
         <module name="spring-boot-polling" />
         <module name="polling" />
+        <module name="netty-socketio" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
@@ -26,8 +26,9 @@
         <module name="udp-chat-client" />
         <module name="netty-im" />
         <module name="spring-boot-websocket" />
+        <module name="spring-boot-dwr" />
         <module name="spring-boot-websocket-stomp" />
-        <module name="udp-chat-server" />
+        <module name="netty-http" />
         <module name="spring-boot-chat" />
       </profile>
       <profile name="Annotation profile for spring-boot-websocket-stomp-mini" enabled="true">
@@ -67,6 +68,7 @@
       <module name="server-send-event" target="1.8" />
       <module name="shiro-test" target="1.8" />
       <module name="spring-boot-chat" target="1.8" />
+      <module name="spring-boot-dwr" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
       <module name="spring-boot-messaging-stomp-websocket" target="1.8" />
       <module name="spring-boot-netty-socketio" target="1.8" />
@@ -93,6 +95,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="netty-websocket-protobuf" options="-parameters" />
+      <module name="spring-boot-dwr" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
       <module name="spring-boot-messaging-stomp-websocket" options="-parameters" />
       <module name="spring-boot-netty-socketio" options="-parameters" />

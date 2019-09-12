@@ -21,6 +21,8 @@
 	<modules>
 
 		<module>ajax-protobuf</module>
+		<module>dwr-sample</module>
+
 		<module>netty-http</module>
 		<module>netty-im</module>
 
