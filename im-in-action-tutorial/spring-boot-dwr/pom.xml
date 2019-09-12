@@ -13,10 +13,9 @@
     <artifactId>spring-boot-dwr</artifactId>
     <version>1.0</version>
 
-    <packaging>jar</packaging>
-    <name>dwr-sample</name>
+    <name>spring-boot-dwr</name>
     <url>http://maven.apache.org</url>
-
+    <description>spring boot dwr</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -31,9 +30,20 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.directwebremoting</groupId>
             <artifactId>dwr</artifactId>
             <version>${dwr.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
         </dependency>
 
     </dependencies>
