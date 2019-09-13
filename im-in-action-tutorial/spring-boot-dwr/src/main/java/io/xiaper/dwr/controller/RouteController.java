@@ -44,6 +44,12 @@ public class RouteController {
         return "index";
     }
 
+    @GetMapping("/index.html")
+    public String indexHtml(Principal principal, Model model) {
+
+        return "index";
+    }
+
     @GetMapping("/login.html")
     public String login(Principal principal, Model model) {
 

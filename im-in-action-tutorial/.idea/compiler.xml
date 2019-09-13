@@ -11,9 +11,11 @@
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
         <module name="netty-http" />
+        <module name="spring-boot-common" />
         <module name="netty-websocket-protobuf" />
         <module name="comet-streaming" />
         <module name="spring-boot-polling" />
+        <module name="spring-boot-websocket-stomp-sockjs" />
         <module name="polling" />
         <module name="netty-socketio" />
         <module name="spring-boot-long-polling" />
@@ -24,24 +26,13 @@
         <module name="ajax-protobuf" />
         <module name="tcp-chat" />
         <module name="udp-chat-client" />
+        <module name="spring-boot-websocket-stomp-mini" />
         <module name="netty-im" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-dwr" />
         <module name="spring-boot-websocket-stomp" />
         <module name="piggyback" />
         <module name="spring-boot-chat" />
-      </profile>
-      <profile name="Annotation profile for spring-boot-websocket-stomp-mini" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-websocket-stomp-mini" />
-      </profile>
-      <profile name="Annotation profile for ByteDesk Spring Boot Projects" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-websocket-stomp-sockjs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -57,6 +48,7 @@
       <module name="piggyback" target="1.5" />
       <module name="polling" target="1.5" />
       <module name="spring-boot-chat" target="1.8" />
+      <module name="spring-boot-common" target="1.8" />
       <module name="spring-boot-dwr" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
       <module name="spring-boot-netty-socketio" target="1.8" />
@@ -77,6 +69,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="netty-websocket-protobuf" options="-parameters" />
+      <module name="spring-boot-common" options="-parameters" />
       <module name="spring-boot-dwr" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
       <module name="spring-boot-netty-socketio" options="-parameters" />

@@ -39,6 +39,13 @@ Version 2.0, 2019-06-19
 Direct Web Remoting
 
 
+
+
+参考:
+
+- http://directwebremoting.org/dwr/index.html[Direct Web Remoting]
+
+
 === SSE
 
 Server-Send-Event
@@ -48,7 +55,8 @@ Server-Send-Event
 单向: server to client
 
 参考:
-https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
+
+- https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
 
 === SPDY
 
@@ -87,6 +95,12 @@ image::assets/img/tcp_http_websocket.png[]
 - 网络状态检测
 - 延迟测量
 
+
+=== 方案对比
+
+对上述各种通信方式,以图表的形式对其各自优缺点进行对比
+
+
 == 通信协议
 
 === IRC
@@ -110,6 +124,13 @@ image::assets/img/tcp_http_websocket.png[]
 
 
 
+=== 方案对比
+
+对上述各种通信协议,以图表的形式对其各自优缺点进行对比,
+得出结论使用websocket
+
+
+
 
 == 通信内容
 
@@ -117,6 +138,11 @@ image::assets/img/tcp_http_websocket.png[]
 === json
 
 === protobuf
+
+=== 方案对比
+
+对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
+
 
 
 == 造轮子
@@ -139,6 +165,10 @@ image::assets/img/tcp_http_websocket.png[]
 
 
 === server
+
+==== webmvc 传统
+
+==== webflux 响应式
 
 === android
 

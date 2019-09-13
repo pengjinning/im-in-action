@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ServerSendEvent Servlet</title>
+</head>
+<body>
+
+    hello webmvc
+
+<!--    WebSocket & EventSource 的区别-->
+<!--    WebSocket基于TCP协议，EventSource基于http协议。-->
+<!--    EventSource是单向通信，而websocket是双向通信。-->
+<!--    EventSource只能发送文本，而websocket支持发送二进制数据。-->
+<!--    在实现上EventSource比websocket更简单。-->
+<!--    EventSource有自动重连接（不借助第三方）以及发送随机事件的能力。-->
+<!--    websocket的资源占用过大EventSource更轻量。-->
+<!--    websocket可以跨域，EventSource基于http跨域需要服务端设置请求头。-->
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (!!window.EventSource) {
+
+            // var source = new EventSource('sse');
+            var source = new EventSource('push');
+
+            // source.onopen = function (event) {
+            //     console.log('成功与服务器连接')
+            // }
+            // 监听从服务器发送来的所有没有指定事件类型的消息(没有event字段的消息)
+            // source.onmessage = function (event) {
+            //     console.log('未命名事件', event.data)
+            // }
+            // source.onerror = function (error) {
+            //     console.log('错误')
+            // }
+            // 监听指定类型的事件（可以监听多个）
+            // source.addEventListener("myEve", function (event) {
+            //     console.log("myEve", event.data)
+            // })
+
+            source.addEventListener('message', function (e) {
+                console.log('message:', e);
+            });
+
+            source.addEventListener('open', function (e) {
+                console.log('open:', e);
+            }, false);
+
+            source.addEventListener('error', function (e) {
+                console.log('error:', e);
+                if (e.readyState == EventSource.CLOSED) {
+                    console.log("连接关闭");
+                }
+            }, false);
+
+        } else {
+            console.log("没有sse");
+        }
+    </script>
+
+</body>
+</html>

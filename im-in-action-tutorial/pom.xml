@@ -34,6 +34,7 @@
 		<module>reverse_ajaxpt1_source/piggyback</module>
 		<module>reverse_ajaxpt1_source/polling</module>
 
+		<module>spring-boot-common</module>
 		<module>spring-boot-dwr</module>
 		<module>spring-boot-netty-socketio</module>
 		<module>spring-boot-long-polling</module>
