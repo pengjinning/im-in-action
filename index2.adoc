@@ -27,6 +27,9 @@ Version 2.0, 2019-06-19
 Ajax
 
 
+=== 捎带轮询Piggyback-Polling
+
+
 === 长轮询Long-Polling
 
 
@@ -34,6 +37,9 @@ Ajax
 
 
 === 反向Ajax
+
+在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
+
 
 
 === Comet
