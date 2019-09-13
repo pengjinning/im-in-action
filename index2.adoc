@@ -22,24 +22,29 @@ Version 2.0, 2019-06-19
 
 == 通信方式
 
-=== Polling
+=== 轮询Polling
+
+Ajax
 
 
-=== Long-Polling
+=== 长轮询Long-Polling
 
 
-==== 反向Ajax
+=== 流Streaming
 
 
-==== Comet
+=== 反向Ajax
 
 
-==== DWR
+=== Comet
+
+
+=== DWR
 
 Direct Web Remoting
 
 
-
+DWR supports Comet, Polling and Piggyback (sending data in with normal requests) as ways to publish to browsers.
 
 参考:
 
@@ -61,7 +66,7 @@ Server-Send-Event
 === SPDY
 
 
-=== Long-Link
+=== 长连接Long-Link
 
 长连接
 tcp
