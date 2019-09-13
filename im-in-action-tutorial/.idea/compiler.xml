@@ -8,9 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-server-send-event-webmvc" />
         <module name="spring-boot-server-send-event-webflux" />
-        <module name="piggyback" />
-        <module name="netty-websocket" />
         <module name="udp-chat-server" />
+        <module name="netty-websocket" />
+        <module name="netty-http" />
         <module name="netty-websocket-protobuf" />
         <module name="comet-streaming" />
         <module name="spring-boot-polling" />
@@ -28,7 +28,7 @@
         <module name="spring-boot-websocket" />
         <module name="spring-boot-dwr" />
         <module name="spring-boot-websocket-stomp" />
-        <module name="netty-http" />
+        <module name="piggyback" />
         <module name="spring-boot-chat" />
       </profile>
       <profile name="Annotation profile for spring-boot-websocket-stomp-mini" enabled="true">
@@ -46,17 +46,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ajax-protobuf" target="1.8" />
-      <module name="binary-chat" target="1.8" />
       <module name="comet-long-polling" target="1.5" />
       <module name="comet-streaming" target="1.5" />
-      <module name="demo (1)" target="1.8" />
-      <module name="demo (2)" target="1.8" />
       <module name="im-in-action-tutorial" target="1.5" />
-      <module name="java-server-websocket-client" target="1.8" />
-      <module name="Java-WebSocket" target="1.8" />
-      <module name="java-websocket" target="1.8" />
-      <module name="java-websocket-chat" target="1.8" />
-      <module name="json-chat" target="1.8" />
       <module name="netty-http" target="1.7" />
       <module name="netty-im" target="1.8" />
       <module name="netty-socketio" target="1.6" />
@@ -64,18 +56,11 @@
       <module name="netty-websocket-protobuf" target="1.8" />
       <module name="piggyback" target="1.5" />
       <module name="polling" target="1.5" />
-      <module name="protobuf-chat" target="1.8" />
-      <module name="server-send-event" target="1.8" />
-      <module name="shiro-test" target="1.8" />
       <module name="spring-boot-chat" target="1.8" />
       <module name="spring-boot-dwr" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
-      <module name="spring-boot-messaging-stomp-websocket" target="1.8" />
       <module name="spring-boot-netty-socketio" target="1.8" />
       <module name="spring-boot-polling" target="1.8" />
-      <module name="spring-boot-sample-websocket" target="1.8" />
-      <module name="spring-boot-sample-websocket-tomcat" target="1.8" />
-      <module name="spring-boot-sample-websocket-undertow" target="1.8" />
       <module name="spring-boot-server-send-event-webflux" target="1.8" />
       <module name="spring-boot-server-send-event-webmvc" target="1.8" />
       <module name="spring-boot-stomp" target="1.8" />
@@ -84,12 +69,9 @@
       <module name="spring-boot-websocket-stomp-mini" target="1.8" />
       <module name="spring-boot-websocket-stomp-sockjs" target="1.8" />
       <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" target="1.8" />
-      <module name="spring-websocket-portfolio" target="1.8" />
       <module name="tcp-chat" target="1.7" />
-      <module name="text-chat" target="1.8" />
       <module name="udp-chat-client" target="1.7" />
       <module name="udp-chat-server" target="1.7" />
-      <module name="websocket-spring-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -97,10 +79,8 @@
       <module name="netty-websocket-protobuf" options="-parameters" />
       <module name="spring-boot-dwr" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
-      <module name="spring-boot-messaging-stomp-websocket" options="-parameters" />
       <module name="spring-boot-netty-socketio" options="-parameters" />
       <module name="spring-boot-polling" options="-parameters" />
-      <module name="spring-boot-sample-websocket" options="-parameters" />
       <module name="spring-boot-server-send-event-webflux" options="-parameters" />
       <module name="spring-boot-server-send-event-webmvc" options="-parameters" />
       <module name="spring-boot-websocket" options="-parameters" />

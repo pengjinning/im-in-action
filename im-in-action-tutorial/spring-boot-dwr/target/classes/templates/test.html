@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DWR</title>
+    <script type="text/javascript" src="/dwr/engine.js"></script>
+    <script type="text/javascript" src="/dwr/util.js"></script>
+    <script type="text/javascript" src="/dwr/interface/UserService.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <style type="text/css">
+        input {
+            height: 50px;
+            width: 100px;
+        }
+
+        div {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        body {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="button" value="Hello" id="hello"/>
+    <input type="button" value="User" id="user"/>
+    <input type="button" value="List" id="list"/>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#hello").click(function () {
+            UserService.hello(function (data) {
+                alert(data)
+            });
+        });
+        $("#user").click(function () {
+            UserService.user(function (data) {
+                alert(JSON.stringify(data));
+            });
+        });
+        $("#list").click(function () {
+            UserService.list(function (data) {
+                alert(JSON.stringify(data));
+            });
+        });
+    });
+</script>
+</body>
+</html>

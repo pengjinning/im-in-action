@@ -46,6 +46,13 @@
             <version>1.18.8</version>
         </dependency>
 
+        <!--自动编译，热部署，https://blog.csdn.net/woshiyeguiren/article/details/79312245-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <build>
