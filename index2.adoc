@@ -60,11 +60,16 @@ Server-Send-Event
 
 === SPDY
 
+
 === Long-Link
 
 长连接
 tcp
 全双工双向通信
+
+=== SockJs
+
+
 
 === WebSocket
 
@@ -109,7 +114,7 @@ image::assets/img/tcp_http_websocket.png[]
 
 === STOMP
 
-- sockjs
+==== sockjs
 
 === Socket.io
 
