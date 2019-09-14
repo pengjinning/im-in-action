@@ -18,28 +18,34 @@ Version 2.0, 2019-06-19
 
 == 前言
 
+- 通信方式和通信协议: 前端demo主要以javascript为主,服务器端demo主要以java为主. 
+- 实战部分:
+前端会包括:web/h5,android,ios,flutter,小程序, 服务端基于spring boot开发,开发语言以java为主
+
 水平有限,难免有错误疏漏之处,敬请指出
 
-== 通信方式
+== 传输方式 Transport
 
-=== 轮询Polling
+=== 轮询Http Polling
 
 Ajax
+JSONP
 
 
-=== 捎带轮询Piggyback-Polling
 
 
-=== 长轮询Long-Polling
+=== 捎带轮询Piggyback Polling
 
 
-=== 流Streaming
+=== 长轮询Long Polling
+
+
+=== 流Http Streaming
 
 
 === 反向Ajax
 
 在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
-
 
 
 === Comet
@@ -72,13 +78,11 @@ Server-Send-Event
 === SPDY
 
 
-=== 长连接Long-Link
+=== 长连接Long-lived connection
 
 长连接
 tcp
 全双工双向通信
-
-=== SockJs
 
 
 
@@ -93,7 +97,7 @@ tcp
 可以应用于
 
 - 聊天
-- 音视频
+- 直播弹幕
 - 游戏
 - 股票行情
 - 协作文档编辑
@@ -111,13 +115,20 @@ image::assets/img/tcp_http_websocket.png[]
 - 网络状态检测
 - 延迟测量
 
+=== SockJs
+
+三种传输方式 WebSocket, HTTP Streaming, and HTTP Long Polling
+
+
+
+https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-time-updates/[Techniques for Real-time Updates]
 
 === 方案对比
 
 对上述各种通信方式,以图表的形式对其各自优缺点进行对比
 
 
-== 通信协议
+== 传输协议 Protocal
 
 === IRC
 
