@@ -26,7 +26,7 @@ Version 2.0, 2019-06-19
 
 == 传输方式 Transport
 
-=== 轮询Http Polling
+=== 轮询Http Polling/Traditional Polling
 
 Ajax
 JSONP
@@ -39,6 +39,9 @@ JSONP
 
 === 长轮询Long Polling
 
+
+
+接收消息越频繁,越接近于Http Polling
 
 === 流Http Streaming
 
@@ -136,10 +139,7 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 === STOMP
 
-==== sockjs
-
 === Socket.io
-
 
 === MQTT
 
@@ -157,14 +157,12 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 得出结论使用websocket
 
 
+== 传输内容 Transport Content
 
 
-== 通信内容
+=== Json
 
-
-=== json
-
-=== protobuf
+=== Protobuf
 
 === 方案对比
 
@@ -172,7 +170,7 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 
 
-== 造轮子
+== 实战
 
 === 私有协议
 
@@ -190,30 +188,151 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 (步行/自行车/机动车/装甲车)
 
-
 === server
 
-==== webmvc 传统
+webmvc 传统/webflux 响应式
 
-==== webflux 响应式
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+统计
 
 === android
 
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+
 === ios
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
 
 === web/h5
 
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+
 === flutter
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+
+=== windows
+
+- qt
+- electron
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+
+=== mac
+
+- qt
+- electron
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
 
 === 小程序
 
+- 发文本
+- 发图片
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+
+== 其他
 
 === mars
 
 腾讯开源库
-
-== 其他
-
 
 === 音视频
 
