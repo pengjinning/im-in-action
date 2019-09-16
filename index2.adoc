@@ -330,10 +330,6 @@ webmvc 传统/webflux 响应式
 
 == 其他
 
-=== mars
-
-腾讯开源库
-
 === 音视频
 
 - webrtc
@@ -377,6 +373,12 @@ webmvc 传统/webflux 响应式
 === 高可用
 
 
+== 参考
+
+- signal
+- telegram
+- mars
+- mixin
 
 
 
