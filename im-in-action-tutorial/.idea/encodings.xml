@@ -12,8 +12,8 @@
     <file url="file://$PROJECT_DIR$/spring-boot-long-polling" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-netty-socketio" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-polling" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-sse-webflux" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-sse-webmvc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-websocket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-websocket-stomp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-websocket-stomp-mini" charset="UTF-8" />

@@ -9,12 +9,13 @@ Version 2.0, 2019-06-19
 :toclevels: 4
 :toc-title: IM从0到1
 :experimental:
-:description: 基于Spring Boot和WebRTC打造即时通讯/在线客服系统
-:keywords: 微服务 SpringBoot SpringCloud
+:description: 基于Spring Boot/Netty/WebRTC构架即时通讯和在线客服系统
+:keywords: 微服务 SpringBoot SpringCloud 虾婆 xiaper.io
 :imagesdir: ./img
 :sectlinks:
 
 从零开始构建一套基于微服务的即时通讯和在线客服系统
+http://www.iminaction.com
 
 == 前言
 
@@ -49,10 +50,13 @@ JSONP
 在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
 
 
-==== Comet
+=== Comet
 
 
-==== DWR
+
+https://en.wikipedia.org/wiki/Comet_%28programming%29[wiki]
+
+=== DWR
 
 Direct Web Remoting
 

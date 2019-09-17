@@ -19,8 +19,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" filepath="$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-netty-socketio/spring-boot-netty-socketio.iml" filepath="$PROJECT_DIR$/spring-boot-netty-socketio/spring-boot-netty-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-server-send-event-webflux/spring-boot-server-send-event-webflux.iml" filepath="$PROJECT_DIR$/spring-boot-server-send-event-webflux/spring-boot-server-send-event-webflux.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-server-send-event-webmvc/spring-boot-server-send-event-webmvc.iml" filepath="$PROJECT_DIR$/spring-boot-server-send-event-webmvc/spring-boot-server-send-event-webmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-webflux/spring-boot-sse-webflux.iml" filepath="$PROJECT_DIR$/spring-boot-sse-webflux/spring-boot-sse-webflux.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" filepath="$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket-stomp/spring-boot-websocket-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-websocket-stomp/spring-boot-websocket-stomp.iml" />
