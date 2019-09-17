@@ -123,8 +123,14 @@ image::assets/img/tcp_http_websocket.png[]
 三种传输方式 WebSocket, HTTP Streaming, and HTTP Long Polling
 
 
-
 https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-time-updates/[Techniques for Real-time Updates]
+
+=== Mars
+
+Mars is a cross-platform network component developed by WeChat.
+
+微信官方开源的跨平台网络组件
+
 
 === 方案对比
 
@@ -188,7 +194,7 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 (步行/自行车/机动车/装甲车)
 
-=== server
+=== 服务器Server
 
 webmvc 传统/webflux 响应式
 
@@ -207,7 +213,11 @@ webmvc 传统/webflux 响应式
 指定坐席
 统计
 
-=== android
+==== 机器人
+
+- 第三方
+
+=== 安卓Android
 
 ==== 一对一
 
@@ -223,7 +233,11 @@ webmvc 传统/webflux 响应式
 工作组
 指定坐席
 
-=== ios
+==== 机器人
+
+- 第三方
+
+=== 苹果iOS
 
 ==== 一对一
 
@@ -239,7 +253,11 @@ webmvc 传统/webflux 响应式
 工作组
 指定坐席
 
-=== web/h5
+==== 机器人
+
+- 第三方
+
+=== 网页Web/H5
 
 ==== 一对一
 
@@ -255,23 +273,12 @@ webmvc 传统/webflux 响应式
 工作组
 指定坐席
 
-=== flutter
+==== 机器人
 
-==== 一对一
+- 第三方
 
-文本
-图片
 
-==== 群聊
-
-建群
-
-==== 在线客服
-
-工作组
-指定坐席
-
-=== windows
+=== Windows
 
 - qt
 - electron
@@ -290,7 +297,11 @@ webmvc 传统/webflux 响应式
 工作组
 指定坐席
 
-=== mac
+==== 机器人
+
+- 第三方
+
+=== Mac
 
 - qt
 - electron
@@ -308,6 +319,10 @@ webmvc 传统/webflux 响应式
 
 工作组
 指定坐席
+
+==== 机器人
+
+- 第三方
 
 === 小程序
 
@@ -327,6 +342,32 @@ webmvc 传统/webflux 响应式
 
 工作组
 指定坐席
+
+==== 机器人
+
+- 第三方
+
+=== 跨平台Flutter
+
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+
+==== 机器人
+
+- 第三方
+
 
 == 其他
 
