@@ -1,4 +1,5 @@
 var Login = {
+
   init: function() {
     this.initNode();
     this.showNotice();
@@ -129,4 +130,5 @@ var Login = {
     return browser.appname + ' ' + browser.version;
   }
 };
+
 Login.init();

@@ -19,6 +19,7 @@ public final class ReverseAjaxServlet extends HttpServlet {
     private final Queue<AsyncContext> asyncContexts = new ConcurrentLinkedQueue<AsyncContext>();
 
     private final Random random = new Random();
+
     private final Thread generator = new Thread("Event generator") {
         @Override
         public void run() {

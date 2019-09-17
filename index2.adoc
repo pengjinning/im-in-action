@@ -9,16 +9,16 @@ Version 2.0, 2019-06-19
 :toclevels: 4
 :toc-title: IM从0到1
 :experimental:
-:description: 基于Spring Boot打造即时通讯和WebRTC应用
+:description: 基于Spring Boot和WebRTC打造即时通讯/在线客服系统
 :keywords: 微服务 SpringBoot SpringCloud
 :imagesdir: ./img
 :sectlinks:
 
-从零开始构建一套基于微服务的即使通讯系统
+从零开始构建一套基于微服务的即时通讯和在线客服系统
 
 == 前言
 
-- 通信方式和通信协议: 前端demo主要以javascript为主,服务器端demo主要以java为主. 
+- 传输方式和传输协议: 前端demo主要以javascript为主,服务器端demo主要以java为主. 
 - 实战部分:
 前端会包括:web/h5,android,ios,flutter,小程序, 服务端基于spring boot开发,开发语言以java为主
 
@@ -26,12 +26,10 @@ Version 2.0, 2019-06-19
 
 == 传输方式 Transport
 
-=== 轮询Http Polling/Traditional Polling
+=== 轮询Http Polling
 
 Ajax
 JSONP
-
-
 
 
 === 捎带轮询Piggyback Polling
@@ -51,10 +49,10 @@ JSONP
 在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
 
 
-=== Comet
+==== Comet
 
 
-=== DWR
+==== DWR
 
 Direct Web Remoting
 
@@ -180,7 +178,7 @@ Mars is a cross-platform network component developed by WeChat.
 
 === 私有协议
 
-=== netty
+=== Netty
 
 === 建立长连接
 
