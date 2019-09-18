@@ -6,33 +6,52 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-sse-webmvc" />
+        <module name="netty-http" />
         <module name="udp-chat-server" />
         <module name="netty-websocket" />
         <module name="spring-boot-common" />
-        <module name="netty-websocket-protobuf" />
+        <module name="spring-boot-socketio" />
         <module name="netty-socketio" />
         <module name="spring-boot-polling" />
-        <module name="spring-boot-websocket-stomp-mini" />
         <module name="polling" />
-        <module name="spring-boot-sse-webflux" />
         <module name="spring-boot-long-polling" />
+        <module name="comet-streaming" />
         <module name="piggyback" />
-        <module name="spring-boot-stomp" />
-        <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" />
         <module name="comet-long-polling" />
-        <module name="spring-boot-netty-socketio" />
         <module name="ajax-protobuf" />
-        <module name="spring-boot-websocket-stomp-sockjs" />
         <module name="udp-chat-client" />
+        <module name="netty-websocket-protobuf" />
         <module name="tcp-chat" />
         <module name="netty-im" />
         <module name="spring-boot-websocket" />
-        <module name="spring-boot-chat" />
+        <module name="spring-boot-sse-webmvc" />
         <module name="spring-boot-dwr" />
-        <module name="spring-boot-websocket-stomp" />
-        <module name="netty-http" />
-        <module name="comet-streaming" />
+        <module name="spring-boot-chat" />
+        <module name="spring-boot-sse-webflux" />
+      </profile>
+      <profile name="Annotation profile for ByteDesk Spring Boot Projects" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-sockjs" />
+      </profile>
+      <profile name="Annotation profile for spring-boot-mini" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-mini" />
+      </profile>
+      <profile name="Annotation profile for spring-boot-stomp" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-stomp" />
+      </profile>
+      <profile name="Annotation profile for spring-boot-sockjs-rabbitmq" enabled="true">
+        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-sockjs-rabbitmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,16 +70,15 @@
       <module name="spring-boot-common" target="1.8" />
       <module name="spring-boot-dwr" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
-      <module name="spring-boot-netty-socketio" target="1.8" />
+      <module name="spring-boot-mini" target="1.8" />
       <module name="spring-boot-polling" target="1.8" />
+      <module name="spring-boot-socketio" target="1.8" />
+      <module name="spring-boot-sockjs" target="1.8" />
+      <module name="spring-boot-sockjs-rabbitmq" target="1.8" />
       <module name="spring-boot-sse-webflux" target="1.8" />
       <module name="spring-boot-sse-webmvc" target="1.8" />
       <module name="spring-boot-stomp" target="1.8" />
       <module name="spring-boot-websocket" target="1.8" />
-      <module name="spring-boot-websocket-stomp" target="1.8" />
-      <module name="spring-boot-websocket-stomp-mini" target="1.8" />
-      <module name="spring-boot-websocket-stomp-sockjs" target="1.8" />
-      <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" target="1.8" />
       <module name="tcp-chat" target="1.7" />
       <module name="udp-chat-client" target="1.7" />
       <module name="udp-chat-server" target="1.7" />
@@ -72,15 +90,15 @@
       <module name="spring-boot-common" options="-parameters" />
       <module name="spring-boot-dwr" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
-      <module name="spring-boot-netty-socketio" options="-parameters" />
+      <module name="spring-boot-mini" options="-parameters" />
       <module name="spring-boot-polling" options="-parameters" />
+      <module name="spring-boot-socketio" options="-parameters" />
+      <module name="spring-boot-sockjs" options="-parameters" />
+      <module name="spring-boot-sockjs-rabbitmq" options="-parameters" />
       <module name="spring-boot-sse-webflux" options="-parameters" />
       <module name="spring-boot-sse-webmvc" options="-parameters" />
+      <module name="spring-boot-stomp" options="-parameters" />
       <module name="spring-boot-websocket" options="-parameters" />
-      <module name="spring-boot-websocket-stomp" options="-parameters" />
-      <module name="spring-boot-websocket-stomp-mini" options="-parameters" />
-      <module name="spring-boot-websocket-stomp-sockjs" options="-parameters" />
-      <module name="spring-boot-websocket-stomp-sockjs-rabbitmq" options="-parameters" />
     </option>
   </component>
 </project>

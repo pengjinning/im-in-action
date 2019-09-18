@@ -44,6 +44,7 @@ JSONP
 
 === 流Http Streaming
 
+iframe流
 
 === 反向Ajax
 
