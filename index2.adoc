@@ -188,7 +188,7 @@ Mars is a cross-platform network component developed by WeChat.
 
 (修路)
 
-=== 定义通信协议
+=== 定义传输协议
 
 (定义交通规则)
 
@@ -198,7 +198,9 @@ Mars is a cross-platform network component developed by WeChat.
 
 === 服务器Server
 
-webmvc 传统/webflux 响应式
+- webmvc 传统
+- webflux 响应式 reactive
+
 
 ==== 一对一
 
