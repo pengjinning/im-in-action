@@ -51,23 +51,6 @@ iframe流
 在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
 
 
-=== Comet
-
-
-
-https://en.wikipedia.org/wiki/Comet_%28programming%29[wiki]
-
-=== DWR
-
-Direct Web Remoting
-
-
-DWR supports Comet, Polling and Piggyback (sending data in with normal requests) as ways to publish to browsers.
-
-参考:
-
-- http://directwebremoting.org/dwr/index.html[Direct Web Remoting]
-
 
 === SSE
 
@@ -91,6 +74,23 @@ tcp
 全双工双向通信
 
 
+
+
+=== Mars
+
+Mars is a cross-platform network component developed by WeChat.
+
+微信官方开源的跨平台网络组件
+
+
+=== 方案对比
+
+对上述各种通信方式,以图表的形式对其各自优缺点进行对比
+
+
+
+
+== 传输协议 Protocal
 
 === WebSocket
 
@@ -121,34 +121,19 @@ image::assets/img/tcp_http_websocket.png[]
 - 网络状态检测
 - 延迟测量
 
-=== SockJs
 
-三种传输方式 WebSocket, HTTP Streaming, and HTTP Long Polling
-
-
-https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-time-updates/[Techniques for Real-time Updates]
-
-=== Mars
-
-Mars is a cross-platform network component developed by WeChat.
-
-微信官方开源的跨平台网络组件
-
-
-=== 方案对比
-
-对上述各种通信方式,以图表的形式对其各自优缺点进行对比
-
-
-== 传输协议 Protocal
 
 === IRC
 
 === XMPP
 
+smack/XMPPFramework
+openfire/ejabberd
+
+
 === STOMP
 
-=== Socket.io
+
 
 === MQTT
 
@@ -164,6 +149,39 @@ Mars is a cross-platform network component developed by WeChat.
 
 对上述各种通信协议,以图表的形式对其各自优缺点进行对比,
 得出结论使用websocket
+
+== 框架 Framework
+
+=== CometD
+
+Cometd/Bayeux 协议
+
+
+https://en.wikipedia.org/wiki/Comet_%28programming%29[wiki]
+
+=== DWR
+
+Direct Web Remoting
+
+
+DWR supports Comet, Polling and Piggyback (sending data in with normal requests) as ways to publish to browsers.
+
+参考:
+
+- http://directwebremoting.org/dwr/index.html[Direct Web Remoting]
+
+
+=== Atmosphere
+
+
+=== Socket.io
+
+=== SockJs
+
+三种传输方式 WebSocket, HTTP Streaming, and HTTP Long Polling
+
+
+https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-time-updates/[Techniques for Real-time Updates]
 
 
 == 传输内容 Transport Content
