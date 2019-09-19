@@ -26,7 +26,6 @@
 		<module>netty-im</module>
 		<module>netty-socketio</module>
 		<module>netty-websocket</module>
-		<module>netty-protobuf</module>
 
 		<module>reverse_ajaxpt1_source/comet-long-polling</module>
 		<module>reverse_ajaxpt1_source/comet-streaming</module>
@@ -38,6 +37,7 @@
 		<module>spring-boot-socketio</module>
 		<module>spring-boot-long-polling</module>
 		<module>spring-boot-polling</module>
+		<module>spring-boot-protobuf</module>
 		<module>spring-boot-sse-webflux</module>
 		<module>spring-boot-sse-webmvc</module>
 

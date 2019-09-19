@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-im/netty-im.iml" filepath="$PROJECT_DIR$/netty-im/netty-im.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-protobuf/netty-protobuf.iml" filepath="$PROJECT_DIR$/netty-protobuf/netty-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-socketio/netty-socketio.iml" filepath="$PROJECT_DIR$/netty-socketio/netty-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket/netty-websocket.iml" filepath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" />
@@ -18,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" filepath="$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" filepath="$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" filepath="$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" filepath="$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" filepath="$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sockjs-rabbitmq/spring-boot-sockjs-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-sockjs-rabbitmq/spring-boot-sockjs-rabbitmq.iml" />

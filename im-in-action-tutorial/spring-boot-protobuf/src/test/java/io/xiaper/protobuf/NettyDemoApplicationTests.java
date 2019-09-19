@@ -1,4 +1,4 @@
-package io.example.nettydemo;
+package io.xiaper.protobuf;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

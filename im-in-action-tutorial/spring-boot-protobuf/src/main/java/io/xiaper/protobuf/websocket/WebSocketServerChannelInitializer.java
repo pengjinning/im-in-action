@@ -1,6 +1,6 @@
-package io.example.nettydemo.websocket;
+package io.xiaper.protobuf.websocket;
 
-import io.example.nettydemo.protobuf.MessageData;
+import io.xiaper.protobuf.proto.MessageData;
 import com.google.protobuf.MessageLite;
 import com.google.protobuf.MessageLiteOrBuilder;
 import io.netty.buffer.ByteBuf;

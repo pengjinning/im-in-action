@@ -1,4 +1,4 @@
-package io.example.nettydemo.websocket;
+package io.xiaper.protobuf.websocket;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;

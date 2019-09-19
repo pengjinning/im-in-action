@@ -1,4 +1,4 @@
-package io.example.nettydemo.protodemo;
+package io.xiaper.protobuf.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

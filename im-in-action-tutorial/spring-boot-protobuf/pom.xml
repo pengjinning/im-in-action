@@ -11,10 +11,10 @@
     </parent>
 
     <groupId>io.xiaper</groupId>
-    <artifactId>netty-protobuf</artifactId>
+    <artifactId>spring-boot-protobuf</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>netty-protobuf</name>
+    <name>spring-boot-protobuf</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

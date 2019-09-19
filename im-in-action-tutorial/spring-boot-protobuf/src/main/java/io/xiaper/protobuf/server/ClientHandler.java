@@ -1,6 +1,6 @@
-package io.example.nettydemo.protodemo;
+package io.xiaper.protobuf.server;
 
-import io.example.nettydemo.protobuf.MessageData;
+import io.xiaper.protobuf.proto.MessageData;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
