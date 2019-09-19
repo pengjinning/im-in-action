@@ -2,7 +2,6 @@ package io.xiaper.im.client;
 
 import io.xiaper.im.client.console.ConsoleCommandManager;
 import io.xiaper.im.client.console.LoginConsoleCommand;
-import com.sanshengshui.im.client.handler.*;
 import io.xiaper.im.client.handler.*;
 import io.xiaper.im.codec.PacketDecoder;
 import io.xiaper.im.codec.PacketEncoder;

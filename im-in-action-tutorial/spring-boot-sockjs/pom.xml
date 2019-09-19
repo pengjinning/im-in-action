@@ -11,9 +11,9 @@
 
 	<groupId>com.xiaper</groupId>
 	<artifactId>spring-boot-sockjs</artifactId>
-
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-websocket-sockjs</name>
+
+	<name>spring-boot-sockjs</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

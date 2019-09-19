@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>io.xiaper</groupId>
-	<artifactId>server-send-event-webflux</artifactId>
+	<artifactId>spring-boot-sse-webflux</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>server-send-event-webflux</name>
+	<name>spring-boot-sse-webflux</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

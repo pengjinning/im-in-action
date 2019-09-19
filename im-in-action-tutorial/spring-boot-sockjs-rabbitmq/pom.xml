@@ -10,10 +10,10 @@
 	</parent>
 
 	<groupId>com.xiaper</groupId>
-	<artifactId>spring-boot-sockjs</artifactId>
-
+	<artifactId>spring-boot-sockjs-rabbitmq</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-websocket-sockjs</name>
+
+	<name>spring-boot-sockjs-rabbitmq</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

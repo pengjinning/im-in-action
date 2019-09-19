@@ -8,12 +8,11 @@
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-im/netty-im.iml" filepath="$PROJECT_DIR$/netty-im/netty-im.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-protobuf/netty-protobuf.iml" filepath="$PROJECT_DIR$/netty-protobuf/netty-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-socketio/netty-socketio.iml" filepath="$PROJECT_DIR$/netty-socketio/netty-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket/netty-websocket.iml" filepath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-websocket-protobuf/netty-websocket-protobuf.iml" filepath="$PROJECT_DIR$/netty-websocket-protobuf/netty-websocket-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" filepath="$PROJECT_DIR$/spring-boot-chat/spring-boot-chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" filepath="$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" filepath="$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" filepath="$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" />
@@ -26,10 +25,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" filepath="$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-messaging-stomp-websocket/spring-boott-messaging-stomp-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-messaging-stomp-websocket/spring-boott-messaging-stomp-websocket.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tcp-chat/tcp-chat.iml" filepath="$PROJECT_DIR$/tcp-chat/tcp-chat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/udp-chat-client/udp-chat-client.iml" filepath="$PROJECT_DIR$/udp-chat-client/udp-chat-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" filepath="$PROJECT_DIR$/udp-chat-server/udp-chat-server.iml" />
     </modules>
   </component>
 </project>

@@ -24,10 +24,9 @@
 
 		<module>netty-http</module>
 		<module>netty-im</module>
-
 		<module>netty-socketio</module>
 		<module>netty-websocket</module>
-		<module>netty-websocket-protobuf</module>
+		<module>netty-protobuf</module>
 
 		<module>reverse_ajaxpt1_source/comet-long-polling</module>
 		<module>reverse_ajaxpt1_source/comet-streaming</module>
@@ -36,22 +35,17 @@
 
 		<module>spring-boot-common</module>
 		<module>spring-boot-dwr</module>
-		<module>spring-boot-netty-socketio</module>
+		<module>spring-boot-socketio</module>
 		<module>spring-boot-long-polling</module>
 		<module>spring-boot-polling</module>
-		<module>spring-boot-server-send-event-webflux</module>
-		<module>spring-boot-server-send-event-webmvc</module>
+		<module>spring-boot-sse-webflux</module>
+		<module>spring-boot-sse-webmvc</module>
 
 		<module>spring-boot-websocket</module>
-		<module>spring-boot-websocket-stomp</module>
-		<module>spring-boot-websocket-stomp-mini</module>
-		<module>spring-boot-websocket-stomp-sockjs</module>
-		<module>spring-boot-websocket-stomp-sockjs-rabbitmq</module>
-
-		<module>tcp-chat</module>
-		<module>udp-chat-client</module>
-		<module>udp-chat-server</module>
-
+		<module>spring-boot-stomp</module>
+		<module>spring-boot-mini</module>
+		<module>spring-boot-sockjs</module>
+		<module>spring-boot-sockjs-rabbitmq</module>
 
 	</modules>
 

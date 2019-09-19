@@ -14,7 +14,7 @@
 	<artifactId>spring-boot-polling</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>polling</name>
+	<name>spring-boot-polling</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

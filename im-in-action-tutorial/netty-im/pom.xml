@@ -3,13 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.sanshengshui</groupId>
+    <groupId>io.xiaper</groupId>
     <artifactId>netty-im</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>netty :: IM</name>
-    <description>netty之用netty实现IM功能(物联网,推送皆可！)</description>
+    <name>netty-im</name>
+    <description>netty之用netty实现IM功能</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

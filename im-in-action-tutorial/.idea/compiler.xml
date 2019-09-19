@@ -6,52 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty-http" />
-        <module name="udp-chat-server" />
+        <module name="spring-boot-stomp" />
+        <module name="piggyback" />
         <module name="netty-websocket" />
-        <module name="spring-boot-common" />
         <module name="spring-boot-socketio" />
         <module name="netty-socketio" />
         <module name="spring-boot-polling" />
+        <module name="spring-boot-sockjs-rabbitmq" />
         <module name="polling" />
+        <module name="spring-boot-sse-webflux" />
         <module name="spring-boot-long-polling" />
-        <module name="comet-streaming" />
-        <module name="piggyback" />
+        <module name="netty-protobuf" />
+        <module name="spring-boot-common" />
         <module name="comet-long-polling" />
         <module name="ajax-protobuf" />
-        <module name="udp-chat-client" />
-        <module name="netty-websocket-protobuf" />
-        <module name="tcp-chat" />
+        <module name="spring-boot-sockjs" />
         <module name="netty-im" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-sse-webmvc" />
         <module name="spring-boot-dwr" />
-        <module name="spring-boot-chat" />
-        <module name="spring-boot-sse-webflux" />
-      </profile>
-      <profile name="Annotation profile for ByteDesk Spring Boot Projects" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-sockjs" />
-      </profile>
-      <profile name="Annotation profile for spring-boot-mini" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp-mini/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-mini" />
-      </profile>
-      <profile name="Annotation profile for spring-boot-stomp" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-stomp" />
-      </profile>
-      <profile name="Annotation profile for spring-boot-sockjs-rabbitmq" enabled="true">
-        <sourceOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-boot-websocket-stomp-sockjs-rabbitmq/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-sockjs-rabbitmq" />
+        <module name="netty-http" />
+        <module name="comet-streaming" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -61,9 +37,9 @@
       <module name="im-in-action-tutorial" target="1.5" />
       <module name="netty-http" target="1.7" />
       <module name="netty-im" target="1.8" />
+      <module name="netty-protobuf" target="1.8" />
       <module name="netty-socketio" target="1.6" />
       <module name="netty-websocket" target="8" />
-      <module name="netty-websocket-protobuf" target="1.8" />
       <module name="piggyback" target="1.5" />
       <module name="polling" target="1.5" />
       <module name="spring-boot-chat" target="1.8" />
@@ -86,7 +62,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="netty-websocket-protobuf" options="-parameters" />
+      <module name="netty-protobuf" options="-parameters" />
       <module name="spring-boot-common" options="-parameters" />
       <module name="spring-boot-dwr" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
