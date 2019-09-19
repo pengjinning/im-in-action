@@ -10,7 +10,7 @@ Version 2.0, 2019-06-19
 :toc-title: IM从0到1
 :experimental:
 :description: 基于Spring Boot/Netty/WebRTC构架即时通讯和在线客服系统
-:keywords: 微服务 SpringBoot SpringCloud 虾婆 xiaper.io
+:keywords: 微服务 虾婆 SpringBoot Netty WebRTC Xiaper
 :imagesdir: ./img
 :sectlinks:
 
@@ -127,9 +127,6 @@ image::assets/img/tcp_http_websocket.png[]
 
 === XMPP
 
-smack/XMPPFramework
-openfire/ejabberd
-
 
 === STOMP
 
@@ -150,7 +147,14 @@ openfire/ejabberd
 对上述各种通信协议,以图表的形式对其各自优缺点进行对比,
 得出结论使用websocket
 
+
 == 框架 Framework
+
+=== Ejabberd
+
+smack/XMPPFramework
+openfire/ejabberd
+
 
 === CometD
 
@@ -184,22 +188,10 @@ DWR supports Comet, Polling and Piggyback (sending data in with normal requests)
 https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-time-updates/[Techniques for Real-time Updates]
 
 
-== 传输内容 Transport Content
-
-
-=== Json
-
-=== Protobuf
-
-=== 方案对比
-
-对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
-
-
 
 == 实战
 
-=== 私有协议
+私有协议
 
 === Netty
 
@@ -207,13 +199,22 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 (修路)
 
-=== 定义传输协议
+=== 传输协议
 
 (定义交通规则)
 
-=== 消息格式
+=== 传输内容
 
 (步行/自行车/机动车/装甲车)
+
+- Json
+
+- Protobuf
+
+- 方案对比
+
+对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
+
 
 === 服务器Server
 
