@@ -250,15 +250,15 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 == 框架 Framework
 
-=== Ejabberd
+//=== Ejabberd
 
-smack/XMPPFramework
-openfire/ejabberd
-
+//smack/XMPPFramework/openfire/ejabberd
 
 === CometD
 
 Cometd/Bayeux 协议
+
+
 
 
 https://en.wikipedia.org/wiki/Comet_%28programming%29[wiki]
