@@ -30,6 +30,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ConsoleChatClient {
+
     public static void main(String[] args) throws Exception {
         ConsoleChatClient client = new ConsoleChatClient();
         client.run();
