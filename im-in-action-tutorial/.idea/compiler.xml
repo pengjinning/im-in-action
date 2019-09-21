@@ -27,6 +27,7 @@
         <module name="spring-boot-websocket" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-dwr" />
+        <module name="spring-boot-atmosphere" />
         <module name="netty-http" />
         <module name="comet-streaming" />
       </profile>
@@ -42,6 +43,7 @@
       <module name="netty-websocket" target="8" />
       <module name="piggyback" target="1.5" />
       <module name="polling" target="1.5" />
+      <module name="spring-boot-atmosphere" target="1.8" />
       <module name="spring-boot-chat" target="1.8" />
       <module name="spring-boot-cometd" target="1.8" />
       <module name="spring-boot-common" target="1.8" />
@@ -64,6 +66,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-atmosphere" options="-parameters" />
       <module name="spring-boot-cometd" options="-parameters" />
       <module name="spring-boot-common" options="-parameters" />
       <module name="spring-boot-dwr" options="-parameters" />

@@ -32,6 +32,7 @@
 		<module>reverse_ajaxpt1_source/piggyback</module>
 		<module>reverse_ajaxpt1_source/polling</module>
 
+		<module>spring-boot-atmosphere</module>
 		<module>spring-boot-cometd</module>
 		<module>spring-boot-common</module>
 		<module>spring-boot-dwr</module>
