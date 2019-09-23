@@ -57,6 +57,8 @@ iframe流
 在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
 
 
+=== Comet
+
 
 === SSE
 
@@ -293,19 +295,31 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 私有协议
 
-=== Netty
 
-=== 建立长连接
+=== 服务器Server
+
+- webmvc 传统
+- webflux 响应式 reactive
+
+
+==== Netty
+
+==== 支持WebSocket
 
 (修路)
 
-=== 传输协议
+
+
+==== 传输协议
 
 (定义交通规则)
 
-=== 传输内容
+
+
+==== 传输内容
 
 (步行/自行车/机动车/装甲车)
+
 
 - Json
 
@@ -314,12 +328,6 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 - 方案对比
 
 对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
-
-
-=== 服务器Server
-
-- webmvc 传统
-- webflux 响应式 reactive
 
 
 ==== 一对一
@@ -513,19 +521,34 @@ https://spring.io/blog/2012/05/08/spring-mvc-3-2-preview-techniques-for-real-tim
 
 === 安全篇
 
-- https/ssl
+.https/ssl
 
-- 数据格式
+SSL保护数据的原理可以分为三部分
 
-* 文本传输
-* 二进制
-* protobuf
+- 认证用户和服务器，确保数据发送到正确的客户端和服务器；
+- 加密数据以防止数据中途被窃取；
+- 维护数据的完整性，确保数据在传输过程中不被改变。
+
+
+.数据格式
+
+- 文本传输
+- 二进制
+- protobuf
 
 === 加密
 
-* 传输加密
-* 存储加密
-* 端到端加密
+.传输加密
+00
+
+.存储加密
+11
+
+.端到端加密
+22
+
+
+=== 敏感词
 
 === 压力测试
 
