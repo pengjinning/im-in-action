@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-cometd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cometd/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/CometDDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/CometDDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/CometDDemoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/CometDDemoServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/ConsoleChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/ConsoleChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static/js/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static/js/reload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/templates/reload/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/templates/reload/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-websocket/target/" />
@@ -251,7 +239,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="99" />
     <option name="width" value="1489" />
@@ -273,22 +261,6 @@
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-atmosphere" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-dwr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-dwr" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -749,7 +721,7 @@
       <workItem from="1568987265379" duration="5854000" />
       <workItem from="1569029547518" duration="45000" />
       <workItem from="1569029940532" duration="19000" />
-      <workItem from="1569247756047" duration="5567000" />
+      <workItem from="1569247756047" duration="6243000" />
     </task>
     <servers />
   </component>
@@ -774,7 +746,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="214518000" />
+    <option name="totallyTimeSpent" value="215194000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -786,9 +758,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="88" y="145" width="1106" height="791" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.21245421" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.32706767" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -799,7 +771,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" weight="0.1996337" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.31347963" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.20585161" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.28223497" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
