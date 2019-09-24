@@ -1,5 +1,5 @@
 require({
-        baseUrl: '../../js/jquery',
+        baseUrl: '/js/jquery',
         paths: {
             jquery: 'https://code.jquery.com/jquery-3.4.1',
             cometd: '../cometd'
@@ -28,9 +28,10 @@ require({
             });
 
             /* Initialize CometD */
-            var cometURL = location.href.replace(/\/jquery-examples\/.*$/, '') + '/cometd';
+            // var cometURL = location.href.replace(/\/jquery-examples\/.*$/, '') + '/cometd';
+            var cometdURL = location.protocol + "//" + location.host + "/cometd";
             cometd.init({
-                url: cometURL,
+                url: cometdURL,
                 logLevel: 'debug'
             });
 

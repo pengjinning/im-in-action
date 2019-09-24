@@ -1,5 +1,5 @@
 require({
-        baseUrl: "../../js/jquery",
+        baseUrl: "/js/jquery",
         paths: {
             jquery: "https://code.jquery.com/jquery-3.4.1",
             cometd: "../cometd"
@@ -37,8 +37,9 @@ require({
                 return false;
             });
 
+            var cometdURL = location.protocol + "//" + location.host + "/cometd";
             cometd.configure({
-                url: location.href.replace(/\/jquery-examples\/.*$/, "") + "/cometd",
+                url: cometdURL,
                 logLevel: "debug"
             });
 
