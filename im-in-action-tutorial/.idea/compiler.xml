@@ -6,30 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-sockjs-rabbitmq" />
         <module name="piggyback" />
         <module name="netty-websocket" />
-        <module name="spring-boot-cometd" />
         <module name="spring-boot-sse-webmvc" />
         <module name="spring-boot-socketio" />
         <module name="netty-socketio" />
         <module name="spring-boot-polling" />
+        <module name="spring-boot-websocket" />
         <module name="polling" />
         <module name="spring-boot-long-polling" />
+        <module name="comet-streaming" />
+        <module name="spring-boot-dwr" />
         <module name="spring-boot-common" />
         <module name="netty-im" />
         <module name="comet-long-polling" />
         <module name="spring-boot-protobuf" />
         <module name="ajax-protobuf" />
-        <module name="spring-boot-sse-webflux" />
         <module name="spring-boot-sockjs" />
+        <module name="spring-boot-cometd" />
         <module name="spring-boot-mini" />
-        <module name="spring-boot-websocket" />
         <module name="spring-boot-stomp" />
-        <module name="spring-boot-dwr" />
+        <module name="spring-boot-sockjs-rabbitmq" />
         <module name="spring-boot-atmosphere" />
+        <module name="spring-boot-xmpp" />
         <module name="netty-http" />
-        <module name="comet-streaming" />
+        <module name="spring-boot-sse-webflux" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -59,6 +60,7 @@
       <module name="spring-boot-sse-webmvc" target="1.8" />
       <module name="spring-boot-stomp" target="1.8" />
       <module name="spring-boot-websocket" target="1.8" />
+      <module name="spring-boot-xmpp" target="1.8" />
       <module name="tcp-chat" target="1.7" />
       <module name="udp-chat-client" target="1.7" />
       <module name="udp-chat-server" target="1.7" />
@@ -81,6 +83,7 @@
       <module name="spring-boot-sse-webmvc" options="-parameters" />
       <module name="spring-boot-stomp" options="-parameters" />
       <module name="spring-boot-websocket" options="-parameters" />
+      <module name="spring-boot-xmpp" options="-parameters" />
     </option>
   </component>
 </project>

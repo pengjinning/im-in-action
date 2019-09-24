@@ -36,84 +36,85 @@ import org.eclipse.jetty.util.thread.QueuedThreadPool;
  * Main class for CometD demo.
  */
 public class CometDDemo {
-    public static void main(String[] args) throws Exception {
-        int port = args.length == 0 ? 8080 : Integer.parseInt(args[0]);
 
-        QueuedThreadPool qtp = new QueuedThreadPool();
-        qtp.setMinThreads(5);
-        qtp.setMaxThreads(200);
-        Server server = new Server(qtp);
-
-        ServerConnector connector = new ServerConnector(server);
-        connector.setPort(port);
-        connector.setIdleTimeout(120000);
-        connector.setAcceptQueueSize(5000);
-        server.addConnector(connector);
-
-        SslContextFactory.Server sslContextFactory = new SslContextFactory.Server();
-        sslContextFactory.setKeyStorePath("src/main/resources/keystore.p12");
-        sslContextFactory.setKeyStoreType("pkcs12");
-        sslContextFactory.setKeyStorePassword("storepwd");
-        ServerConnector sslConnector = new ServerConnector(server, sslContextFactory);
-        sslConnector.setPort(port - 80 + 443);
-        server.addConnector(connector);
-
-        ContextHandlerCollection contexts = new ContextHandlerCollection();
-        server.setHandler(contexts);
-
-        ServletContextHandler context = new ServletContextHandler(contexts, "/", ServletContextHandler.SESSIONS);
-        context.setBaseResource(new ResourceCollection(
-                Resource.newResource("../../../cometd-demo/src/main/webapp/"),
-                Resource.newResource("../../../cometd-javascript/common/src/main/webapp/"),
-                Resource.newResource("../../../cometd-javascript/jquery/src/main/webapp/"),
-                Resource.newResource("../../../cometd-javascript/examples-jquery/src/main/webapp/"),
-                Resource.newResource("../../../cometd-javascript/dojo/src/main/webapp/"),
-                Resource.newResource("../../../cometd-javascript/examples-dojo/src/main/webapp/"),
-                Resource.newResource("../../../cometd-demo/target/war/work/org.cometd.javascript/cometd-javascript-dojo/"),
-                Resource.newResource("../../../cometd-demo/target/war/work/org.cometd.javascript/cometd-javascript-jquery/"))
-        );
-
-        ServletHolder dftServlet = context.addServlet(DefaultServlet.class, "/");
-        dftServlet.setInitOrder(1);
-
-        // CometD servlet
-        AnnotationCometDServlet cometdServlet = new AnnotationCometDServlet();
-        ServletHolder cometd = new ServletHolder(cometdServlet);
-        context.addServlet(cometd, "/cometd/*");
-        cometd.setInitParameter("timeout", "20000");
-        cometd.setInitParameter("interval", "100");
-        cometd.setInitParameter("maxInterval", "10000");
-        cometd.setInitParameter("multiSessionInterval", "5000");
-        cometd.setInitParameter("services", ChatService.class.getName());
-        cometd.setInitOrder(2);
-
-        ServletHolder demo = context.addServlet(CometDDemoServlet.class, "/demo");
-        demo.setInitOrder(3);
-
-        server.start();
-
-        BayeuxServer bayeux = cometdServlet.getBayeux();
-        bayeux.setSecurityPolicy(new DefaultSecurityPolicy());
-
-        // Demo lazy messages
-        if (Boolean.getBoolean("LAZY")) {
-            bayeux.addExtension(new BayeuxServer.Extension() {
-                @Override
-                public boolean rcv(ServerSession from, Mutable message) {
-                    if (message.getChannel().startsWith("/chat/") && !message.isPublishReply() && message.getData().toString().contains("lazy")) {
-                        message.setLazy(true);
-                    }
-                    return true;
-                }
-            });
-        }
-
-        // Demo lazy messages
-        if (Boolean.getBoolean("LAZYCHAT")) {
-            String channelName = "/chat/demo";
-            final ServerChannel chat_demo = bayeux.createChannelIfAbsent(channelName).getReference();
-            chat_demo.setLazy(true);
-            chat_demo.setPersistent(true);
-        }
-    }
+//    public static void main(String[] args) throws Exception {
+//        int port = args.length == 0 ? 8080 : Integer.parseInt(args[0]);
+//
+//        QueuedThreadPool qtp = new QueuedThreadPool();
+//        qtp.setMinThreads(5);
+//        qtp.setMaxThreads(200);
+//        Server server = new Server(qtp);
+//
+//        ServerConnector connector = new ServerConnector(server);
+//        connector.setPort(port);
+//        connector.setIdleTimeout(120000);
+//        connector.setAcceptQueueSize(5000);
+//        server.addConnector(connector);
+//
+//        SslContextFactory.Server sslContextFactory = new SslContextFactory.Server();
+//        sslContextFactory.setKeyStorePath("src/main/resources/keystore.p12");
+//        sslContextFactory.setKeyStoreType("pkcs12");
+//        sslContextFactory.setKeyStorePassword("storepwd");
+//        ServerConnector sslConnector = new ServerConnector(server, sslContextFactory);
+//        sslConnector.setPort(port - 80 + 443);
+//        server.addConnector(connector);
+//
+//        ContextHandlerCollection contexts = new ContextHandlerCollection();
+//        server.setHandler(contexts);
+//
+//        ServletContextHandler context = new ServletContextHandler(contexts, "/", ServletContextHandler.SESSIONS);
+//        context.setBaseResource(new ResourceCollection(
+//                Resource.newResource("../../../cometd-demo/src/main/webapp/"),
+//                Resource.newResource("../../../cometd-javascript/common/src/main/webapp/"),
+//                Resource.newResource("../../../cometd-javascript/jquery/src/main/webapp/"),
+//                Resource.newResource("../../../cometd-javascript/examples-jquery/src/main/webapp/"),
+//                Resource.newResource("../../../cometd-javascript/dojo/src/main/webapp/"),
+//                Resource.newResource("../../../cometd-javascript/examples-dojo/src/main/webapp/"),
+//                Resource.newResource("../../../cometd-demo/target/war/work/org.cometd.javascript/cometd-javascript-dojo/"),
+//                Resource.newResource("../../../cometd-demo/target/war/work/org.cometd.javascript/cometd-javascript-jquery/"))
+//        );
+//
+//        ServletHolder dftServlet = context.addServlet(DefaultServlet.class, "/");
+//        dftServlet.setInitOrder(1);
+//
+//        // CometD servlet
+//        AnnotationCometDServlet cometdServlet = new AnnotationCometDServlet();
+//        ServletHolder cometd = new ServletHolder(cometdServlet);
+//        context.addServlet(cometd, "/cometd/*");
+//        cometd.setInitParameter("timeout", "20000");
+//        cometd.setInitParameter("interval", "100");
+//        cometd.setInitParameter("maxInterval", "10000");
+//        cometd.setInitParameter("multiSessionInterval", "5000");
+//        cometd.setInitParameter("services", ChatService.class.getName());
+//        cometd.setInitOrder(2);
+//
+//        ServletHolder demo = context.addServlet(CometDDemoServlet.class, "/demo");
+//        demo.setInitOrder(3);
+//
+//        server.start();
+//
+//        BayeuxServer bayeux = cometdServlet.getBayeux();
+//        bayeux.setSecurityPolicy(new DefaultSecurityPolicy());
+//
+//        // Demo lazy messages
+//        if (Boolean.getBoolean("LAZY")) {
+//            bayeux.addExtension(new BayeuxServer.Extension() {
+//                @Override
+//                public boolean rcv(ServerSession from, Mutable message) {
+//                    if (message.getChannel().startsWith("/chat/") && !message.isPublishReply() && message.getData().toString().contains("lazy")) {
+//                        message.setLazy(true);
+//                    }
+//                    return true;
+//                }
+//            });
+//        }
+//
+//        // Demo lazy messages
+//        if (Boolean.getBoolean("LAZYCHAT")) {
+//            String channelName = "/chat/demo";
+//            final ServerChannel chat_demo = bayeux.createChannelIfAbsent(channelName).getReference();
+//            chat_demo.setLazy(true);
+//            chat_demo.setPersistent(true);
+//        }
+//    }
 }

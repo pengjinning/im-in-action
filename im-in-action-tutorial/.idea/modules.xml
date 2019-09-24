@@ -27,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" filepath="$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" filepath="$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" />
     </modules>
   </component>
 </project>
