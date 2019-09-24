@@ -54,7 +54,8 @@
                 return;
             }
 
-            var cometdURL = location.protocol + "//" + location.host + config.contextPath + "/cometd";
+            // config.contextPath +
+            var cometdURL = location.protocol + "//" + location.host + "/cometd";
             var useServer = $('#useServer').prop('checked');
             if (useServer) {
                 var altServer = $('#altServer').val();
