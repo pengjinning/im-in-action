@@ -18,7 +18,7 @@ public class LongPollingDatabaseListener {
     @Autowired
     LongPollingEventSimulator simulator;
 
-    @Scheduled(fixedRate = 5000)
+//    @Scheduled(fixedRate = 5000)
     public void checkNotifications() {
         if (dbService.containsNotifications(nodeId)) {
             simulator.simulateOutgoingNotification(dbService.getAndRemoveNotifications(nodeId));

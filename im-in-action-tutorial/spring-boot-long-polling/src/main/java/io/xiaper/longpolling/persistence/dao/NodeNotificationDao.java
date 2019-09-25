@@ -11,6 +11,6 @@ import java.util.List;
 public interface NodeNotificationDao extends JpaRepository<NodeNotification, Long> {
 
     @Query("SELECT n FROM NodeNotification n WHERE n.nodeId = :nodeId AND n.timestamp > :timestamp")
-    public List<NodeNotification> getNotifications(@Param("nodeId") final String nodeId, @Param("timestamp") final Date timestamp);
+    List<NodeNotification> getNotifications(@Param("nodeId") final String nodeId, @Param("timestamp") final Date timestamp);
 
 }
