@@ -17,11 +17,10 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component
 public class LongPollingEventSimulator {
 
-    private final BlockingQueue<LongPollingSession> longPollingQueue = new ArrayBlockingQueue<LongPollingSession>(100);
+    private final BlockingQueue<LongPollingSession> longPollingQueue = new ArrayBlockingQueue<>(100);
 
     @Autowired
     private NodeNotificationService dbService;
-
 
     @Autowired
     private MessagePayloadUtil messageUtil;

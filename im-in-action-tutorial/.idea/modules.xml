@@ -20,11 +20,11 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" filepath="$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" filepath="$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" filepath="$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" filepath="$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-sockjs-rabbitmq/spring-boot-sockjs-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-sockjs-rabbitmq/spring-boot-sockjs-rabbitmq.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-webflux/spring-boot-sse-webflux.iml" filepath="$PROJECT_DIR$/spring-boot-sse-webflux/spring-boot-sse-webflux.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" filepath="$PROJECT_DIR$/spring-boot-sse-webmvc/spring-boot-sse-webmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse/spring-boot-sse.iml" filepath="$PROJECT_DIR$/spring-boot-sse/spring-boot-sse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-reactive/spring-boot-sse-reactive.iml" filepath="$PROJECT_DIR$/spring-boot-sse-reactive/spring-boot-sse-reactive.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" filepath="$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" />

@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class LongPollingApplication {
 
-
     public static void main(String[] args) {
         SpringApplication.run(LongPollingApplication.class, args);
     }

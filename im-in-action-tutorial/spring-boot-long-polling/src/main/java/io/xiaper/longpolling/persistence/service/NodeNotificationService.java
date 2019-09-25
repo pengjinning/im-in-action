@@ -7,14 +7,14 @@ import java.util.List;
 
 public interface NodeNotificationService {
 
-    public List<NodeNotification> getNotifications(final String nodeId);
+     List<NodeNotification> getNotifications(final String nodeId);
 
-    public List<NodeNotification> getAndRemoveNotifications(final String nodeId);
+     List<NodeNotification> getAndRemoveNotifications(final String nodeId);
 
-    public boolean containsNotifications(final String nodeId);
+     boolean containsNotifications(final String nodeId);
 
-    public NodeNotification save(final NodeNotification node);
+     NodeNotification save(final NodeNotification node);
 
-    public void flush();
+     void flush();
 
 }
