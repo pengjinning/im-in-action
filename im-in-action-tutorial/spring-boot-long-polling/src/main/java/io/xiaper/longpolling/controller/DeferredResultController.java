@@ -54,10 +54,13 @@ public class DeferredResultController {
     @GetMapping(value = "/get")
     public DeferredResult<DeferredResultResponse> get(@RequestParam(value = "timeout", required = false, defaultValue = "10000") Long timeout) {
 
+        // 1. 定义一个DeferredResult, 异步方式hold住这个请求的同时释放容器线程
         DeferredResult<DeferredResultResponse> deferredResult = new DeferredResult<>(timeout);
 
+        // 2. 将任务放入队列中，后台定义一个专门执行任务的线程，循环执行队列中的任务；
         deferredResultService.process(requestId, deferredResult);
 
+        // 3. 然后在主线程中直接返回deferredResult结果；此时servlet容器线程被释放，继续服务其他请求，以此提高吞吐量，后台任务线程执行耗时长的任务；
         return deferredResult;
     }
 

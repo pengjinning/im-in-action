@@ -62,6 +62,8 @@ public class DeferredResultService {
 
         // 这里的Consumer，就相当于是传入的DeferredResult对象的地址
         // 所以下面settingResult方法中"taskMap.get(requestId)"就是Controller层创建的对象
+
+        // 执行完的任务，直接调用deferredResult.setResult()方法，即可将结果返回给客户端，和Callable、Future性质一样。
         taskMap.putIfAbsent(requestId, deferredResult::setResult);
     }
 

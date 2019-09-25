@@ -44,19 +44,17 @@ public class CallableController {
      */
     @GetMapping("/get")
     public Callable<String> testCallable() throws InterruptedException {
-        log.info("主线程开始！");
+        log.info("主线程开始！{}", Thread.currentThread().getName());
 
-        Callable<String> result = new Callable<String>() {
-            @Override
-            public String call() throws Exception {
-                log.info("副线程开始！");
-                Thread.sleep(1000);
-                log.info("副线程结束！");
-                return "SUCCESS";
-            }
+        Callable<String> result = () -> {
+            log.info("副线程开始！{}", Thread.currentThread().getName());
+            Thread.sleep(1000);
+            log.info("副线程结束！{}", Thread.currentThread().getName());
+            return "SUCCESS";
         };
 
-        log.info("主线程结束！");
+        log.info("主线程结束！{}", Thread.currentThread().getName());
+
         return result;
     }
 
