@@ -12,6 +12,7 @@ import java.net.InetSocketAddress;
 
 //websocket长连接示例
 public class Server {
+
     public static void main(String[] args) throws Exception{
         
         // 主线程组

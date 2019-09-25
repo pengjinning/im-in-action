@@ -2,25 +2,105 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/AckChatLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/BinaryEventLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/ChatLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/ChatObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/EventChatLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/NamespaceChatLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/SslChatLauncher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/keystore.jks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/ack-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/binary-event-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/event-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/namespace-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/ssl-event-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-websocket/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-mqttx/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-security/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_protobuf_java_format_protobuf_java_format_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_logging_juli_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_0_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_1_3_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_2_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_1_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_1_2_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_4_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-socketio/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-socketio/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/SSEController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/SSEController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../index2.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../index2.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/AjaxProtobufApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/MappingJackson2HttpMessageWithContentLengthConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/ServletInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/WebController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/json/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/json/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/json/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/protobuf/Address.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/protobuf/AddressOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/protobuf/Gender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/protobuf/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/protobuf/PersonOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample1/protobuf/PersonProtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/json/Many.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/json/One.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/protobuf/Many.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/protobuf/ManyOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/protobuf/One.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/protobuf/OneOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/java/org/utkuozdemir/sample2/protobuf/OneProtos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/js/ByteBufferAB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/js/ProtoBuf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/js/sockjs-0.3.4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/js/stomp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/protobuf/one_protos.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/protobuf/person_protos.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax-protobuf/src/test/java/org/utkuozdemir/AjaxProtobufApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/StompMiniApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/MiniApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mini/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/cloudMsg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/createTeam.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/netcall_meeting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/selectCallMethod.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/speakBan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/teamInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/teamMember.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/server/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,6 +171,8 @@
     <ignored path="$PROJECT_DIR$/spring-boot-rabbitmq/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-streaming/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-streaming-reactive/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-mqttx/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-security/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,20 +205,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spring-boot-socketio/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="662">
-                <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -198,12 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static/js/echo.js" />
-        <option value="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static/js/application.js" />
-        <option value="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/templates/reload/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/CometDDemo.java" />
-        <option value="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/ConsoleChatClient.java" />
-        <option value="$PROJECT_DIR$/spring-boot-cometd/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat/CometDDemoServlet.java" />
         <option value="$PROJECT_DIR$/spring-boot-xmpp/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-cometd/readme.md" />
@@ -237,7 +300,6 @@
         <option value="$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/ObjectsController.java" />
         <option value="$PROJECT_DIR$/spring-boot-polling/readme.md" />
         <option value="$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/RawDataController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/LongPollingApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/service/AsyncRequestService.java" />
         <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/AsyncController.java" />
@@ -249,6 +311,13 @@
         <option value="$PROJECT_DIR$/spring-boot-websocket/src/main/resources/templates/test.html" />
         <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/AckChatLauncher.java" />
         <option value="$PROJECT_DIR$/spring-boot-socketio/README.md" />
+        <option value="$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/server/Server.java" />
+        <option value="$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/controller/GreetingController.java" />
+        <option value="$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/MiniApplication.java" />
+        <option value="$PROJECT_DIR$/spring-boot-mini/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/spring-boot-mqttx/readme.md" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-security/readme.md" />
       </list>
     </option>
   </component>
@@ -286,7 +355,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="174" />
     <option name="y" value="23" />
     <option name="width" value="1489" />
@@ -300,7 +369,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -309,222 +377,11 @@
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="corundumstudio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="corundumstudio" type="462c0819:PsiDirectoryNode" />
-              <item name="socketio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="corundumstudio" type="462c0819:PsiDirectoryNode" />
-              <item name="socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="socketio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-socketio" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -548,15 +405,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/spring-boot-cometd/src/main/resources" />
-      <recent name="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static/js" />
-      <recent name="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static/css" />
-      <recent name="$PROJECT_DIR$/spring-boot-dwr/src/main/resources/templates" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.xiaper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo" />
+      <recent name="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio" />
+      <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.xiaper.longpolling.controller" />
@@ -565,12 +422,12 @@
       <recent name="com.xiaper.controller" />
       <recent name="io.xiaper.websocket.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/css" />
+      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/spring-boot-socketio/src/main/resources" />
       <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling" />
-      <recent name="$PROJECT_DIR$/spring-boot-cometd/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/spring-boot-cometd/src/main/java/io/xiaper/cometd/chat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -713,6 +570,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringBootMqttxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-mqttx" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.mqttx.MqttxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-security" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.springbootsecurity.SpringBootSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringBootWebSocketServer (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-websocket" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.websocket.SpringBootWebSocketServer" />
@@ -765,7 +636,7 @@
     </configuration>
     <configuration name="StompMiniApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-mini" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.StompMiniApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.MiniApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -899,7 +770,9 @@
       <item itemvalue="Spring Boot.CometdApplication" />
       <item itemvalue="Spring Boot.SpringBootAtmosphereApplication" />
       <item itemvalue="Spring Boot.SpringBootXmppApplication" />
+      <item itemvalue="Spring Boot.SpringBootMqttxApplication" />
       <item itemvalue="Spring Boot.SocketIOApplication (1)" />
+      <item itemvalue="Spring Boot.SpringBootSecurityApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -985,7 +858,8 @@
       <workItem from="1569329329999" duration="233000" />
       <workItem from="1569329628633" duration="16377000" />
       <workItem from="1569394092235" duration="447000" />
-      <workItem from="1569411598917" duration="6327000" />
+      <workItem from="1569411598917" duration="7132000" />
+      <workItem from="1569420780083" duration="200000" />
     </task>
     <servers />
   </component>
@@ -1010,7 +884,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238578000" />
+    <option name="totallyTimeSpent" value="239583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1022,9 +896,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="255" y="121" width="1250" height="778" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.23260073" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.24503312" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1035,7 +909,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" weight="0.1996337" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32706374" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.19331244" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.34993926" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1118,149 +992,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/templates/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/chat/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/StreamingApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-polling/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="105">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-polling/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/comet-streaming/src/main/java/ReverseAjaxServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-          <folding>
-            <element signature="e#605#619#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/ApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="40" lean-forward="true" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/src/main/java/PiggybackServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/LongPollingApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/CallableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/DeferredResultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="75" column="118" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="118" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/service/AsyncRequestService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/AsyncController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2061#2062#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/ObjectsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="47" column="34" lean-forward="true" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5143" column="23" selection-start-line="5143" selection-start-column="13" selection-end-line="5143" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-stomp/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-311" />
@@ -1365,62 +1096,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/AckChatLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/BinaryEventLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/ChatLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/ChatObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/EventChatLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/NamespaceChatLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/SslChatLauncher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/resources/ack-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/AckChatLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/BinaryEventLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/ChatLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/ChatObject.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/EventChatLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/NamespaceChatLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/java/io/corundumstudio/socketio/demo/SslChatLauncher.java" />
+    <entry file="file://$PROJECT_DIR$/netty-socketio/src/main/resources/ack-index.html" />
     <entry file="file://$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/EventChatLauncher.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1439,9 +1122,6 @@
     <entry file="file://$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/ChatLauncher.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/AckChatLauncher.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/ack-index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -1456,23 +1136,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-socketio/README.md">
+    <entry file="file://$PROJECT_DIR$/netty-socketio/README.md" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-socketio/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="256">
-            <caret line="20" selection-start-line="20" selection-end-line="37" selection-end-column="91" />
+          <first_editor relative-caret-position="257">
+            <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-socketio/README.md">
+    <entry file="file://$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/demo/AckChatLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax-protobuf/README.md" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/ProtobufApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax-protobuf/src/main/resources/static/index.html" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-protobuf/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/websocket/WebSocketServerFrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-protobuf/src/main/java/io/xiaper/protobuf/websocket/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-protobuf/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="209" column="11" lean-forward="true" selection-start-line="209" selection-start-column="11" selection-end-line="209" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/controller/GreetingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/config/WebSocketConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-mini/src/main/java/io/xiaper/MiniApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-mini/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-mqttx/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="662">
-            <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+          <first_editor relative-caret-position="45">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-im/src/main/java/io/xiaper/im/server/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-security/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
