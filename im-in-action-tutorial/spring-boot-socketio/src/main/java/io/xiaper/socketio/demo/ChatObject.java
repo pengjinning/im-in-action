@@ -1,4 +1,4 @@
-package io.corundumstudio.socketio.demo;
+package io.xiaper.socketio.demo;
 
 public class ChatObject {
 

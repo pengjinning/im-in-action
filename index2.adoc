@@ -54,15 +54,7 @@ JSONP
 
 iframe流
 
-=== 反向Ajax
-
-在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
-
-
-=== Comet
-
-
-=== SSE
+==== SSE
 
 Server-Send-Event
 
@@ -74,6 +66,15 @@ Server-Send-Event
 
 - https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
 
+=== 反向Ajax
+
+在一个标准的 HTTP Ajax 请求中，数据是从客户端发送给服务器端，反向 Ajax 可以某些特定的方式来模拟发出一个 Ajax 请求, 将数据从服务器端发送到客户端
+
+
+=== Comet
+
+
+
 === SPDY
 
 
@@ -82,8 +83,6 @@ Server-Send-Event
 长连接
 tcp
 全双工双向通信
-
-
 
 
 === Mars

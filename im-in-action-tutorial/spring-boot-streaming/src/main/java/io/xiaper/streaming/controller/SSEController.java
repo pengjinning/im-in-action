@@ -95,8 +95,9 @@ public class SSEController {
      *  3.请求 http://localhost:7002/sse/end?clientId=111 接口结束某个请求,第1步的浏览器将结束阻塞;
      *
      *  其中clientId代表请求的唯一标志;
+     *
+     *  用于保存每个请求对应的 SseEmitter
      */
-    // 用于保存每个请求对应的 SseEmitter
     private Map<String, Result> sseEmitterMap = new ConcurrentHashMap<>();
 
     /**

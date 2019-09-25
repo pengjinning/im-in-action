@@ -1,7 +1,7 @@
-package io.corundumstudio.socketio.demo;
+package io.xiaper.socketio.demo;
 
-import com.corundumstudio.socketio.listener.*;
 import com.corundumstudio.socketio.*;
+import com.corundumstudio.socketio.listener.DataListener;
 
 public class NamespaceChatLauncher {
 

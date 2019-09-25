@@ -25,3 +25,24 @@ This example project is inspired by the following projects.
 # License
 
 MIT
+
+# Demo scenarios
+
+By default you will run a chat which communcate with server via json objects.
+There are several demo scenarios available:
+
+ `Class` - `Web client page`
+
+ `com.corundumstudio.socketio.demo.ChatLauncher` - `/client/index.html`
+
+ `com.corundumstudio.socketio.demo.EventChatLauncher` - `/client/event-index.html`
+
+ `com.corundumstudio.socketio.demo.SslChatLauncher` - `/client/ssl-event-index.html`
+
+ `com.corundumstudio.socketio.demo.NamespaceChatLauncher` - `/client/namespace-index.html`
+
+ `com.corundumstudio.socketio.demo.AckChatLauncher` - `/client/ack-index.html`
+
+ `com.corundumstudio.socketio.demo.BinaryEventLauncher` - `/client/binary-event-index.html`
+ 
+ 

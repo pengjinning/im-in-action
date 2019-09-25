@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-im/netty-im.iml" filepath="$PROJECT_DIR$/netty-im/netty-im.iml" />
-      <module fileurl="file://$PROJECT_DIR$/netty-socketio/netty-socketio.iml" filepath="$PROJECT_DIR$/netty-socketio/netty-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-websocket/netty-websocket.iml" filepath="$PROJECT_DIR$/netty-websocket/netty-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/piggyback/piggyback.iml" />
       <module fileurl="file://$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" filepath="$PROJECT_DIR$/reverse_ajaxpt1_source/polling/polling.iml" />
