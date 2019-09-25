@@ -28,6 +28,7 @@ import org.springframework.web.servlet.mvc.method.annotation.StreamingResponseBo
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.util.Date;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
@@ -49,6 +50,23 @@ public class DownloadController {
 //            }
 //        };
 //    }
+
+    /**
+     *
+     * @return
+     */
+    @GetMapping("/srb")
+    public ResponseEntity<StreamingResponseBody> handleRbe() {
+
+        StreamingResponseBody stream = out -> {
+
+            String msg = "/srb" + " @ " + new Date();
+
+            out.write(msg.getBytes());
+        };
+
+        return new ResponseEntity(stream, HttpStatus.OK);
+    }
 
 
     private final Logger logger = LoggerFactory.getLogger(DownloadController.class);

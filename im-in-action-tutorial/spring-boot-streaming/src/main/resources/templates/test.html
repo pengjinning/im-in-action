@@ -7,6 +7,7 @@
 <body>
 
     hello webmvc
+    <div id="msg_from_server"></div>
 
 <!--    WebSocket & EventSource 的区别-->
 <!--    WebSocket基于TCP协议，EventSource基于http协议。-->
@@ -22,7 +23,8 @@
         if (!!window.EventSource) {
 
             // var source = new EventSource('sse');
-            var source = new EventSource('push');
+            var source = new EventSource('sse/push');
+            var contentHtml = "";
 
             // source.onopen = function (event) {
             //     console.log('成功与服务器连接')
@@ -41,6 +43,9 @@
 
             source.addEventListener('message', function (e) {
                 console.log('message:', e);
+                //
+                contentHtml += e.data + "<br/>";
+                $("#msg_from_server").html(contentHtml);
             });
 
             source.addEventListener('open', function (e) {
@@ -49,13 +54,21 @@
 
             source.addEventListener('error', function (e) {
                 console.log('error:', e);
-                if (e.readyState == EventSource.CLOSED) {
+                //
+                if (e.currentTarget.readyState == EventSource.CLOSED) {
                     console.log("连接关闭");
+                } else if (e.currentTarget.readyState == EventSource.CONNECTING) {
+                    console.log("连接中");
+                } else if (e.currentTarget.readyState == EventSource.OPEN) {
+                    console.log("连接打开");
+                } else {
+                    console.log(e.currentTarget.readyState);
                 }
             }, false);
 
         } else {
-            console.log("没有sse");
+            //
+            console.log("Your web browser dosen't support EventSource.");
         }
     </script>
 
