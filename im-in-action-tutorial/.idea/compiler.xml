@@ -8,19 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-protobuf" />
         <module name="piggyback" />
-        <module name="spring-boot-sse" />
         <module name="netty-websocket" />
+        <module name="spring-boot-streaming-reactive" />
         <module name="spring-boot-socketio" />
         <module name="comet-streaming" />
         <module name="spring-boot-polling" />
         <module name="polling" />
-        <module name="spring-boot-sse-reactive" />
         <module name="spring-boot-long-polling" />
         <module name="spring-boot-common" />
         <module name="netty-im" />
         <module name="comet-long-polling" />
         <module name="netty-socketio" />
         <module name="ajax-protobuf" />
+        <module name="spring-boot-streaming" />
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-sockjs" />
         <module name="spring-boot-cometd" />
@@ -56,9 +56,9 @@
       <module name="spring-boot-rabbitmq" target="1.8" />
       <module name="spring-boot-socketio" target="1.8" />
       <module name="spring-boot-sockjs" target="1.8" />
-      <module name="spring-boot-sse" target="1.8" />
-      <module name="spring-boot-sse-reactive" target="1.8" />
       <module name="spring-boot-stomp" target="1.8" />
+      <module name="spring-boot-streaming" target="1.8" />
+      <module name="spring-boot-streaming-reactive" target="1.8" />
       <module name="spring-boot-websocket" target="1.8" />
       <module name="spring-boot-xmpp" target="1.8" />
       <module name="tcp-chat" target="1.7" />
@@ -79,9 +79,9 @@
       <module name="spring-boot-rabbitmq" options="-parameters" />
       <module name="spring-boot-socketio" options="-parameters" />
       <module name="spring-boot-sockjs" options="-parameters" />
-      <module name="spring-boot-sse" options="-parameters" />
-      <module name="spring-boot-sse-reactive" options="-parameters" />
       <module name="spring-boot-stomp" options="-parameters" />
+      <module name="spring-boot-streaming" options="-parameters" />
+      <module name="spring-boot-streaming-reactive" options="-parameters" />
       <module name="spring-boot-websocket" options="-parameters" />
       <module name="spring-boot-xmpp" options="-parameters" />
     </option>

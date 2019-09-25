@@ -23,9 +23,9 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" filepath="$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" filepath="$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse/spring-boot-sse.iml" filepath="$PROJECT_DIR$/spring-boot-sse/spring-boot-sse.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-sse-reactive/spring-boot-sse-reactive.iml" filepath="$PROJECT_DIR$/spring-boot-sse-reactive/spring-boot-sse-reactive.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" filepath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-streaming/spring-boot-streaming.iml" filepath="$PROJECT_DIR$/spring-boot-streaming/spring-boot-streaming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-streaming-reactive/spring-boot-streaming-reactive.iml" filepath="$PROJECT_DIR$/spring-boot-streaming-reactive/spring-boot-streaming-reactive.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" filepath="$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" />
     </modules>

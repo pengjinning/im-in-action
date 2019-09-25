@@ -14,14 +14,16 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * https://spring.io/blog/2012/05/16/spring-mvc-3-2-preview-chat-sample/
+ */
 @Controller
 @RequestMapping("/mvc/chat")
 public class ChatController {
 
 	private final ChatRepository chatRepository;
 
-	private final Map<DeferredResult<List<String>>, Integer> chatRequests =
-			new ConcurrentHashMap<DeferredResult<List<String>>, Integer>();
+	private final Map<DeferredResult<List<String>>, Integer> chatRequests = new ConcurrentHashMap<>();
 
 	@Autowired
 	public ChatController(ChatRepository chatRepository) {
@@ -35,12 +37,7 @@ public class ChatController {
 		final DeferredResult<List<String>> deferredResult = new DeferredResult<List<String>>(null, Collections.emptyList());
 		this.chatRequests.put(deferredResult, messageIndex);
 
-		deferredResult.onCompletion(new Runnable() {
-			@Override
-			public void run() {
-				chatRequests.remove(deferredResult);
-			}
-		});
+		deferredResult.onCompletion(() -> chatRequests.remove(deferredResult));
 
 		List<String> messages = this.chatRepository.getMessages(messageIndex);
 		if (!messages.isEmpty()) {
