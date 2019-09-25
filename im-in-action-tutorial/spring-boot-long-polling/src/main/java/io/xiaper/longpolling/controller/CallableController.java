@@ -29,7 +29,6 @@ import java.util.concurrent.Callable;
 @RequestMapping(value = "/callable")
 public class CallableController {
 
-
     /**
      * 请求端基本和普通请求一样，但是日志输出就有差别了。主线程完成后副线程才开始。
      * http://localhost:7080/callable/get
@@ -46,8 +45,8 @@ public class CallableController {
     @GetMapping("/get")
     public Callable<String> testCallable() throws InterruptedException {
         log.info("主线程开始！");
-        Callable<String> result = new Callable<String>() {
 
+        Callable<String> result = new Callable<String>() {
             @Override
             public String call() throws Exception {
                 log.info("副线程开始！");
@@ -55,8 +54,8 @@ public class CallableController {
                 log.info("副线程结束！");
                 return "SUCCESS";
             }
-
         };
+
         log.info("主线程结束！");
         return result;
     }

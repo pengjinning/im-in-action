@@ -9,7 +9,7 @@ Version 2.0, 2019-06-19
 :toclevels: 4
 :toc-title: 百万级并发架构
 :experimental:
-:description: 基于SpringBoot/Netty/WebRTC构架即时通讯和在线客服系统
+:description: 虾婆-开源即时通讯解决方案
 :keywords: 微服务 虾婆 SpringBoot Netty WebRTC Xiaper
 :imagesdir: ./img
 :sectlinks:
@@ -20,6 +20,8 @@ http://www.iminaction.com
 - 首先从IM传统实现方式开始讲解,对比各种开源框架,到自己动手从零实现一套即时通讯和在线客服系统,可直接用于生产环境
 - 本书侧重实战,提供了大量的实例源码
 - 提供SpringBoot/Netty/WebRTC入门实例
+- 基于SpringBoot/Netty/WebRTC构架即时通讯和在线客服系统
+
 
 == 前言
 

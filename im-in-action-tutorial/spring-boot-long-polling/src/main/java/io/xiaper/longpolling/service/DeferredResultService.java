@@ -43,12 +43,16 @@ public class DeferredResultService {
      * @param deferredResult
      */
     public void process(String requestId, DeferredResult<DeferredResultResponse> deferredResult) {
+
         // 请求超时的回调函数
         deferredResult.onTimeout(() -> {
+            //
             taskMap.remove(requestId);
+            //
             DeferredResultResponse deferredResultResponse = new DeferredResultResponse();
             deferredResultResponse.setCode(HttpStatus.REQUEST_TIMEOUT.value());
             deferredResultResponse.setMsg(DeferredResultResponse.Msg.TIMEOUT.getDesc());
+            //
             deferredResult.setResult(deferredResultResponse);
         });
 
@@ -69,10 +73,14 @@ public class DeferredResultService {
      * @param deferredResultResponse
      */
     public void settingResult(String requestId, DeferredResultResponse deferredResultResponse) {
+
         if (taskMap.containsKey(requestId)) {
+
             Consumer<DeferredResultResponse> deferredResultResponseConsumer = taskMap.get(requestId);
+
             // 这里相当于DeferredResult对象的setResult方法
             deferredResultResponseConsumer.accept(deferredResultResponse);
+
             taskMap.remove(requestId);
         }
     }
