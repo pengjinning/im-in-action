@@ -17,15 +17,19 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public final class ReverseAjaxServlet extends HttpServlet {
 
     private final Queue<AsyncContext> asyncContexts = new ConcurrentLinkedQueue<AsyncContext>();
+
     private final String boundary = "ABCDEFGHIJKLMNOPQRST"; // generated
 
     private final Random random = new Random();
+
     private final Thread generator = new Thread("Event generator") {
         @Override
         public void run() {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
+
                     Thread.sleep(random.nextInt(5000));
+
                     for (AsyncContext asyncContext : asyncContexts) {
                         HttpServletResponse peer = (HttpServletResponse) asyncContext.getResponse();
                         peer.getOutputStream().println("Content-Type: application/json");
@@ -55,6 +59,7 @@ public final class ReverseAjaxServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         AsyncContext asyncContext = req.startAsync();
         asyncContext.setTimeout(0);
 

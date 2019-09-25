@@ -18,16 +18,23 @@ import java.util.concurrent.LinkedBlockingQueue;
 public final class PollingServlet extends HttpServlet {
 
     private final Random random = new Random();
+
     private final BlockingQueue<String> messages = new LinkedBlockingQueue<String>();
+
     private final Thread generator = new Thread("Event generator") {
+
         @Override
         public void run() {
+
             while (!Thread.currentThread().isInterrupted()) {
+
                 try {
+
                     Thread.sleep(random.nextInt(5000));
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 }
+
                 messages.offer("At " + new Date());
             }
         }
@@ -47,6 +54,7 @@ public final class PollingServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<String> messages = new LinkedList<String>();
         this.messages.drainTo(messages);
+        //
         resp.setStatus(HttpServletResponse.SC_OK);
         resp.setContentType("application/json");
         resp.getWriter().write(new JSONArray(messages).toString());

@@ -21,12 +21,17 @@ public final class ReverseAjaxServlet extends HttpServlet {
     private final Random random = new Random();
 
     private final Thread generator = new Thread("Event generator") {
+
         @Override
         public void run() {
+
             while (!Thread.currentThread().isInterrupted()) {
                 try {
+
                     Thread.sleep(random.nextInt(5000));
+
                     while (!asyncContexts.isEmpty()) {
+
                         AsyncContext asyncContext = asyncContexts.poll();
                         HttpServletResponse peer = (HttpServletResponse) asyncContext.getResponse();
                         peer.getWriter().write(new JSONArray().put("At " + new Date()).toString());
@@ -34,6 +39,7 @@ public final class ReverseAjaxServlet extends HttpServlet {
                         peer.setContentType("application/json");
                         asyncContext.complete();
                     }
+
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 } catch (IOException e) {

@@ -20,11 +20,14 @@ import java.util.concurrent.LinkedBlockingQueue;
 public final class PiggybackServlet extends HttpServlet {
 
     private final Random random = new Random();
-    private final BlockingQueue<String> messages = new LinkedBlockingQueue<String>();
+
+    private final BlockingQueue<String> messages = new LinkedBlockingQueue<>();
 
     private final Thread generator = new Thread("Event generator") {
+
         @Override
         public void run() {
+            //
             while (!Thread.currentThread().isInterrupted()) {
                 try {
                     Thread.sleep(random.nextInt(5000));
@@ -48,9 +51,11 @@ public final class PiggybackServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //
         System.out.println("FORM POSTED !");
-        List<String> messages = new LinkedList<String>();
+        List<String> messages = new LinkedList<>();
         this.messages.drainTo(messages);
+        //
         resp.setStatus(HttpServletResponse.SC_OK);
         resp.setContentType("application/json");
         try {
@@ -61,13 +66,15 @@ public final class PiggybackServlet extends HttpServlet {
         } catch (JSONException e) {
             throw new ServletException(e.getMessage(), e);
         }
+        //
         resp.getWriter().flush();
     }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<String> messages = new LinkedList<String>();
+        List<String> messages = new LinkedList<>();
         this.messages.drainTo(messages);
+        //
         resp.setStatus(HttpServletResponse.SC_OK);
         resp.setContentType("application/json");
         resp.getWriter().write(new JSONArray(messages).toString());
