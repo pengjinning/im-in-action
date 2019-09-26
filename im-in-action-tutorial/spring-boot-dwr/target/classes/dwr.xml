@@ -9,6 +9,7 @@
     	http://www.directwebremoting.org/schema/spring-dwr-3.0.xsd">
 
     <dwr:configuration/>
+
     <dwr:annotation-scan base-package="io.xiaper.dwr.service" scanDataTransferObject="true" scanRemoteProxy="true"/>
 
 </beans>
