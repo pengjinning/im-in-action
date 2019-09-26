@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polling</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
+    <script type="text/javascript">
+
+        // setInterval(function() {
+        //     $.get('/get/data-list', function(data, status) {
+        //         console.log(data)
+        //     })
+        // }, 5000)
+
+        // function poll() {
+        //     setTimeout(function() {
+        //         $.get('/get/data-list', function(data, status) {
+        //             console.log(data)
+        //             poll()
+        //         })
+        //     }, 5000)
+        // }
+
+        jQuery(function($) {
+            setInterval(function() {
+                $('body').append('<span>[client] checking for events...</span><br/>');
+                $.getJSON('/api/polling', function(events) {
+                    if(events.length) {
+                        $('body').append('<span style="color: blue;">[client] ' + events.length + ' events</span><br/>');
+                    } else {
+                        $('body').append('<span style="color: red;">[client] no event</span><br/>');
+                    }
+                    for (var i in events) {
+                        $('body').append('<span>[event] ' + events[i] + '</span><br/>');
+                    }
+                });
+            }, 2000);
+        });
+
+    </script>
+
+</head>
+<body>
+
+Polling
+
+</body>
+</html>

@@ -27,7 +27,6 @@
 		<module>reverse_ajaxpt1_source/comet-long-polling</module>
 		<module>reverse_ajaxpt1_source/comet-streaming</module>
 		<module>reverse_ajaxpt1_source/piggyback</module>
-		<module>reverse_ajaxpt1_source/polling</module>
 
 		<module>spring-boot-atmosphere</module>
 		<module>spring-boot-cometd</module>
@@ -37,6 +36,7 @@
 		<module>spring-boot-mini</module>
 		<module>spring-boot-mqttx</module>
 
+		<module>spring-boot-piggyback</module>
 		<module>spring-boot-polling</module>
 		<module>spring-boot-protobuf</module>
 

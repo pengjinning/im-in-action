@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-    "http://www.w3.org/TR/html4/loose.dtd">
+        "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <title>HTTP Polling</title>
@@ -22,7 +22,7 @@
             $('#submit').click(function() {
                 $('#logs').append('<span>[client] checking for events...</span><br/>');
                 //
-                $.post('ajax', function(data) {
+                $.post('/api/piggyback', function(data) {
                     $('#logs').append('<span>[server] form valid ? ' + data.formValid + ' </span><br/>');
                     processEvents(data.events);
                 });

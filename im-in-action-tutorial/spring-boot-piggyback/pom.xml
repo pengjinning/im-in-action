@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>io.xiaper</groupId>
-	<artifactId>spring-boot-atmosphere</artifactId>
+	<artifactId>spring-boot-piggyback</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>spring-boot-atmosphere</name>
+	<name>spring-boot-piggyback</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -30,6 +30,18 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.xiaper</groupId>
+			<artifactId>spring-boot-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.46</version>
 		</dependency>
 
 		<dependency>

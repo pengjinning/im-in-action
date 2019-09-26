@@ -15,12 +15,15 @@
  * limitations under the License.
  */
 
-package io.xiaper.polling.controller;
+package io.xiaper.piggyback.controller;
 
-import io.xiaper.polling.service.PollingService;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import io.xiaper.piggyback.service.PiggybackService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,17 +33,34 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/api")
-public class PollingController {
+public class PiggybackController {
 
     @Autowired
-    PollingService pollingService;
+    PiggybackService piggybackService;
 
-    @GetMapping("/polling")
-    public List<String> polling() {
-//        log.info("polling");
+    @PostMapping("/piggyback")
+    public JSONObject postPiggyback() {
+        log.info("post piggyback");
         //
         List<String> messages = new LinkedList<>();
-        pollingService.getMessages().drainTo(messages);
+        piggybackService.getMessages().drainTo(messages);
+        //
+        JSONObject jsonObject = new JSONObject();
+        //
+        JSONArray messagesArray = new JSONArray();
+        messagesArray.addAll(messages);
+        jsonObject.put("events", messagesArray);
+        jsonObject.put("formValid", true);
+
+        return jsonObject;
+    }
+
+    @GetMapping("/piggyback")
+    public List<String> getPiggyback() {
+        log.info("get piggyback");
+        //
+        List<String> messages = new LinkedList<>();
+        piggybackService.getMessages().drainTo(messages);
         //
         return messages;
     }

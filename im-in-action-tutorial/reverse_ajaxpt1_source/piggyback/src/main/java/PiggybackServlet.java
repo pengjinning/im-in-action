@@ -29,7 +29,9 @@ public final class PiggybackServlet extends HttpServlet {
         public void run() {
             //
             while (!Thread.currentThread().isInterrupted()) {
+
                 try {
+
                     Thread.sleep(random.nextInt(5000));
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
@@ -53,6 +55,7 @@ public final class PiggybackServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //
         System.out.println("FORM POSTED !");
+
         List<String> messages = new LinkedList<>();
         this.messages.drainTo(messages);
         //
@@ -72,6 +75,7 @@ public final class PiggybackServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //
         List<String> messages = new LinkedList<>();
         this.messages.drainTo(messages);
         //
