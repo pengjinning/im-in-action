@@ -30,7 +30,6 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/async")
 public class AsyncController {
 
-
     @Autowired
     private AsyncRequestService asyncRequestService;
 

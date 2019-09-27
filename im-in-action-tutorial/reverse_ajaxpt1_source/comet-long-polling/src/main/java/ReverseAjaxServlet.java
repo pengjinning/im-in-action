@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 public final class ReverseAjaxServlet extends HttpServlet {
 
-    private final Queue<AsyncContext> asyncContexts = new ConcurrentLinkedQueue<AsyncContext>();
+    private final Queue<AsyncContext> asyncContexts = new ConcurrentLinkedQueue<>();
 
     private final Random random = new Random();
 
@@ -33,10 +33,12 @@ public final class ReverseAjaxServlet extends HttpServlet {
                     while (!asyncContexts.isEmpty()) {
 
                         AsyncContext asyncContext = asyncContexts.poll();
+                        //
                         HttpServletResponse peer = (HttpServletResponse) asyncContext.getResponse();
                         peer.getWriter().write(new JSONArray().put("At " + new Date()).toString());
                         peer.setStatus(HttpServletResponse.SC_OK);
                         peer.setContentType("application/json");
+                        //
                         asyncContext.complete();
                     }
 
