@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/src/main/java/ReverseAjaxServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/reverse_ajaxpt1_source/comet-long-polling/src/main/java/ReverseAjaxServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/AsyncController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/AsyncController.java" afterDir="false" />
-    </list>
+    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-websocket/target/" />
@@ -157,8 +154,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/AsyncController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="315">
+              <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
               <folding>
                 <element signature="e#1968#1969#0" expanded="true" />
                 <element signature="e#2018#2019#0" expanded="true" />
@@ -1135,7 +1132,7 @@
       <workItem from="1569394092235" duration="447000" />
       <workItem from="1569411598917" duration="7132000" />
       <workItem from="1569420780083" duration="200000" />
-      <workItem from="1569503910557" duration="10582000" />
+      <workItem from="1569503910557" duration="10888000" />
     </task>
     <servers />
   </component>
@@ -1160,7 +1157,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250165000" />
+    <option name="totallyTimeSpent" value="250471000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1175,7 +1172,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.22954823" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.22954823" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1192,7 +1189,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32908162" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908162" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.498779" visible="true" weight="0.1985371" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.498779" weight="0.1985371" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.3834901" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49915254" weight="0.31452456" />
@@ -1665,8 +1662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/AsyncController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="315">
+          <caret line="41" column="23" lean-forward="true" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
           <folding>
             <element signature="e#1968#1969#0" expanded="true" />
             <element signature="e#2018#2019#0" expanded="true" />

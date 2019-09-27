@@ -128,7 +128,6 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 (步行/自行车/机动车/装甲车)
 
-
 - Json
 
 - Protobuf
@@ -137,6 +136,7 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
 
+==== 加密
 
 ==== 一对一
 
@@ -170,7 +170,6 @@ JSONP
 
 
 ==== 长轮询Long Polling
-
 
 
 接收消息越频繁,越接近于Http Polling
