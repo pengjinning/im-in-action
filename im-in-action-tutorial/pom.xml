@@ -24,9 +24,6 @@
 		<module>netty-im</module>
 		<module>netty-websocket</module>
 
-		<module>reverse_ajaxpt1_source/comet-long-polling</module>
-		<module>reverse_ajaxpt1_source/comet-streaming</module>
-
 		<module>spring-boot-atmosphere</module>
 		<module>spring-boot-cometd</module>
 		<module>spring-boot-common</module>

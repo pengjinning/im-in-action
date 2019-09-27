@@ -1,5 +1,5 @@
 = IM实战-IM In Action 草稿2
-bytedesk(c) 2019 jackning
+xiaper(c) 2019 jackning
 Version 2.0, 2019-06-19
 :doctype: book
 :icons: font
@@ -20,7 +20,8 @@ http://www.iminaction.com
 - 首先从IM传统实现方式开始讲解,对比各种开源框架,到自己动手从零实现一套即时通讯和在线客服系统,可直接用于生产环境
 - 本书侧重实战,提供了大量的实例源码
 - 提供SpringBoot/Netty/WebRTC入门实例
-- 基于SpringBoot/Netty/WebRTC构架即时通讯和在线客服系统
+- 完整即时通讯和在线客服系统
+- 提供Web/H5, 安卓, iOS, Windows, Mac, 小程序, Flutter等IM相关实例源码
 
 
 == 前言
@@ -40,9 +41,8 @@ http://www.iminaction.com
 
 ==== 轮询Http Polling
 
-Ajax
-JSONP
-
+- Ajax
+- JSONP
 - 捎带轮询Piggyback Polling
 
 
@@ -53,6 +53,7 @@ JSONP
 
 ==== 流Http Streaming
 
+- DeferedResult
 
 - SSE
 
@@ -65,6 +66,8 @@ Server-Send-Event
 参考:
 
 - https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
+
+==== MQTT.js
 
 ==== STOMP
 
@@ -187,6 +190,10 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 === 安卓Android
 
+==== 原生java
+
+==== 跨平台mars
+
 ==== 一对一
 
 文本
@@ -206,6 +213,12 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 - 第三方
 
 === 苹果iOS
+
+==== 原生objective-c
+
+==== 跨平台mars
+
+
 
 ==== 一对一
 
@@ -229,8 +242,11 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 === Windows
 
-- qt
-- electron
+==== qt
+
+==== electron
+
+- mars
 
 ==== 一对一
 
@@ -252,8 +268,10 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 === Mac
 
-- qt
-- electron
+==== qt
+
+==== electron
+
 
 ==== 一对一
 
