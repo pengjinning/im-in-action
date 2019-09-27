@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-atmosphere" />
-        <module name="piggyback" />
         <module name="netty-websocket" />
         <module name="spring-boot-cometd" />
         <module name="spring-boot-streaming-reactive" />

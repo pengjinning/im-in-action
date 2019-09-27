@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
  */
 public final class ReverseAjaxServlet extends HttpServlet {
 
-    private final Queue<AsyncContext> asyncContexts = new ConcurrentLinkedQueue<AsyncContext>();
+    private final Queue<AsyncContext> asyncContexts = new ConcurrentLinkedQueue<>();
 
     private final String boundary = "ABCDEFGHIJKLMNOPQRST"; // generated
 
@@ -38,6 +38,7 @@ public final class ReverseAjaxServlet extends HttpServlet {
                         peer.getOutputStream().println("--" + boundary);
                         peer.flushBuffer();
                     }
+
                 } catch (InterruptedException e) {
                     Thread.currentThread().interrupt();
                 } catch (IOException e) {
