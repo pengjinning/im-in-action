@@ -3,6 +3,7 @@ package io.xiaper.streaming.controller;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,7 +39,8 @@ public class SSEController {
     @Autowired
     ThreadPoolTaskExecutor mvcTaskExecutor;
 
-    @RequestMapping(value="/push",produces="text/event-stream;charset=utf-8")
+    // "text/event-stream;charset=utf-8"
+    @RequestMapping(value="/push",produces= MediaType.TEXT_EVENT_STREAM_VALUE)
     @ResponseBody
     public String push() {
         //
