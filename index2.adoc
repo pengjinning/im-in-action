@@ -29,134 +29,12 @@ http://www.iminaction.com
 - 实战部分:
 前端会包括:web/h5,android,ios,flutter,小程序, 服务端基于spring boot开发,开发语言以java为主
 
-
-
 水平有限,难免有错误疏漏之处,敬请指出
-
-
-== 传输协议 Protocal
-
-=== WebSocket
-
-https://zh.wikipedia.org/wiki/WebSocket[wiki]
-
-而传统的轮询方式（即采用http协议不断发送请求）的缺点：
-
-- 浪费流量（http请求头比较大）、
-- 浪费资源（没有更新也要请求）、
-- 消耗服务器CPU占用（没有信息也要接收请求）。
-
-可以应用于
-
-- 聊天
-- 直播弹幕
-- 游戏
-- 股票行情
-- 协作文档编辑
-
-websocket完全是事件驱动的.也就是说,客户端不需要轮询服务器以得到目标资源的最新状态,只需要监听相关的通知即可.
-
-websocket支持处理文本和二进制数据.
-
-Websocket是消息协议/聊天/服务器通知/管道和多路复用协议/自定义协议/紧凑二进制协议和用于与互联网服务器互操作的其他标准协议的很好基础.
-
-image::assets/img/tcp_http_websocket.png[]
-
-- 持续连接(keep-alive)
-- 心跳
-- 网络状态检测
-- 延迟测量
-
-
-
-=== IRC
-
-https://zh.wikipedia.org/wiki/IRC[wiki]
-
-=== XMPP
-
-https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%B6%88%E6%81%AF%E4%B8%8E%E5%AD%98%E5%9C%A8%E5%8D%8F%E8%AE%AE[wiki]
-
-=== STOMP
-
-https://stomp.github.io/[website]
-
-=== MQTT
-
-https://zh.wikipedia.org/wiki/MQTT[wiki]
-
-- websub
-
-原名pubsubhubbub
-
-- pubsub机制
-
-
-
-=== 方案对比
-
-对上述各种通信协议,以图表的形式对其各自优缺点进行对比,
-得出结论使用websocket
 
 
 == 实战
 
 私有协议
-
-
-=== 服务器Server
-
-- webmvc 传统
-- webflux 响应式 reactive
-
-
-==== Netty
-
-==== 支持WebSocket
-
-(修路)
-
-
-
-==== 传输协议
-
-(定义交通规则)
-
-
-
-==== 传输内容
-
-(步行/自行车/机动车/装甲车)
-
-- Json
-
-- Protobuf
-
-- 方案对比
-
-对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
-
-==== 加密
-
-==== 一对一
-
-文本
-图片
-
-==== 群聊
-
-建群
-
-==== 在线客服
-
-工作组
-指定坐席
-统计
-
-==== 机器人
-
-- 第三方
-
 
 === 网页Web/H5
 
@@ -189,6 +67,13 @@ Server-Send-Event
 
 - https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
 
+==== STOMP
+
+https://stomp.github.io/[website]
+
+==== SockJs
+
+==== WebSocket
 
 ==== 一对一
 
@@ -203,6 +88,98 @@ Server-Send-Event
 
 工作组
 指定坐席
+
+==== 机器人
+
+- 第三方
+
+
+=== 服务器Server
+
+- webmvc 传统
+- webflux 响应式 reactive
+
+
+==== Netty
+
+
+==== WebSocket
+
+(修路)
+
+https://zh.wikipedia.org/wiki/WebSocket[wiki]
+
+而传统的轮询方式（即采用http协议不断发送请求）的缺点：
+
+- 浪费流量（http请求头比较大）、
+- 浪费资源（没有更新也要请求）、
+- 消耗服务器CPU占用（没有信息也要接收请求）。
+
+可以应用于
+
+- 聊天
+- 直播弹幕
+- 游戏
+- 股票行情
+- 协作文档编辑
+
+websocket完全是事件驱动的.也就是说,客户端不需要轮询服务器以得到目标资源的最新状态,只需要监听相关的通知即可.
+
+websocket支持处理文本和二进制数据.
+
+Websocket是消息协议/聊天/服务器通知/管道和多路复用协议/自定义协议/紧凑二进制协议和用于与互联网服务器互操作的其他标准协议的很好基础.
+
+image::assets/img/tcp_http_websocket.png[]
+
+- 持续连接(keep-alive)
+- 心跳
+- 网络状态检测
+- 延迟测量
+
+
+==== 传输协议
+
+(定义交通规则)
+
+-  MQTT
+
+https://zh.wikipedia.org/wiki/MQTT[wiki]
+
+- websub
+
+原名pubsubhubbub
+
+- pubsub机制
+
+
+==== 传输内容
+
+(步行/自行车/机动车/装甲车)
+
+- Json
+
+- Protobuf
+
+- 方案对比
+
+对上述各种通信内容,以图表的形式对其各自优缺点进行对比,得出结论
+
+==== 加密
+
+==== 一对一
+
+文本
+图片
+
+==== 群聊
+
+建群
+
+==== 在线客服
+
+工作组
+指定坐席
+统计
 
 ==== 机器人
 
@@ -400,6 +377,15 @@ SSL保护数据的原理可以分为三部分
 === 高性能
 
 === 高可用
+
+
+=== IRC
+
+https://zh.wikipedia.org/wiki/IRC[wiki]
+
+=== XMPP
+
+https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%B6%88%E6%81%AF%E4%B8%8E%E5%AD%98%E5%9C%A8%E5%8D%8F%E8%AE%AE[wiki]
 
 
 == 参考

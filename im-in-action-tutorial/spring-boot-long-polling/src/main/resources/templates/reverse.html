@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>HTTP Polling</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery-json/2.3.0/jquery.json.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+
+            function processEvents(events) {
+                console.log("events: ", events);
+                //
+                if (events.length) {
+                    $('#logs').append('<span style="color: blue;">[client] ' + events.length + ' events</span><br/>');
+                } else {
+                    $('#logs').append('<span style="color: red;">[client] no event</span><br/>');
+                }
+                for (var i in events) {
+                    $('#logs').append('<span>[event] ' + events[i] + '</span><br/>');
+                }
+            }
+
+            function long_polling() {
+                //
+                $.ajax('/api/reverse', function(events) {
+                // $.getJSON('/api/reverse', function(events) {
+                    console.log('reverse: ', events);
+                    //
+                    processEvents(events);
+                    long_polling();
+                });
+            }
+
+            long_polling();
+
+        });
+    </script>
+</head>
+<body>
+<div id="logs" style="font-family: monospace;">
+</div>
+</body>
+</html>

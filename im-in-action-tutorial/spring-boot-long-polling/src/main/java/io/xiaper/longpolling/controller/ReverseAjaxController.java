@@ -17,38 +17,32 @@
 
 package io.xiaper.longpolling.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import io.xiaper.longpolling.service.ReverseAjaxService;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import java.security.Principal;
+import javax.servlet.AsyncContext;
+import javax.servlet.http.HttpServletRequest;
 
-@Controller
-public class RouteController {
+@Slf4j
+@RestController
+@RequestMapping("/api")
+public class ReverseAjaxController {
 
-    @GetMapping("/")
-    public String index(Principal principal, Model model) {
-
-        return "index";
-    }
-
-    @GetMapping("/index.html")
-    public String indexHtml(Principal principal, Model model) {
-
-        return "index";
-    }
-
-
-    @GetMapping("/chat")
-    public String chat(Principal principal, Model model) {
-
-        return "chat";
-    }
+    @Autowired
+    ReverseAjaxService reverseAjaxService;
 
     @GetMapping("/reverse")
-    public String reverse(Principal principal, Model model) {
+    public void getReverse(HttpServletRequest req) {
+        log.info("get reverse");
 
-        return "reverse";
+        AsyncContext asyncContext = req.startAsync();
+        asyncContext.setTimeout(0);
+
+        reverseAjaxService.getAsyncContexts().offer(asyncContext);
     }
 
 }

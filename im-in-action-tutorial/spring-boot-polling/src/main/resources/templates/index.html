@@ -7,22 +7,6 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://jquery-json.googlecode.com/files/jquery.json-2.2.min.js"></script>
     <script type="text/javascript">
-
-        // setInterval(function() {
-        //     $.get('/get/data-list', function(data, status) {
-        //         console.log(data)
-        //     })
-        // }, 5000)
-
-        // function poll() {
-        //     setTimeout(function() {
-        //         $.get('/get/data-list', function(data, status) {
-        //             console.log(data)
-        //             poll()
-        //         })
-        //     }, 5000)
-        // }
-
         jQuery(function($) {
             setInterval(function() {
                 $('body').append('<span>[client] checking for events...</span><br/>');
