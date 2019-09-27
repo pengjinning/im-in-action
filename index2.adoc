@@ -22,6 +22,7 @@ http://www.iminaction.com
 - 提供SpringBoot/Netty/WebRTC入门实例
 - 完整即时通讯和在线客服系统
 - 提供Web/H5, 安卓, iOS, Windows, Mac, 小程序, Flutter等IM相关实例源码
+- 微服务架构
 
 
 == 前言

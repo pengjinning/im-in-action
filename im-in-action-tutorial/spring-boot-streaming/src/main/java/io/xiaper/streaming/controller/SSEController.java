@@ -22,6 +22,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * https://howtodoinjava.com/spring-boot2/rest/spring-async-controller-sseemitter/
  * https://www.baeldung.com/spring-mvc-sse-streams
  * https://golb.hplar.ch/2017/03/Server-Sent-Events-with-Spring.html
  * streaming

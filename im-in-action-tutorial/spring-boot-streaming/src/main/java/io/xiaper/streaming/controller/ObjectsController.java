@@ -23,6 +23,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter
 
 /**
  * https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-async-http-streaming
+ * https://howtodoinjava.com/spring-boot2/rest/spring-async-controller-responsebodyemitter/
  */
 @RestController
 public class ObjectsController {
