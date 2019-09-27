@@ -43,8 +43,7 @@ http://www.iminaction.com
 Ajax
 JSONP
 
-
-==== 捎带轮询Piggyback Polling
+- 捎带轮询Piggyback Polling
 
 
 ==== 长轮询Long Polling
