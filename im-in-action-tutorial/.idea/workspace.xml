@@ -323,7 +323,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
     <option name="x" value="135" />
     <option name="y" value="23" />
     <option name="width" value="1407" />
@@ -1090,7 +1090,7 @@
       <workItem from="1569420780083" duration="200000" />
       <workItem from="1569503910557" duration="12923000" />
       <workItem from="1569583979766" duration="95000" />
-      <workItem from="1569584425274" duration="3059000" />
+      <workItem from="1569584425274" duration="3172000" />
     </task>
     <servers />
   </component>
@@ -1115,7 +1115,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255660000" />
+    <option name="totallyTimeSpent" value="255773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1127,10 +1127,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="135" y="23" width="1407" height="928" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.22466423" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.26959708" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
