@@ -21,6 +21,8 @@ public class SocketIOApplication {
         Configuration config = new Configuration();
         config.setHostname(host);
         config.setPort(port);
+        config.setMaxFramePayloadLength(1024 * 1024);
+        config.setMaxHttpContentLength(1024 * 1024);
         return new SocketIOServer(config);
     }
 
