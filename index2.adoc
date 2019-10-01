@@ -68,7 +68,6 @@ Server-Send-Event
 
 - https://www.ruanyifeng.com/blog/2017/05/server-sent_events.html[Server-Sent Events 教程]
 
-==== MQTT.js
 
 ==== STOMP
 
@@ -144,7 +143,7 @@ image::assets/img/tcp_http_websocket.png[]
 
 (定义交通规则)
 
--  MQTT
+=====  MQTT
 
 https://zh.wikipedia.org/wiki/MQTT[wiki]
 
@@ -153,6 +152,9 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 原名pubsubhubbub
 
 - pubsub机制
+
+
+- Demo MQTT.js
 
 
 ==== 传输内容
@@ -404,6 +406,8 @@ https://zh.wikipedia.org/wiki/IRC[wiki]
 === XMPP
 
 https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%B6%88%E6%81%AF%E4%B8%8E%E5%AD%98%E5%9C%A8%E5%8D%8F%E8%AE%AE[wiki]
+
+=== Socket.io
 
 
 == 参考

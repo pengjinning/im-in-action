@@ -76,7 +76,6 @@
             chatSocket.json.send(jsonObject);
         }
 
-
         chat1Socket.on('connect', connectHandler('#chat1'));
         chat2Socket.on('connect', connectHandler('#chat2'));
 
@@ -101,7 +100,6 @@
         function sendMessage2() {
             sendMessageHandler('#chat2', userName2, chat2Socket);
         }
-
 
         function output(message, parentId) {
             var currentTime = "<span class='time'>" + moment().format('HH:mm:ss.SSS') + "</span>";

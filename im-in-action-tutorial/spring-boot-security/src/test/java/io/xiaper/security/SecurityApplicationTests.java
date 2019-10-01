@@ -1,4 +1,4 @@
-package io.xiaper.springbootsecurity;
+package io.xiaper.security;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringBootSecurityApplicationTests {
+public class SecurityApplicationTests {
 
 	@Test
 	public void contextLoads() {
