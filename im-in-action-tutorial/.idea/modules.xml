@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" filepath="$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-rsocket/spring-boot-rsocket.iml" filepath="$PROJECT_DIR$/spring-boot-rsocket/spring-boot-rsocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-security/spring-boot-security.iml" filepath="$PROJECT_DIR$/spring-boot-security/spring-boot-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" filepath="$PROJECT_DIR$/spring-boot-socketio/spring-boot-socketio.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" filepath="$PROJECT_DIR$/spring-boot-sockjs/spring-boot-sockjs.iml" />

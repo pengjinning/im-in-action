@@ -6,28 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-websocket" />
         <module name="netty-websocket" />
         <module name="spring-boot-streaming-reactive" />
         <module name="spring-boot-xmpp" />
         <module name="spring-boot-socketio" />
         <module name="spring-boot-polling" />
+        <module name="spring-boot-piggyback" />
         <module name="spring-boot-cometd" />
         <module name="spring-boot-long-polling" />
-        <module name="spring-boot-security" />
         <module name="spring-boot-common" />
         <module name="netty-im" />
         <module name="spring-boot-protobuf" />
+        <module name="spring-boot-rsocket" />
         <module name="spring-boot-streaming" />
-        <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-mqttx" />
         <module name="spring-boot-sockjs" />
-        <module name="spring-boot-piggyback" />
-        <module name="spring-boot-atmosphere" />
+        <module name="spring-boot-rabbitmq" />
+        <module name="spring-boot-websocket" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-dwr" />
+        <module name="spring-boot-atmosphere" />
         <module name="spring-boot-mini" />
         <module name="netty-http" />
-        <module name="spring-boot-mqttx" />
+        <module name="spring-boot-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -53,6 +54,7 @@
       <module name="spring-boot-polling" target="1.8" />
       <module name="spring-boot-protobuf" target="1.8" />
       <module name="spring-boot-rabbitmq" target="1.8" />
+      <module name="spring-boot-rsocket" target="1.8" />
       <module name="spring-boot-security" target="1.8" />
       <module name="spring-boot-socketio" target="1.8" />
       <module name="spring-boot-sockjs" target="1.8" />
@@ -79,6 +81,7 @@
       <module name="spring-boot-polling" options="-parameters" />
       <module name="spring-boot-protobuf" options="-parameters" />
       <module name="spring-boot-rabbitmq" options="-parameters" />
+      <module name="spring-boot-rsocket" options="-parameters" />
       <module name="spring-boot-security" options="-parameters" />
       <module name="spring-boot-socketio" options="-parameters" />
       <module name="spring-boot-sockjs" options="-parameters" />
