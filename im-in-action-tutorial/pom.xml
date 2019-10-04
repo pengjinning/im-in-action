@@ -37,7 +37,7 @@
 		<module>spring-boot-protobuf</module>
 
 		<module>spring-boot-rabbitmq</module>
-		<module>spring-boot-rsocket</module>
+		<module>spring-boot-reactive</module>
 
 		<module>spring-boot-security</module>
 		<module>spring-boot-socketio</module>
@@ -48,6 +48,8 @@
 
 		<module>spring-boot-websocket</module>
 		<module>spring-boot-xmpp</module>
+
+		<module>spring-webflux-example</module>
 
 	</modules>
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package io.xiaper.streaming.controller;
+package com.howtodoinjava.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -37,6 +37,4 @@ public class TimeHandler {
                         map(l -> new SimpleDateFormat("HH:mm:ss").format(new Date())),
                 String.class);
     }
-
-
 }
