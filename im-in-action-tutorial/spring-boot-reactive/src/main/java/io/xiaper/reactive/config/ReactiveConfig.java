@@ -69,7 +69,9 @@ public class ReactiveConfig {
 
     @Bean
     public WebSocketService webSocketService() {
-        return new HandshakeWebSocketService(new ReactorNettyRequestUpgradeStrategy());
+        ReactorNettyRequestUpgradeStrategy upgradeStrategy = new ReactorNettyRequestUpgradeStrategy();
+//        upgradeStrategy.setMaxFramePayloadLength();
+        return new HandshakeWebSocketService(upgradeStrategy);
     }
 
     ///
