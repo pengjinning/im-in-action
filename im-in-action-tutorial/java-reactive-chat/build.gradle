@@ -1,0 +1,54 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.0.M2'
+    }
+    repositories {
+        mavenCentral()
+        maven { url "https://repo.spring.io/snapshot" }
+        maven { url "https://repo.spring.io/milestone" }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-webflux')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+
+
+task npmDependencies(type: Exec) {
+    workingDir 'src/main/ui'
+    commandLine 'npm'
+    args = ["install"]
+}
+
+task buildUI(type: Exec, dependsOn: npmDependencies) {
+    logger.lifecycle("-" * 100)
+    logger.lifecycle("""
+    THIS BUILD HAS BEEN TESTED ON OSX WITH NPM 4.1.2 AND NODE v7.7.1 AVAILABLE ON THE PATH
+""")
+    logger.lifecycle("-" * 100)
+    workingDir 'src/main/ui'
+    commandLine 'npm'
+    args = ["run", "build"]
+}
+
+processResources.dependsOn buildUI

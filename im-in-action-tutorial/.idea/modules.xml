@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/mongo-chat2019/chatAppDemo.iml" filepath="$PROJECT_DIR$/mongo-chat2019/chatAppDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/im-in-action-tutorial.iml" filepath="$PROJECT_DIR$/im-in-action-tutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-http/netty-http.iml" filepath="$PROJECT_DIR$/netty-http/netty-http.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-im/netty-im.iml" filepath="$PROJECT_DIR$/netty-im/netty-im.iml" />

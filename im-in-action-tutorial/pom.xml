@@ -20,6 +20,8 @@
 
 	<modules>
 
+		<module>mongo-chat2019</module>
+
 		<module>netty-http</module>
 		<module>netty-im</module>
 		<module>netty-websocket</module>
