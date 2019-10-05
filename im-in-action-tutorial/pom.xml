@@ -49,8 +49,6 @@
 		<module>spring-boot-websocket</module>
 		<module>spring-boot-xmpp</module>
 
-		<module>spring-webflux-example</module>
-
 	</modules>
 
 </project>

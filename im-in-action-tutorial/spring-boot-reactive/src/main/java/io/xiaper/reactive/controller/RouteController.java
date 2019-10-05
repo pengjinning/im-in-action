@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.howtodoinjava.demo.controller;
+package io.xiaper.reactive.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

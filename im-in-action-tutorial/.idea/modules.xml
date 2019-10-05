@@ -26,7 +26,6 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-streaming-reactive/spring-boot-streaming-reactive.iml" filepath="$PROJECT_DIR$/spring-boot-streaming-reactive/spring-boot-streaming-reactive.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" filepath="$PROJECT_DIR$/spring-boot-websocket/spring-boot-websocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" filepath="$PROJECT_DIR$/spring-boot-xmpp/spring-boot-xmpp.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-webflux-example/spring-webflux-example.iml" filepath="$PROJECT_DIR$/spring-webflux-example/spring-webflux-example.iml" />
     </modules>
   </component>
 </project>

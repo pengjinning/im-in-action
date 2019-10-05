@@ -1,4 +1,4 @@
-package com.howtodoinjava.demo.handler;
+package io.xiaper.reactive.handler;
 
 import org.springframework.web.reactive.socket.WebSocketHandler;
 import org.springframework.web.reactive.socket.WebSocketSession;
@@ -9,8 +9,7 @@ public class EchoHandler implements WebSocketHandler
 	@Override
 	public Mono<Void> handle(WebSocketSession session) 
 	{
-		return session
-				.send( session.receive()
+		return session.send( session.receive()
 								.map(msg -> "RECEIVED ON SERVER :: " + msg.getPayloadAsText())
 								.map(session::textMessage) 
 					);
