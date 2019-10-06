@@ -34,16 +34,16 @@ public class BinaryWebSocketFrameHandler extends SimpleChannelInboundHandler<Bin
     public void channelRead0(ChannelHandlerContext context, BinaryWebSocketFrame frame) throws IOException {
         //
         log.info("接收到二进制消息,消息长度:[{}]", frame.content().capacity());
-        ByteBuf byteBuf = Unpooled.directBuffer(frame.content().capacity());
-        byteBuf.writeBytes(frame.content());
+//        ByteBuf byteBuf = Unpooled.directBuffer(frame.content().capacity());
+//        byteBuf.writeBytes(frame.content());
 //        String contentString = new String(byteBuf.array(), CharsetUtil.UTF_8);
 //
         //转成byte
-        byte [] bytes = new byte[frame.content().capacity()];
-        byteBuf.readBytes(bytes);
+//        byte [] bytes = new byte[frame.content().capacity()];
+//        byteBuf.readBytes(bytes);
 
         //
-        log.info("decode binary content {}", String.valueOf(bytes));
+//        log.info("decode binary content {}", String.valueOf(bytes));
 
         // Echo the frame
         context.write(frame.retain());
