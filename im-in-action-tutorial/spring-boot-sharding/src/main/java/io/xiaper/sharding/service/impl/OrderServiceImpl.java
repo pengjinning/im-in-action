@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package io.xiaper.sharding.service;
+package io.xiaper.sharding.service.impl;
 
 import io.xiaper.sharding.entity.AddressEntity;
 import io.xiaper.sharding.entity.OrderEntity;
@@ -23,6 +23,7 @@ import io.xiaper.sharding.entity.OrderItemEntity;
 import io.xiaper.sharding.repository.AddressRepository;
 import io.xiaper.sharding.repository.OrderItemRepository;
 import io.xiaper.sharding.repository.OrderRepository;
+import io.xiaper.sharding.service.ExampleService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

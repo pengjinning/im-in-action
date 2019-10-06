@@ -15,9 +15,10 @@
  * limitations under the License.
  */
 
-package io.xiaper.sharding.repository;
+package io.xiaper.sharding.repository.impl;
 
-import io.xiaper.sharding.entity.OrderItem;
+import io.xiaper.sharding.entity.UserEntity;
+import io.xiaper.sharding.repository.UserRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -28,7 +29,7 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class OrderItemRepositoryImpl implements OrderItemRepository {
+public class UserRepositoryImpl implements UserRepository {
     
     @PersistenceContext
     private EntityManager entityManager;
@@ -39,31 +40,31 @@ public class OrderItemRepositoryImpl implements OrderItemRepository {
     }
     
     @Override
-    public void truncateTable() {
-        throw new UnsupportedOperationException("truncateTable for JPA");
-    }
-    
-    @Override
     public void dropTable() {
         throw new UnsupportedOperationException("dropTable for JPA");
     }
     
     @Override
-    public Long insert(final OrderItem orderItem) {
-        entityManager.persist(orderItem);
-        return orderItem.getOrderItemId();
+    public void truncateTable() {
+        throw new UnsupportedOperationException("truncateTable for JPA");
     }
     
     @Override
-    public void delete(final Long orderItemId) {
-        Query query = entityManager.createQuery("DELETE FROM OrderItemEntity i WHERE i.orderItemId = ?1 AND i.userId = 51");
-        query.setParameter(1, orderItemId);
+    public Long insert(final UserEntity entity) {
+        entityManager.persist(entity);
+        return null;
+    }
+    
+    @Override
+    public void delete(final Long id) {
+        Query query = entityManager.createQuery("DELETE FROM UserEntiy o WHERE o.userId = ?1");
+        query.setParameter(1, id.intValue());
         query.executeUpdate();
     }
     
     @Override
     @SuppressWarnings("unchecked")
-    public List<OrderItem> selectAll() {
-        return (List<OrderItem>) entityManager.createQuery("SELECT i FROM OrderEntity o, OrderItemEntity i WHERE o.orderId = i.orderId").getResultList();
+    public List<UserEntity> selectAll() {
+        return (List<UserEntity>) entityManager.createQuery("SELECT o FROM UserEntiy o").getResultList();
     }
 }

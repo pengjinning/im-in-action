@@ -17,27 +17,28 @@
 
 package io.xiaper.sharding.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "t_address")
-public final class AddressEntity extends Address {
+public final class AddressEntity implements Serializable {
     
     private static final long serialVersionUID = 4743102234543827855L;
-    
+
     @Id
     @Column(name = "address_id")
-    @Override
-    public Long getAddressId() {
-        return super.getAddressId();
-    }
-    
+    private Long addressId;
+
     @Column(name = "address_name")
-    @Override
-    public String getAddressName() {
-        return super.getAddressName();
-    }
+    private String addressName;
+
 }

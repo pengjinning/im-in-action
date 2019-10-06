@@ -17,37 +17,32 @@
 
 package io.xiaper.sharding.entity;
 
-import javax.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.*;
+import java.io.Serializable;
+
+@Getter
+@Setter
 @Entity
 @Table(name = "t_order_item")
-public final class OrderItemEntity extends OrderItem {
+public final class OrderItemEntity implements Serializable {
     
     private static final long serialVersionUID = 5685474394188443341L;
-    
+
     @Id
     @Column(name = "order_item_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Override
-    public long getOrderItemId() {
-        return super.getOrderItemId();
-    }
-    
+    private long orderItemId;
+
     @Column(name = "order_id")
-    @Override
-    public long getOrderId() {
-        return super.getOrderId();
-    }
-    
+    private long orderId;
+
     @Column(name = "user_id")
-    @Override
-    public int getUserId() {
-        return super.getUserId();
-    }
-    
+    private int userId;
+
     @Column(name = "status")
-    @Override
-    public String getStatus() {
-        return super.getStatus();
-    }
+    private String status;
+
 }

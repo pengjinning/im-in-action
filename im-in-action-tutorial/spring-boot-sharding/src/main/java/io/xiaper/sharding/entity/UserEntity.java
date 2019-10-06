@@ -17,45 +17,37 @@
 
 package io.xiaper.sharding.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "t_user")
-public final class UserEntity extends User {
+public final class UserEntity implements Serializable {
     
     private static final long serialVersionUID = -3708998745561667721L;
-    
+
     @Id
     @Column(name = "user_id")
-    @Override
-    public int getUserId() {
-        return super.getUserId();
-    }
-    
+    private int userId;
+
     @Column(name = "user_name")
-    @Override
-    public String getUserName() {
-        return super.getUserName();
-    }
-    
+    private String userName;
+
     @Column(name = "user_name_plain")
-    @Override
-    public String getUserNamePlain() {
-        return super.getUserNamePlain();
-    }
-    
+    private String userNamePlain;
+
     @Column(name = "pwd")
-    @Override
-    public String getPwd() {
-        return super.getPwd();
-    }
-    
+    private String pwd;
+
     @Column(name = "assisted_query_pwd")
-    @Override
-    public String getAssistedQueryPwd() {
-        return super.getAssistedQueryPwd();
-    }
+    private String assistedQueryPwd;
+
 }

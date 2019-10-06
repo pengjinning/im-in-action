@@ -17,7 +17,7 @@
 
 package io.xiaper.sharding.repository;
 
-import io.xiaper.sharding.entity.Address;
+import io.xiaper.sharding.entity.AddressEntity;
 
-public interface AddressRepository extends CommonRepository<Address, Long> {
+public interface AddressRepository extends CommonRepository<AddressEntity, Long> {
 }

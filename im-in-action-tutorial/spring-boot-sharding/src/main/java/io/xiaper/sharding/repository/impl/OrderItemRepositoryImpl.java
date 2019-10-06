@@ -15,9 +15,10 @@
  * limitations under the License.
  */
 
-package io.xiaper.sharding.repository;
+package io.xiaper.sharding.repository.impl;
 
-import io.xiaper.sharding.entity.Order;
+import io.xiaper.sharding.entity.OrderItemEntity;
+import io.xiaper.sharding.repository.OrderItemRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -28,7 +29,7 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class OrderRepositoryImpl implements OrderRepository {
+public class OrderItemRepositoryImpl implements OrderItemRepository {
     
     @PersistenceContext
     private EntityManager entityManager;
@@ -49,21 +50,21 @@ public class OrderRepositoryImpl implements OrderRepository {
     }
     
     @Override
-    public Long insert(final Order order) {
-        entityManager.persist(order);
-        return order.getOrderId();
+    public Long insert(final OrderItemEntity orderItem) {
+        entityManager.persist(orderItem);
+        return orderItem.getOrderItemId();
     }
     
     @Override
-    public void delete(final Long orderId) {
-        Query query = entityManager.createQuery("DELETE FROM OrderEntity o WHERE o.orderId = ?1");
-        query.setParameter(1, orderId);
+    public void delete(final Long orderItemId) {
+        Query query = entityManager.createQuery("DELETE FROM t_order_item i WHERE i.orderItemId = ?1 AND i.userId = 51");
+        query.setParameter(1, orderItemId);
         query.executeUpdate();
     }
     
-    @SuppressWarnings("unchecked")
     @Override
-    public List<Order> selectAll() {
-        return (List<Order>) entityManager.createQuery("SELECT o FROM OrderEntity o").getResultList();
+    @SuppressWarnings("unchecked")
+    public List<OrderItemEntity> selectAll() {
+        return (List<OrderItemEntity>) entityManager.createQuery("SELECT i FROM t_order o, t_order_item i WHERE o.orderId = i.orderId").getResultList();
     }
 }

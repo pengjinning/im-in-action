@@ -15,9 +15,10 @@
  * limitations under the License.
  */
 
-package io.xiaper.sharding.repository;
+package io.xiaper.sharding.repository.impl;
 
-import io.xiaper.sharding.entity.Address;
+import io.xiaper.sharding.entity.AddressEntity;
+import io.xiaper.sharding.repository.AddressRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -49,21 +50,21 @@ public class AddressRepositoryImpl implements AddressRepository {
     }
     
     @Override
-    public Long insert(final Address entity) {
+    public Long insert(final AddressEntity entity) {
         entityManager.persist(entity);
         return entity.getAddressId();
     }
     
     @Override
     public void delete(final Long addressCode) {
-        Query query = entityManager.createQuery("DELETE FROM AddressEntity i WHERE i.addressCode = ?1");
+        Query query = entityManager.createQuery("DELETE FROM t_address i WHERE i.addressCode = ?1");
         query.setParameter(1, addressCode);
         query.executeUpdate();
     }
     
     @Override
     @SuppressWarnings("unchecked")
-    public List<Address> selectAll() {
-        return (List<Address>) entityManager.createQuery("SELECT i FROM AddressEntity i").getResultList();
+    public List<AddressEntity> selectAll() {
+        return (List<AddressEntity>) entityManager.createQuery("SELECT i FROM t_address i").getResultList();
     }
 }

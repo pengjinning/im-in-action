@@ -15,10 +15,11 @@
  * limitations under the License.
  */
 
-package io.xiaper.sharding.service;
+package io.xiaper.sharding.service.impl;
 
 import io.xiaper.sharding.entity.UserEntity;
 import io.xiaper.sharding.repository.UserRepository;
+import io.xiaper.sharding.service.ExampleService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

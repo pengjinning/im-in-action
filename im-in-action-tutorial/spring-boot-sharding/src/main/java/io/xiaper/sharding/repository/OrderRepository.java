@@ -17,7 +17,7 @@
 
 package io.xiaper.sharding.repository;
 
-import io.xiaper.sharding.entity.Order;
+import io.xiaper.sharding.entity.OrderEntity;
 
-public interface OrderRepository extends CommonRepository<Order, Long> {
+public interface OrderRepository extends CommonRepository<OrderEntity, Long> {
 }

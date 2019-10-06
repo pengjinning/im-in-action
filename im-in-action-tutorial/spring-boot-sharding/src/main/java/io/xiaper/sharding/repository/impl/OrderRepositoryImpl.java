@@ -15,9 +15,10 @@
  * limitations under the License.
  */
 
-package io.xiaper.sharding.repository;
+package io.xiaper.sharding.repository.impl;
 
-import io.xiaper.sharding.entity.User;
+import io.xiaper.sharding.entity.OrderEntity;
+import io.xiaper.sharding.repository.OrderRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -28,7 +29,7 @@ import java.util.List;
 
 @Repository
 @Transactional
-public class UserRepositoryImpl implements UserRepository {
+public class OrderRepositoryImpl implements OrderRepository {
     
     @PersistenceContext
     private EntityManager entityManager;
@@ -39,31 +40,31 @@ public class UserRepositoryImpl implements UserRepository {
     }
     
     @Override
-    public void dropTable() {
-        throw new UnsupportedOperationException("dropTable for JPA");
-    }
-    
-    @Override
     public void truncateTable() {
         throw new UnsupportedOperationException("truncateTable for JPA");
     }
     
     @Override
-    public Long insert(final User entity) {
-        entityManager.persist(entity);
-        return null;
+    public void dropTable() {
+        throw new UnsupportedOperationException("dropTable for JPA");
     }
     
     @Override
-    public void delete(final Long id) {
-        Query query = entityManager.createQuery("DELETE FROM UserEntiy o WHERE o.userId = ?1");
-        query.setParameter(1, id.intValue());
+    public Long insert(final OrderEntity order) {
+        entityManager.persist(order);
+        return order.getOrderId();
+    }
+    
+    @Override
+    public void delete(final Long orderId) {
+        Query query = entityManager.createQuery("DELETE FROM OrderEntity o WHERE o.orderId = ?1");
+        query.setParameter(1, orderId);
         query.executeUpdate();
     }
     
-    @Override
     @SuppressWarnings("unchecked")
-    public List<User> selectAll() {
-        return (List<User>) entityManager.createQuery("SELECT o FROM UserEntiy o").getResultList();
+    @Override
+    public List<OrderEntity> selectAll() {
+        return (List<OrderEntity>) entityManager.createQuery("SELECT o FROM OrderEntity o").getResultList();
     }
 }

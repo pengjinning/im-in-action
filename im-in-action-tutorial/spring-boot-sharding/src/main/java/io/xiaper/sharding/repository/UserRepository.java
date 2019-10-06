@@ -17,7 +17,7 @@
 
 package io.xiaper.sharding.repository;
 
-import io.xiaper.sharding.entity.User;
+import io.xiaper.sharding.entity.UserEntity;
 
-public interface UserRepository extends CommonRepository<User, Long> {
+public interface UserRepository extends CommonRepository<UserEntity, Long> {
 }
