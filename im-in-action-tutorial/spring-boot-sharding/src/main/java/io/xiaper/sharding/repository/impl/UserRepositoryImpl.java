@@ -57,7 +57,7 @@ public class UserRepositoryImpl implements UserRepository {
     
     @Override
     public void delete(final Long id) {
-        Query query = entityManager.createQuery("DELETE FROM UserEntiy o WHERE o.userId = ?1");
+        Query query = entityManager.createQuery("DELETE FROM t_user o WHERE o.userId = ?1");
         query.setParameter(1, id.intValue());
         query.executeUpdate();
     }
@@ -65,6 +65,6 @@ public class UserRepositoryImpl implements UserRepository {
     @Override
     @SuppressWarnings("unchecked")
     public List<UserEntity> selectAll() {
-        return (List<UserEntity>) entityManager.createQuery("SELECT o FROM UserEntiy o").getResultList();
+        return (List<UserEntity>) entityManager.createQuery("SELECT o FROM t_user o").getResultList();
     }
 }

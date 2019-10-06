@@ -57,7 +57,7 @@ public class OrderRepositoryImpl implements OrderRepository {
     
     @Override
     public void delete(final Long orderId) {
-        Query query = entityManager.createQuery("DELETE FROM OrderEntity o WHERE o.orderId = ?1");
+        Query query = entityManager.createQuery("DELETE FROM t_order o WHERE o.orderId = ?1");
         query.setParameter(1, orderId);
         query.executeUpdate();
     }
@@ -65,6 +65,6 @@ public class OrderRepositoryImpl implements OrderRepository {
     @SuppressWarnings("unchecked")
     @Override
     public List<OrderEntity> selectAll() {
-        return (List<OrderEntity>) entityManager.createQuery("SELECT o FROM OrderEntity o").getResultList();
+        return (List<OrderEntity>) entityManager.createQuery("SELECT o FROM t_order o").getResultList();
     }
 }
