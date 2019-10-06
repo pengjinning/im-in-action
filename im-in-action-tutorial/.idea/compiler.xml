@@ -23,7 +23,6 @@
         <module name="spring-boot-streaming" />
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-sockjs" />
-        <module name="spring-boot-piggyback" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-dwr" />

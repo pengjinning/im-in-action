@@ -20,8 +20,6 @@
 
 	<modules>
 
-		<module>mongo-chat2019</module>
-
 		<module>netty-http</module>
 		<module>netty-im</module>
 		<module>netty-websocket</module>
@@ -34,7 +32,6 @@
 		<module>spring-boot-mini</module>
 		<module>spring-boot-mqttx</module>
 
-		<module>spring-boot-piggyback</module>
 		<module>spring-boot-polling</module>
 		<module>spring-boot-protobuf</module>
 

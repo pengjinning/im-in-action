@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package io.xiaper.piggyback.controller;
+package io.xiaper.polling.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import io.xiaper.piggyback.service.PiggybackService;
+import io.xiaper.polling.service.PiggybackService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

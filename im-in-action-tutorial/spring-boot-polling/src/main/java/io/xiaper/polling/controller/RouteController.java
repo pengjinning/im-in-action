@@ -38,4 +38,10 @@ public class RouteController {
         return "index";
     }
 
+    @GetMapping("/piggy")
+    public String piggy(Principal principal, Model model) {
+
+        return "piggy";
+    }
+
 }

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package io.xiaper.piggyback.service;
+package io.xiaper.polling.service;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
