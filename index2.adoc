@@ -77,7 +77,6 @@ https://stomp.github.io/[website]
 
 ==== WebSocket
 
-==== RSocket/Reactive
 
 ==== 一对一
 
@@ -97,6 +96,20 @@ https://stomp.github.io/[website]
 
 - 第三方
 
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
 
 === 服务器Server
 
@@ -192,6 +205,20 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 - 第三方
 
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
 
 === 安卓Android
 
@@ -216,6 +243,22 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 ==== 机器人
 
 - 第三方
+
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
+
 
 === 苹果iOS
 
@@ -243,6 +286,20 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 - 第三方
 
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
 
 
 === Windows
@@ -271,6 +328,21 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 - 第三方
 
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
+
 === Mac
 
 ==== qt
@@ -296,6 +368,21 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 - 第三方
 
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
+
 === 小程序
 
 - 发文本
@@ -319,6 +406,21 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 - 第三方
 
+==== 音视频
+
+- webrtc
+
+主要用于实时语音和视频聊天,可以用于传输数据.
+可以结合webrtc和websocket构建实时应用
+
+- 基本概念
+
+- 应用
+
+* 文本对话
+
+* 实时音视频
+
 === 跨平台Flutter
 
 
@@ -340,15 +442,7 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 - 第三方
 
-
-
-
-== 其他
-
-=== 虾婆 Xiaper
-
-
-=== 音视频
+==== 音视频
 
 - webrtc
 
@@ -362,6 +456,12 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 * 文本对话
 
 * 实时音视频
+
+
+== 其他
+
+=== 虾婆 Xiaper
+
 
 
 === 安全篇
@@ -399,11 +499,12 @@ SSL保护数据的原理可以分为三部分
 
 === 对接第三方用户系统
 
-=== 总体架构
 
-=== 高性能
+=== 架构
 
-=== 高可用
+==== 高性能
+
+==== 高可用
 
 
 === IRC
@@ -415,6 +516,8 @@ https://zh.wikipedia.org/wiki/IRC[wiki]
 https://zh.wikipedia.org/wiki/%E5%8F%AF%E6%89%A9%E5%B1%95%E6%B6%88%E6%81%AF%E4%B8%8E%E5%AD%98%E5%9C%A8%E5%8D%8F%E8%AE%AE[wiki]
 
 === Socket.io
+
+=== RSocket/Reactive
 
 
 == 参考

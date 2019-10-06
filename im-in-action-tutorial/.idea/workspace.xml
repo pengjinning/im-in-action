@@ -2,8 +2,208 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/config/ReactiveConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/config/ReactiveConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/handler/EchoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/handler/EchoHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_api_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_common_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_entry_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_execute_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_merge_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_optimize_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_parse_common_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_parse_mysql_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_parse_oracle_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_parse_postgresql_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_parse_spi_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_parse_sqlserver_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_rewrite_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_core_route_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_jdbc_core_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_jdbc_spring_boot_starter_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shardingsphere_sharding_transaction_core_4_0_0_RC2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_indy_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/AddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/AddressRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/CommonRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderItemRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/ExampleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-master-slave.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-databases-tables.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-databases.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-master-slave.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-tables.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_20_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_36_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_8_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_2_9_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_19.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_16_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_2_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_bson_3_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_3_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_async_3_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_3_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_reactivestreams_1_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_reactive_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_2_1_8_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/ChatSocketHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/EventBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/Payload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/ReactiveChatApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/UserStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/resources/public/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/.eslintrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/actions/chat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/actions/time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/app.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/chat.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/humanized_time.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/message_input.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/messages.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/nav.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/online_users.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/require_user.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/time_ticker.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/components/user_profile.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/index.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/middleware/websocket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/messages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/stats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/styles/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/styles/login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/styles/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/styles/messages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/styles/profile.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/styles/users.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/webpack.loaders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/webpack.production.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/main/ui/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/java-reactive-chat/src/test/java/codes/monkey/reactivechat/ReactiveChatApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/ChatAppDemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/config/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/controllers/ChatMessageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/models/Channel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/models/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/repos/ChatChannelRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/repos/ChatMessageRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/java/com/example/chatAppDemo/chatAppDemo/repos/UserRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-chat2019/src/test/java/com/example/chatAppDemo/chatAppDemo/ChatAppDemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index2.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/../index2.adoc" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,6 +281,7 @@
     <ignored path="$PROJECT_DIR$/spring-boot-reactive/target/" />
     <ignored path="$PROJECT_DIR$/spring-webflux-example/target/" />
     <ignored path="$PROJECT_DIR$/mongo-chat2019/target/" />
+    <ignored path="$PROJECT_DIR$/spring-boot-sharding/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +314,30 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-tables.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <folding>
+                <element signature="e#1286#1287#0" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -175,27 +399,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/ReverseAjax.java" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/RouteController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/controller/ReverseAjaxController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/java/io/xiaper/longpolling/service/ReverseAjaxService.java" />
-        <option value="$PROJECT_DIR$/spring-boot-long-polling/src/main/resources/templates/reverse.html" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/controller/RouteController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/SSEController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-streaming/src/main/java/io/xiaper/streaming/controller/ObjectsController.java" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/chat/ChatModule.java" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/static/js/jquery-1.9.1.min.js" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/test.html" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio/SocketIOApplication.java" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/ack-index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/binary-event-index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/event-index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/index.html" />
         <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/ssl-event-index.html" />
         <option value="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo/namespace-index.html" />
         <option value="$PROJECT_DIR$/spring-boot-security/pom.xml" />
@@ -215,7 +418,6 @@
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/RouteController.java" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other/ChatSocketHandler.java" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other/ReactiveChatApplication.java" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/ReactiveApplication.java" />
@@ -226,6 +428,28 @@
         <option value="$PROJECT_DIR$/spring-boot-reactive/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/handler/EchoHandler.java" />
         <option value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/config/ReactiveConfig.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/readme.md" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/ShardingApplication.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/Order.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/UserEntity.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/AddressRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/AddressRepository.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderItemRepository.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderItemRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/UserRepository.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/UserRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/OrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-master-slave.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-databases.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-databases-tables.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-master-slave.properties" />
+        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-tables.properties" />
       </list>
     </option>
   </component>
@@ -252,22 +476,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-boot-reactive" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-boot-sharding" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="spring-boot-reactive" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="spring-boot-sharding" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
-    <option name="y" value="81" />
-    <option name="width" value="1229" />
-    <option name="height" value="868" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="117" />
+    <option name="y" value="23" />
+    <option name="width" value="1267" />
+    <option name="height" value="807" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -277,6 +501,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,11 +509,207 @@
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="polling" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-polling" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="sharding" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="io" type="462c0819:PsiDirectoryNode" />
+              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
+              <item name="sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-sharding" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -303,7 +724,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -315,15 +736,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/spring-boot-reactive/src/main/resources/static/js" />
-      <recent name="$PROJECT_DIR$/spring-webflux-example/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/css" />
-      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/js" />
-      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/templates" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.xiaper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-boot-sharding/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service" />
+      <recent name="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository" />
+      <recent name="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity" />
+      <recent name="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.howtodoinjava.demo.controller" />
@@ -332,12 +753,12 @@
       <recent name="com.xiaper.springbootwebsocketsockjs.controller" />
       <recent name="com.xiaper.controller" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other" />
-      <recent name="$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive" />
-      <recent name="$PROJECT_DIR$/spring-boot-piggyback/src/main/java/io/xiaper/piggyback" />
-      <recent name="$PROJECT_DIR$/spring-boot-socketio/src/main/resources/templates/demo" />
-      <recent name="$PROJECT_DIR$/spring-boot-socketio/src/main/java/io/xiaper/socketio" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-boot-reactive/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/spring-webflux-example/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/css" />
+      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/static/js" />
+      <recent name="$PROJECT_DIR$/spring-boot-mini/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,7 +773,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReactiveApplication">
+  <component name="RunManager" selected="Spring Boot.ShardingApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -453,6 +874,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShardingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-sharding" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.sharding.ShardingApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SocketIOApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-socketio" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jamesye.starter.realtimeserver.SocketIOApplication" />
@@ -507,6 +935,13 @@
     <configuration name="SpringBootSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.security.SecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootShardingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-sharding" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.xiaper.sharding.SpringBootShardingApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -656,8 +1091,10 @@
       <item itemvalue="Spring Boot.PiggybackApplication" />
       <item itemvalue="Spring Boot.SocketIOApplication" />
       <item itemvalue="Spring Boot.ReactiveApplication" />
-      <item itemvalue="Spring Boot.EchoApplication" />
       <item itemvalue="Spring Boot.ChatAppDemoApplication" />
+      <item itemvalue="Spring Boot.EchoApplication" />
+      <item itemvalue="Spring Boot.SpringBootShardingApplication" />
+      <item itemvalue="Spring Boot.ShardingApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -754,6 +1191,8 @@
       <workItem from="1570175327018" duration="575000" />
       <workItem from="1570197346125" duration="2915000" />
       <workItem from="1570227043199" duration="6595000" />
+      <workItem from="1570326318208" duration="334000" />
+      <workItem from="1570326690841" duration="1283000" />
     </task>
     <servers />
   </component>
@@ -778,7 +1217,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273217000" />
+    <option name="totallyTimeSpent" value="274834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,9 +1229,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="128" y="81" width="1229" height="868" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.2358888" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.25824177" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -803,7 +1243,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" weight="0.1996337" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32706374" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.22570533" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.4075235" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -811,7 +1251,7 @@
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32908162" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.498779" weight="0.1985371" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501221" side_tool="true" weight="0.3834901" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50061053" side_tool="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49915254" weight="0.31452456" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32908162" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
@@ -820,7 +1260,7 @@
       <window_info anchor="bottom" id="Flutter Performance" order="16" side_tool="true" />
       <window_info anchor="bottom" id="LuaCheck" order="17" />
       <window_info anchor="bottom" id="CheckStyle" order="18" />
-      <window_info anchor="bottom" id="Problems" order="19" />
+      <window_info anchor="bottom" id="Problems" order="19" sideWeight="0.4993895" weight="0.3291536" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -833,7 +1273,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info anchor="right" id="Maven" order="12" weight="0.24175824" />
+      <window_info anchor="right" id="Maven" order="12" weight="0.17948718" />
       <window_info anchor="right" id="Flutter Inspector" order="13" />
       <window_info anchor="right" id="Flutter Outline" order="14" />
     </layout>
@@ -886,228 +1326,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-json/2.1.7.RELEASE/spring-boot-starter-json-2.1.7.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234" />
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-webflux/2.1.7.RELEASE/spring-boot-starter-webflux-2.1.7.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-reactor-netty/2.1.7.RELEASE/spring-boot-starter-reactor-netty-2.1.7.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/java/io/xiaper/streaming/controller/RouteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/java/io/xiaper/streaming/config/RouterConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/java/io/xiaper/streaming/SSEWebFluxApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/java/io/xiaper/streaming/service/StockTransactionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/java/io/xiaper/streaming/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/java/io/xiaper/streaming/controller/StockTransactionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-          <folding>
-            <element signature="e#1642#1643#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-streaming-reactive/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/src/main/java/com/howtodoinjava/demo/handler/EchoHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/src/main/resources/static/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/src/main/java/com/howtodoinjava/demo/controller/RouteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-webflux-example/src/main/java/com/howtodoinjava/demo/EchoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" selection-start-line="26" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/resources/static/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-rsocket/2.2.0.RC1/spring-boot-starter-rsocket-2.2.0.RC1.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-webflux/2.2.0.RC1/spring-boot-starter-webflux-2.2.0.RC1.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="82" column="29" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.3.0.RELEASE/reactor-core-3.3.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/spring-webflux/5.2.0.RELEASE/spring-webflux-5.2.0.RELEASE.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.0.RELEASE/spring-core-5.2.0.RELEASE.jar!/org/springframework/core/Ordered.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="41" lean-forward="true" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/java/codes/monkey/reactivechat/ChatSocketHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other/Payload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other/ReactiveChatApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/ReactiveApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1039#1040#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/controller/RouteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/java/io/xiaper/reactive/other/ChatSocketHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1204,47 +1422,268 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/middleware/websocket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/messages.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/stats.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/time.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/middleware/websocket.js" />
+    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/index.js" />
+    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/messages.js" />
+    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/stats.js" />
+    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/time.js" />
+    <entry file="file://$PROJECT_DIR$/java-reactive-chat/src/main/ui/app/reducers/user.js" />
     <entry file="file://$PROJECT_DIR$/spring-boot-reactive/src/main/resources/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderItemEntity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/AddressEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/AddressRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#52#1" expanded="true" />
+            <element signature="e#0#29#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/AddressRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/CommonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderItemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderItemRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#72#1" expanded="true" />
+            <element signature="e#0#74#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/OrderRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="58" column="52" selection-start-line="58" selection-start-column="52" selection-end-line="58" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#27#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/UserRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#0#43#1" expanded="true" />
+            <element signature="e#0#25#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/ExampleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/ShardingApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#310#311#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="285">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-master-slave.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="68" lean-forward="true" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-databases.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-databases-tables.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-master-slave.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/OrderEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding>
+            <element signature="e#1286#1287#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application-sharding-tables.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

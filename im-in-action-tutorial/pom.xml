@@ -42,6 +42,8 @@
 		<module>spring-boot-reactive</module>
 
 		<module>spring-boot-security</module>
+		<module>spring-boot-sharding</module>
+
 		<module>spring-boot-socketio</module>
 		<module>spring-boot-sockjs</module>
 		<module>spring-boot-stomp</module>

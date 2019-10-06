@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/mongo-chat2019" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-http" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-im" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty-websocket" charset="UTF-8" />
@@ -18,6 +17,7 @@
     <file url="file://$PROJECT_DIR$/spring-boot-rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-reactive" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-sharding" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-socketio" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-sockjs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-stomp" charset="UTF-8" />
@@ -25,6 +25,5 @@
     <file url="file://$PROJECT_DIR$/spring-boot-streaming-reactive" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-websocket" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-xmpp" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-webflux-example" charset="UTF-8" />
   </component>
 </project>
