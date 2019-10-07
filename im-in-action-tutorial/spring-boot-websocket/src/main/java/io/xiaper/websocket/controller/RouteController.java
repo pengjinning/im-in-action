@@ -32,16 +32,28 @@ public class RouteController {
         return "index";
     }
 
-    @GetMapping("/index.html")
-    public String indexHtml(Principal principal, Model model) {
+    @GetMapping("/text")
+    public String text(Principal principal, Model model) {
 
-        return "index";
+        return "text";
     }
 
-    @GetMapping("/websocket")
-    public String websocket(Principal principal, Model model) {
+    @GetMapping("/binary")
+    public String binary(Principal principal, Model model) {
 
-        return "websocket";
+        return "binary";
+    }
+
+    @GetMapping("/protobuf")
+    public String protobuf(Principal principal, Model model) {
+
+        return "protobuf";
+    }
+
+    @GetMapping("/performance")
+    public String performance(Principal principal, Model model) {
+
+        return "performance";
     }
 
 }
