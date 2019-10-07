@@ -28,10 +28,17 @@ TODO: 配图
 - [JMeter WebSocket Samplers - How to Use Config Elements and Assertions](https://www.blazemeter.com/blog/jmeter-websocket-samplers-how-to-use-config-elements-and-assertions/)
 
 
+## 压测stomp
+
+
+
+
 ## 压测mqtt
 
 - [mqtt-jmeter](https://github.com/emqx/mqtt-jmeter)
 
+- 下载插件
+- 放到lib/ext文件夹，并重启
 
 
 
