@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import com.alibaba.fastjson.JSONObject;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -15,6 +15,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
  *
  * @author xiaper.com
  */
+@Slf4j
 @Component
 public class TextMessageHandler extends TextWebSocketHandler {
 
@@ -25,8 +26,11 @@ public class TextMessageHandler extends TextWebSocketHandler {
 			throws InterruptedException, IOException {
 
 		String payload = message.getPayload();
-		JSONObject jsonObject = JSONObject.parseObject(payload);
-		session.sendMessage(new TextMessage("Hi " + jsonObject.get("user") + " how may we help you?"));
+		log.info("text {}", payload);
+		session.sendMessage(new TextMessage(payload));
+
+//		JSONObject jsonObject = JSONObject.parseObject(payload);
+//		session.sendMessage(new TextMessage("Hi " + jsonObject.get("user") + " how may we help you?"));
 	}
 
     @Override

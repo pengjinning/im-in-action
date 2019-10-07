@@ -57,8 +57,8 @@
         //
         if (window.WebSocket) {
             //
-            // socket = new WebSocket('ws://127.0.0.1:3885/ws'); // ws
-            socket = new WebSocket('wss://127.0.0.1:3886/ws'); // wss
+            socket = new WebSocket('ws://localhost:2886/ws'); // ws
+            // socket = new WebSocket('wss://127.0.0.1:2886/ws'); // wss
             // 设置binaryType为 blob 数据(默认)
             socket.binaryType = "blob";
             // 设置binaryType为 ArrayBuffer 数据

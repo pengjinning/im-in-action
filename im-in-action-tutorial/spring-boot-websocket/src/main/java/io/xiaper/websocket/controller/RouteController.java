@@ -38,12 +38,6 @@ public class RouteController {
         return "index";
     }
 
-    @GetMapping("/test")
-    public String test(Principal principal, Model model) {
-
-        return "test";
-    }
-
     @GetMapping("/websocket")
     public String websocket(Principal principal, Model model) {
 
