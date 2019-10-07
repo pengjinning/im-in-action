@@ -1,4 +1,4 @@
-package io.xiaper.springbootwebsocketsockjs;
+package io.xiaper.sockjs;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package io.xiaper.springbootwebsocketsockjs;
+package io.xiaper.sockjs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -7,6 +7,8 @@ import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.BinaryWebSocketHandler;
 
 /**
+ * 二进制 WebSocket 处理器
+ *
  * @author bytedesk.com on 2019/2/3
  */
 @Slf4j
@@ -14,10 +16,9 @@ import org.springframework.web.socket.handler.BinaryWebSocketHandler;
 public class BinaryMessageHandler extends BinaryWebSocketHandler {
 
     @Override
-    protected void handleBinaryMessage(WebSocketSession session, BinaryMessage message)
-            throws Exception {
+    protected void handleBinaryMessage(WebSocketSession session, BinaryMessage message) throws Exception {
         log.info("binary");
-
+        session.sendMessage(new BinaryMessage("hello world!".getBytes()));
     }
 
 }

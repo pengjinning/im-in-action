@@ -1,13 +1,13 @@
-package io.xiaper.springbootwebsocketsockjs;
+package io.xiaper.sockjs;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootWebsocketSockjsApplication {
+public class SockjsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootWebsocketSockjsApplication.class, args);
+		SpringApplication.run(SockjsApplication.class, args);
 	}
 
 }
