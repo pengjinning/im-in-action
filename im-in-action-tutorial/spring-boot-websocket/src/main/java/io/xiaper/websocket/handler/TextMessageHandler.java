@@ -24,7 +24,7 @@ public class TextMessageHandler extends TextWebSocketHandler {
     List<WebSocketSession> sessions = new CopyOnWriteArrayList<>();
 
     @Override
-	public void handleTextMessage(WebSocketSession session, TextMessage message) throws InterruptedException, IOException {
+	public void handleTextMessage(WebSocketSession session, TextMessage message) throws IOException {
 
 		String payload = message.getPayload();
 		log.info("text {}", payload);
@@ -38,7 +38,7 @@ public class TextMessageHandler extends TextWebSocketHandler {
 	}
 
     @Override
-    public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+    public void afterConnectionEstablished(WebSocketSession session) {
         
         InetSocketAddress clientAddress = session.getRemoteAddress();
         HttpHeaders handshakeHeaders = session.getHandshakeHeaders();
@@ -72,4 +72,11 @@ public class TextMessageHandler extends TextWebSocketHandler {
         super.afterConnectionClosed(session, status);
 
     }
+
+    @Override
+    public void handleTransportError(WebSocketSession session, Throwable exception) throws Exception {
+        log.info("Info: WebSocket connection closed.");
+    }
+
+
 }

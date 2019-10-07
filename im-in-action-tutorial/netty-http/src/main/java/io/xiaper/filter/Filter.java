@@ -1,7 +1,7 @@
 package io.xiaper.filter;
 
-import io.xiaper.handler.Request;
-import io.xiaper.handler.Response;
+import io.xiaper.websocket.handler.Request;
+import io.xiaper.websocket.handler.Response;
 
 /**
  * 过滤器接口<br>

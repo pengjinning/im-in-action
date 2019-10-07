@@ -13,39 +13,26 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.xiaper.handler;
+package io.xiaper.websocket.handler;
 
-import io.netty.buffer.ByteBuf;
-import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
-import io.netty.handler.codec.http.websocketx.*;
+import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
+import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import lombok.extern.slf4j.Slf4j;
-
-import java.io.IOException;
 
 /**
  * Handles handshakes and messages
  */
 @Slf4j
-public class BinaryWebSocketFrameHandler extends SimpleChannelInboundHandler<BinaryWebSocketFrame> {
+public class TextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
 
     @Override
-    public void channelRead0(ChannelHandlerContext context, BinaryWebSocketFrame frame) throws IOException {
+    public void channelRead0(ChannelHandlerContext context, TextWebSocketFrame frame) {
         //
-        log.info("接收到二进制消息,消息长度:[{}]", frame.content().capacity());
-//        ByteBuf byteBuf = Unpooled.directBuffer(frame.content().capacity());
-//        byteBuf.writeBytes(frame.content());
-//        String contentString = new String(byteBuf.array(), CharsetUtil.UTF_8);
-//
-        //转成byte
-//        byte [] bytes = new byte[frame.content().capacity()];
-//        byteBuf.readBytes(bytes);
+        log.info("接收到文本消息, 消息长度:[{}]", frame.content().capacity());
+        log.info("decode text content {}", frame.text());
 
-        //
-//        log.info("decode binary content {}", String.valueOf(bytes));
-
-        // Echo the frame
         context.write(frame.retain());
     }
 
@@ -76,21 +63,22 @@ public class BinaryWebSocketFrameHandler extends SimpleChannelInboundHandler<Bin
 
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
-        log.info("binary userEventTriggered");
+        log.info("text userEventTriggered");
         //
         if (evt instanceof WebSocketServerProtocolHandler.HandshakeComplete) {
-            log.info("binary web socket 握手成功。");
+            log.info("text web socket 握手成功。");
             //
             WebSocketServerProtocolHandler.HandshakeComplete handshakeComplete = (WebSocketServerProtocolHandler.HandshakeComplete) evt;
             String requestUri = handshakeComplete.requestUri();
-            log.info("binary requestUri:[{}]", requestUri);
+            log.info("text requestUri:[{}]", requestUri);
             //
             String subproTocol = handshakeComplete.selectedSubprotocol();
-            log.info("binary subproTocol:[{}]", subproTocol);
+            log.info("text subproTocol:[{}]", subproTocol);
             //
-            handshakeComplete.requestHeaders().forEach(entry -> log.info("binary header key:[{}] value:[{}]", entry.getKey(), entry.getValue()));
+            handshakeComplete.requestHeaders().forEach(entry -> log.info("text header key:[{}] value:[{}]", entry.getKey(), entry.getValue()));
         } else {
             super.userEventTriggered(ctx, evt);
         }
     }
+
 }

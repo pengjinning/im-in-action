@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package io.xiaper.controller;
+package io.xiaper.stomp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

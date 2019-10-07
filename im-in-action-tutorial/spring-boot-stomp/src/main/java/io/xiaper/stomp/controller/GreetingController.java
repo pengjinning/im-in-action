@@ -1,4 +1,4 @@
-package io.xiaper.controller;
+package io.xiaper.stomp.controller;
 
 import io.xiaper.model.Greeting;
 import io.xiaper.model.HelloMessage;

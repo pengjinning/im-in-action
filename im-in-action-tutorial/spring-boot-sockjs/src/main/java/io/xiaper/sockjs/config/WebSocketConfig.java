@@ -1,4 +1,4 @@
-package io.xiaper.config;
+package io.xiaper.sockjs.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

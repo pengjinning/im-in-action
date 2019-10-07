@@ -1,10 +1,10 @@
-package io.xiaper.handler;
+package io.xiaper.websocket.handler;
 
 import io.netty.channel.*;
 import io.netty.handler.codec.http.*;
 import io.netty.handler.ssl.SslHandler;
 import io.netty.handler.stream.ChunkedNioFile;
-import io.xiaper.util.Constants;
+import io.xiaper.websocket.util.Constants;
 
 import java.io.File;
 import java.io.RandomAccessFile;

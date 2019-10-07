@@ -1,4 +1,4 @@
-package io.xiaper.handler;
+package io.xiaper.websocket.handler;
 
 import cn.hutool.core.lang.Singleton;
 import cn.hutool.log.Log;

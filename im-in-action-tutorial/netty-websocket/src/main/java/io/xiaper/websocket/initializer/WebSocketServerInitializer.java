@@ -13,7 +13,7 @@
  * License for the specific language governing permissions and limitations
  * under the License.
  */
-package io.xiaper.initializer;
+package io.xiaper.websocket.initializer;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
@@ -25,10 +25,10 @@ import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.codec.http.websocketx.extensions.compression.WebSocketServerCompressionHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.stream.ChunkedWriteHandler;
-import io.xiaper.handler.HttpRequestHandler;
-import io.xiaper.handler.BinaryWebSocketFrameHandler;
-import io.xiaper.handler.TextWebSocketFrameHandler;
-import io.xiaper.util.Constants;
+import io.xiaper.websocket.handler.HttpRequestHandler;
+import io.xiaper.websocket.handler.BinaryWebSocketFrameHandler;
+import io.xiaper.websocket.handler.TextWebSocketFrameHandler;
+import io.xiaper.websocket.util.Constants;
 
 /**
  */

@@ -1,7 +1,7 @@
 package io.xiaper.action;
 
-import io.xiaper.handler.Request;
-import io.xiaper.handler.Response;
+import io.xiaper.websocket.handler.Request;
+import io.xiaper.websocket.handler.Response;
 
 /**
  * 请求处理接口<br>

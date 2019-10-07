@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package io.xiaper.util;
+package io.xiaper.websocket.util;
 
 public class Constants {
 

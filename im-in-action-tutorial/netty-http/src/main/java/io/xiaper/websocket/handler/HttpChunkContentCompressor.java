@@ -1,4 +1,4 @@
-package io.xiaper.handler;
+package io.xiaper.websocket.handler;
 
 import cn.hutool.log.StaticLog;
 import io.netty.channel.ChannelHandlerContext;

@@ -1,4 +1,4 @@
-package io.xiaper.handler;
+package io.xiaper.websocket.handler;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.date.DateUtil;

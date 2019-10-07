@@ -1,4 +1,4 @@
-package io.xiaper;
+package io.xiaper.websocket;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -11,7 +11,7 @@ import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.ssl.SslContext;
 import io.netty.handler.ssl.SslContextBuilder;
 import io.netty.handler.ssl.util.SelfSignedCertificate;
-import io.xiaper.initializer.WebSocketServerInitializer;
+import io.xiaper.websocket.initializer.WebSocketServerInitializer;
 import lombok.extern.slf4j.Slf4j;
 
 /**
