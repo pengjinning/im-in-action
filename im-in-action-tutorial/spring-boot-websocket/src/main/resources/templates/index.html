@@ -1,25 +1,52 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>虾婆 Web Demo</title>
-	<link rel="stylesheet" href="css/base.css"/>
-	<link rel="stylesheet" href="css/animate.css"/>
-	<link rel="stylesheet" href="css/index.css?v=1"/>
-	<link rel="icon" href="images/icon.ico" type="image/x-icon"/>
+    <title>WebSocket Chat Application</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/app.js"></script>
 </head>
 <body>
-	<div class="bad-network hide tc radius5px" id="j-errorNetwork">已与服务器断开，请检查网络连接</div>
-	<div class="wrapper radius10px" id="j-wrapper">
-		<div class="row tc">
-			<a href="main.html">
-				<button type="button" class="btn btn-login" id="j-loginBtn">IM即时通讯DEMO</button>
-			</a>
-		</div>
-	</div>
-	<div id="footer" class="footer tc">
-		<p class="hide">为了更好地体验本Demo，建议您使用Edge、Chrome、FireFox、Safari、360等主流浏览器。</p>
-		<p>&copy;2019 xiaper.io</p>
-	</div>
+
+<div id="main-content" class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="connect">Chat Application:</label>
+                    <button id="connect" type="button">Start New Chat</button>
+                    <button id="disconnect" type="button" disabled="disabled">End Chat
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="chat">
+                <thead>
+                <tr>
+                    <th>Welcome user. Please enter you name</th>
+                </tr>
+                </thead>
+                <tbody id="helloworldmessage">
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <textarea id="user" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button id="send" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>

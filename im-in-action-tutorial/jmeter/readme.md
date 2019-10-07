@@ -24,3 +24,14 @@ TODO: 配图
   - 重启jmeter
   - 打开插件管理器：选项->Plugins Manager
   
+- [JMeter WebSocket Samplers - A Practical Guide](https://www.blazemeter.com/blog/jmeter-websocket-samplers-a-practical-guide/)
+- [JMeter WebSocket Samplers - How to Use Config Elements and Assertions](https://www.blazemeter.com/blog/jmeter-websocket-samplers-how-to-use-config-elements-and-assertions/)
+
+
+## 压测mqtt
+
+- [mqtt-jmeter](https://github.com/emqx/mqtt-jmeter)
+
+
+
+

@@ -495,7 +495,9 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 ==== 读写分离
 
 
-==== 分表
+==== 水平分表
+
+message
 
 
 === 安全篇

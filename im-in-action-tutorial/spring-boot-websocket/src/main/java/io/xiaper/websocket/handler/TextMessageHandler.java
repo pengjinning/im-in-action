@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import org.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
@@ -25,7 +25,7 @@ public class TextMessageHandler extends TextWebSocketHandler {
 			throws InterruptedException, IOException {
 
 		String payload = message.getPayload();
-		JSONObject jsonObject = new JSONObject(payload);
+		JSONObject jsonObject = JSONObject.parseObject(payload);
 		session.sendMessage(new TextMessage("Hi " + jsonObject.get("user") + " how may we help you?"));
 	}
 

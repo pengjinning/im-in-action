@@ -26,18 +26,6 @@ import java.security.Principal;
 @Controller
 public class RouteController {
 
-    @GetMapping("/cloudMsg.html")
-    public String cloudMsg(Principal principal, Model model) {
-
-        return "cloudMsg";
-    }
-
-    @GetMapping("/createTeam.html")
-    public String createTeam(Principal principal, Model model) {
-
-        return "createTeam";
-    }
-
     @GetMapping("/")
     public String index(Principal principal, Model model) {
 
@@ -50,58 +38,16 @@ public class RouteController {
         return "index";
     }
 
-    @GetMapping("/login.html")
-    public String login(Principal principal, Model model) {
-
-        return "login";
-    }
-
-    @GetMapping("/main.html")
-    public String main(Principal principal, Model model) {
-
-        return "main";
-    }
-
-    @GetMapping("/netcall_meeting.html")
-    public String netcall_meeting(Principal principal, Model model) {
-
-        return "netcall_meeting";
-    }
-
-    @GetMapping("/register.html")
-    public String register(Principal principal, Model model) {
-
-        return "register";
-    }
-
-    @GetMapping("/selectCallMethod.html")
-    public String selectCallMethod(Principal principal, Model model) {
-
-        return "selectCallMethod";
-    }
-
-    @GetMapping("/speakBan.html")
-    public String speakBan(Principal principal, Model model) {
-
-        return "speakBan";
-    }
-
-    @GetMapping("/teamInfo.html")
-    public String teamInfo(Principal principal, Model model) {
-
-        return "teamInfo";
-    }
-
-    @GetMapping("/teamMember.html")
-    public String teamMember(Principal principal, Model model) {
-
-        return "teamMember";
-    }
-
     @GetMapping("/test")
     public String test(Principal principal, Model model) {
 
         return "test";
+    }
+
+    @GetMapping("/websocket")
+    public String websocket(Principal principal, Model model) {
+
+        return "websocket";
     }
 
 }
