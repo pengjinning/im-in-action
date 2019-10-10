@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <title>在线咨询</title>
+    <link rel="stylesheet" href="./css/mq-desktop-fusion.css">
+</head>
+
+<body>
+    <div id="alert" class="hide">
+        <div id="alertInside"></div><a id="alertHide"><i class="icon icon-times"></i></a>
+    </div>
+    <section id="pageChat">
+        <div id="evaluationHolder"></div>
+        <div id="evaluationMask"></div>
+        <header class="header">
+            <div id="headLeft" class="pull-left"></div>
+            <div id="headRight" class="pull-right"><a id="btnCallAgent">转人工</a> <a id="btnRing"><i id="iconRing"
+                        class="icon"></i></a></div>
+            <div class="clearfix"></div>
+        </header>
+        <div class="body">
+            <div class="body-left">
+                <div id="msgWrapper">
+                    <div id="msgHolder"></div>
+                </div>
+                <div class="footer">
+                    <div id="chatHasEnd" class="hide"></div>
+                    <div id="blacklistTips" class="hide"></div>
+                    <div class="text-holder"><textarea id="textarea" placeholder="请输入"></textarea></div>
+                    <div class="feature-holder">
+                        <div id="featureBtns" class="feature-left"></div>
+                        <div class="feature-right"><input id="btnSend" type="button" value="发送"></div>
+                        <div id="emojiHolder"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-right">
+                <div id="profile"></div>
+                <div name="supportHolder" class="support-holder"></div>
+            </div>
+        </div>
+        <div id="audioHolder" class="audio-holder"></div>
+        <div id="unableService" class="hide"></div>
+        <div id="queueingTips" class="hide"></div>
+    </section>
+    <section id="pageTicket">
+        <header class="header">
+            <div class="pull-left">
+                <div class="title">给我们留言</div>
+            </div>
+            <div class="pull-right"></div>
+            <div class="clearfix"></div>
+        </header>
+        <div class="body">
+            <div id="ticketForm"></div>
+            <div id="ticketSuccess">
+                <h2>留言成功</h2>
+                <p>我们会尽快联系你</p><a id="ticketAgain">再次留言</a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div name="supportHolder" class="support-holder"></div>
+        </footer>
+    </section>
+    <section id="pageSurvey">
+        <header class="header">
+            <div class="pull-left">
+                <div id="surveyTitle" class="title">询前表单</div>
+            </div>
+            <div class="pull-right"></div>
+            <div class="clearfix"></div>
+        </header>
+        <div id="surveyBody" class="body"></div>
+        <footer class="footer">
+            <div name="supportHolder" class="support-holder"></div>
+        </footer>
+    </section>
+    <!-- <script src="https://resource.meiqia.com/dist/scripts/desktop-fusion-2cqwvzmklou.js"></script> -->
+
+    <!-- <script type='text/javascript'>
+        (function(m, ei, q, i, a, j, s) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            j = ei.createElement(q),
+                s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+            s.parentNode.insertBefore(j, s);
+        })(window, document, 'script', '_MEIQIA');
+        _MEIQIA('entId', 5255);
+    </script> -->
+
+</body>
+
+</html>

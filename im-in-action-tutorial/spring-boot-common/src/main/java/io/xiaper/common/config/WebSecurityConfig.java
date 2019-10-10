@@ -15,36 +15,27 @@
  * limitations under the License.
  */
 
-package io.xiaper.polling.controller;
+package io.xiaper.common.config;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import java.security.Principal;
-
-@Controller
-public class RouteController {
-
-    @GetMapping("/")
-    public String index(Model model) {
-
-        return "index";
-    }
-
-    @GetMapping("/index.html")
-    public String indexHtml(Model model, @RequestParam(value = "code") String code) {
-
-        model.addAttribute("code", code);
-
-        return "index";
-    }
-
-    @GetMapping("/piggy")
-    public String piggy(Model model) {
-
-        return "piggy";
-    }
-
-}
+//@Configuration
+//@EnableWebSecurity
+//public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+//
+//    @Override
+//    protected void configure(HttpSecurity http) throws Exception {
+//        // 允许所有网站frame嵌入
+//        http.headers().frameOptions().disable();
+//        http.cors().and()
+//                .authorizeRequests()
+//                .antMatchers("/api/**").authenticated()
+//                .antMatchers("**", "/**").permitAll()
+//                .anyRequest().authenticated();
+//    }
+//
+//    @Override
+//    public void configure(WebSecurity web) {
+//        // 设置Spring Security不拦截/resources/static/目录下的静态资源
+//        web.ignoring().antMatchers("/**");
+//    }
+//
+//}

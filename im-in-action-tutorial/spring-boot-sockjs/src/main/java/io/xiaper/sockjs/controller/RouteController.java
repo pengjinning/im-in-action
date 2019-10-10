@@ -20,6 +20,7 @@ package io.xiaper.sockjs.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.security.Principal;
 
@@ -27,15 +28,35 @@ import java.security.Principal;
 public class RouteController {
 
     @GetMapping("/")
-    public String index(Principal principal, Model model) {
+    public String index(Model model) {
 
         return "index";
     }
 
     @GetMapping("/index.html")
-    public String indexHtml(Principal principal, Model model) {
+    public String indexHtml(Model model, @RequestParam(value = "code") String code) {
+
+        model.addAttribute("code", code);
 
         return "index";
+    }
+
+    @GetMapping("/piggy")
+    public String piggy(Model model) {
+
+        return "piggy";
+    }
+
+    @GetMapping("/mq")
+    public String mq(Model model) {
+
+        return "mq";
+    }
+
+    @GetMapping("/mqf")
+    public String mqf(Model model) {
+
+        return "mqf";
     }
 
 }
