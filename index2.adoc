@@ -47,6 +47,10 @@ http://www.iminaction.com
 - 捎带轮询Piggyback Polling
 
 
+
+
+
+
 ==== 长轮询Long Polling
 
 
@@ -261,6 +265,7 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 * 实时音视频
 
+==== 推送
 
 === 苹果iOS
 
@@ -303,6 +308,7 @@ https://zh.wikipedia.org/wiki/MQTT[wiki]
 
 * 实时音视频
 
+==== 推送
 
 === Windows
 
