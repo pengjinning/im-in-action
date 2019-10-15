@@ -28,27 +28,19 @@ import java.security.Principal;
 public class RouteController {
 
     @GetMapping("/")
-    public String index(Model model) {
-
-        return "index";
-    }
-
-    @GetMapping("/index.html")
-    public String indexHtml(Model model, @RequestParam(value = "code") String code) {
-
-        model.addAttribute("code", code);
+    public String index() {
 
         return "index";
     }
 
     @GetMapping("/window")
-    public String window(Model model) {
+    public String window() {
 
         return "window";
     }
 
     @GetMapping("/frame")
-    public String frame(Model model) {
+    public String frame() {
 
         return "frame";
     }

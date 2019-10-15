@@ -17,25 +17,31 @@
 
 package io.xiaper.common.config;
 
-//@Configuration
-//@EnableWebSecurity
-//public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
-//
-//    @Override
-//    protected void configure(HttpSecurity http) throws Exception {
-//        // 允许所有网站frame嵌入
-//        http.headers().frameOptions().disable();
-//        http.cors().and()
-//                .authorizeRequests()
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+
+@Configuration
+@EnableWebSecurity
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        // 允许所有网站frame嵌入
+        http.headers().frameOptions().disable();
+        http.cors().and()
+                .authorizeRequests()
+                .antMatchers("**").permitAll()
 //                .antMatchers("/api/**").authenticated()
-//                .antMatchers("**", "/**").permitAll()
-//                .anyRequest().authenticated();
-//    }
-//
+                .anyRequest().authenticated();
+    }
+
 //    @Override
 //    public void configure(WebSecurity web) {
 //        // 设置Spring Security不拦截/resources/static/目录下的静态资源
 //        web.ignoring().antMatchers("/**");
 //    }
-//
-//}
+
+}
