@@ -41,22 +41,16 @@ public class RouteController {
         return "index";
     }
 
-    @GetMapping("/piggy")
-    public String piggy(Model model) {
+    @GetMapping("/window")
+    public String window(Model model) {
 
-        return "piggy";
+        return "window";
     }
 
-    @GetMapping("/mq")
-    public String mq(Model model) {
+    @GetMapping("/frame")
+    public String frame(Model model) {
 
-        return "mq";
-    }
-
-    @GetMapping("/mqf")
-    public String mqf(Model model) {
-
-        return "mqf";
+        return "frame";
     }
 
 }
