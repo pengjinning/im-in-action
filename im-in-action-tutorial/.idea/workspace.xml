@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_8_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/controller/RouteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/controller/RouteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SpringBootWebsocketSockjsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -126,20 +119,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="109">
+              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+              <folding>
+                <element signature="e#2005#2006#0" expanded="true" />
+                <element signature="e#2055#2056#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java">
+        <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -243,7 +237,6 @@
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/window.html" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/css/main.css" />
         <option value="$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/fragments/footer.html" />
-        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/kefu.html" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/im.html" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/imwindow.html" />
@@ -254,10 +247,11 @@
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/controller/RouteController.java" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/register.html" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/about.html" />
-        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/spring-boot-common/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" />
       </list>
     </option>
   </component>
@@ -328,10 +322,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="92" />
-    <option name="y" value="121" />
-    <option name="width" value="1181" />
-    <option name="height" value="884" />
+    <option name="x" value="230" />
+    <option name="y" value="184" />
+    <option name="width" value="1309" />
+    <option name="height" value="803" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -461,29 +455,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-              <item name="jquery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -642,81 +613,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="im" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="kefu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-boot-sockjs" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-              <item name="xiaper" type="462c0819:PsiDirectoryNode" />
-              <item name="sockjs" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -806,6 +702,22 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SockjsApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-boot-sockjs" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.xiaper.sockjs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.xiaper.sockjs" />
+      <option name="MAIN_CLASS_NAME" value="io.xiaper.sockjs.SockjsApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1137,9 +1049,11 @@
       <item itemvalue="Spring Boot.SpringBootWebsocketSockjsApplication" />
       <item itemvalue="Spring Boot.SocketIOApplication (1)" />
       <item itemvalue="Spring Boot.EchoApplication" />
+      <item itemvalue="JUnit.SockjsApplicationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SockjsApplicationTests" />
         <item itemvalue="Application.WebSocketServer" />
         <item itemvalue="Spring Boot.EchoApplication" />
         <item itemvalue="Spring Boot.SocketIOApplication" />
@@ -1241,7 +1155,7 @@
       <workItem from="1570663446942" duration="3364000" />
       <workItem from="1571146706414" duration="3057000" />
       <workItem from="1571149991146" duration="5786000" />
-      <workItem from="1571184447841" duration="9009000" />
+      <workItem from="1571184447841" duration="10246000" />
     </task>
     <servers />
   </component>
@@ -1264,9 +1178,12 @@
     <history-entry file="ServerSendEventApplicationTests - 2019.02.11 at 20h 11m 49s.xml">
       <configuration name="ServerSendEventApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SockjsApplicationTests - 2019.10.16 at 11h 48m 37s.xml">
+      <configuration name="SockjsApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320480000" />
+    <option name="totallyTimeSpent" value="321717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1292,7 +1209,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" weight="0.1996337" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4106583" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74908423" visible="true" weight="0.24346918" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74908423" visible="true" weight="0.24451411" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1624,20 +1541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/fragments/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/kefu/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1735,10 +1638,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/fragments/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="115">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1747,8 +1664,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="109">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="e#2005#2006#0" expanded="true" />
+            <element signature="e#2055#2056#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

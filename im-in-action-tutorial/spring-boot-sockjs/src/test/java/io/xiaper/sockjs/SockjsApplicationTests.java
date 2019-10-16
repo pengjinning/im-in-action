@@ -53,7 +53,7 @@ public class SockjsApplicationTests {
 
 	@Test
 	public void accessSecuredResourceUnauthenticatedThenRedirectsToLogin() throws Exception {
-		mockMvc.perform(get("/hello"))
+		mockMvc.perform(get("/im"))
 				.andExpect(status().is3xxRedirection())
 				.andExpect(redirectedUrlPattern("**/login"));
 	}
@@ -61,7 +61,7 @@ public class SockjsApplicationTests {
 	@Test
 	@WithMockUser
 	public void accessSecuredResourceAuthenticatedThenOk() throws Exception {
-		mockMvc.perform(get("/hello"))
+		mockMvc.perform(get("/im"))
 				.andExpect(status().isOk());
 	}
 
