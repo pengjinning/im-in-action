@@ -39,22 +39,34 @@ public class RouteController {
         return "login";
     }
 
+    @GetMapping("/register")
+    public String register() {
+
+        return "register";
+    }
+
+    @GetMapping("/about")
+    public String about() {
+
+        return "about";
+    }
+
     @GetMapping("/im")
     public String im() {
 
-        return "im";
-    }
-
-    @GetMapping("/kefu")
-    public String kefu() {
-
-        return "kefu";
+        return "im/index";
     }
 
     @GetMapping("/imwindow")
     public String imwindow() {
 
         return "imwindow";
+    }
+
+    @GetMapping("/kefu")
+    public String kefu() {
+
+        return "kefu/index";
     }
 
     @GetMapping("/kefuwindow")
@@ -66,7 +78,7 @@ public class RouteController {
     @GetMapping("/admin")
     public String admin() {
 
-        return "admin";
+        return "admin/index";
     }
 
 
