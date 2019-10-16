@@ -51,10 +51,16 @@ public class RouteController {
         return "kefu";
     }
 
-    @GetMapping("/window")
-    public String window() {
+    @GetMapping("/imwindow")
+    public String imwindow() {
 
-        return "window";
+        return "imwindow";
+    }
+
+    @GetMapping("/kefuwindow")
+    public String kefuwindow() {
+
+        return "kefuwindow";
     }
 
     @GetMapping("/admin")
