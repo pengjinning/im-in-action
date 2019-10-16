@@ -30,7 +30,7 @@ public class RouteController {
     @GetMapping("/")
     public String index() {
 
-        return "index";
+        return "home";
     }
 
     @GetMapping("/window")
@@ -43,6 +43,24 @@ public class RouteController {
     public String frame() {
 
         return "frame";
+    }
+
+    @GetMapping("/login")
+    public String login() {
+
+        return "login";
+    }
+
+    @GetMapping("/home")
+    public String home() {
+
+        return "home";
+    }
+
+    @GetMapping("/hello")
+    public String hello() {
+
+        return "hello";
     }
 
 }
