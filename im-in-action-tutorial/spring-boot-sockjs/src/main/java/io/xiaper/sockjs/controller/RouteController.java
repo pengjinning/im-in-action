@@ -60,7 +60,7 @@ public class RouteController {
     @GetMapping("/imwindow")
     public String imwindow() {
 
-        return "imwindow";
+        return "im/imwindow";
     }
 
     @GetMapping("/kefu")
@@ -72,7 +72,7 @@ public class RouteController {
     @GetMapping("/kefuwindow")
     public String kefuwindow() {
 
-        return "kefuwindow";
+        return "kefu/kefuwindow";
     }
 
     @GetMapping("/admin")

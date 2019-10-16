@@ -37,11 +37,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        // 允许frame嵌入。使得可以在frame.html中嵌入window.html
+        // 允许frame嵌入
         http.headers().frameOptions().disable();
         //
         http.authorizeRequests()
-            .antMatchers("/", "/index", "/kefu", "/kefuwindow").permitAll()
+            .antMatchers("/", "/index", "/kefu", "/kefuwindow", "/register", "/about", "/admin").permitAll()
             .anyRequest().authenticated()
             .and()
             .formLogin()
