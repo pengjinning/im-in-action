@@ -2,29 +2,532 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_6_RELEASE.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_199.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-http/netty-http.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-http/netty-http.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSocketConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSocketConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/controller/RouteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/controller/RouteController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/DrawPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/EventEmitter/EventEmitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/EventEmitter/EventEmitter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_Chatroom_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_NIM_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_NRTC_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_Netcall_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_SDK_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_WebRTC_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/NIM_Web_WhiteBoard_v5.6.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/chrome/gapafbpmfemleaplicdhhcikajbogpkf_main.crx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/chrome/yunxin-Web-Screensharing.crx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/.jscs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/CHANGES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/CONTRIBUTORS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/es5-sham.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/es5-sham.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/es5-sham.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/es5-shim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/es5-shim.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/es5-shim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/shims.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/helpers/h-matchers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/index.min.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/lib/jasmine-html.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/lib/jasmine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/lib/jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/lib/jasmine_favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/native.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/helpers-jasmine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-array.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-function.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-object.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-regexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/es5-shim/tests/spec/s-string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jQuery-ajaxTransport-XDomainRequest/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jQuery-ajaxTransport-XDomainRequest/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jQuery-ajaxTransport-XDomainRequest/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jQuery-ajaxTransport-XDomainRequest/jQuery.XDomainRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jQuery-ajaxTransport-XDomainRequest/jQuery.XDomainRequest.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jQuery-ajaxTransport-XDomainRequest/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/nim_server_conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/platform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/polyfill.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/rangeslider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/rtcSupport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/alt/video-js-cdn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/alt/video-js-cdn.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/alt/video.novtt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/alt/video.novtt.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/alt/video.novtt.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/examples/shared/example-captions.vtt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/examples/simple-embed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/font/VideoJS.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/font/VideoJS.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/font/VideoJS.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/font/VideoJS.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/ie8/videojs-ie8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/ie8/videojs-ie8.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/ba.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/nn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/lang/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/video-js-5.8.7/video.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/videojs-hls-2.0.1/videojs-contrib-hls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/videojs-hls-2.0.1/videojs-contrib-hls.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/vue.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/3rd/zepto.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/CEmojiEngine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/Jcrop.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/font/context-menu-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/font/context-menu-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/font/context-menu-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/font/context-menu-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/jquery.contextMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/jquery.contextMenu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/contextMenu/jquery.contextMenu.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_444444_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_555555_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_777620_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_777777_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_cc0000_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/jquery.Jcrop.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/minAlert.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/pure-min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/rangeslider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/uiKit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/css/whiteboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/addFriend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/addTeam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/advanced.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd041.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd042.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd043.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd044.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd045.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd046.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd047.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd/ajmd048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ajmd001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ban-disable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/ban.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/bg_netcall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/bg_netcall_fullscreen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/bg_netcall_waiting_view.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/bg_page.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/bg_whiteboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/btn_switch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/calendar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/chartroom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/default-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/delete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/devices.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_05.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_06.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_07.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_09.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_101.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_102.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_103.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_104.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_105.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_106.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_107.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_108.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_109.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_110.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_111.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_112.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_113.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_114.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_115.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_116.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_117.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_118.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_119.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_120.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_121.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_124.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_125.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_126.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_127.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_129.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_130.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_131.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_132.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_133.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_135.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_136.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_137.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_138.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_139.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_140.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_141.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_142.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_143.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_145.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_146.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_147.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_148.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_149.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_151.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_160.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_161.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_162.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_163.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_164.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_165.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_166.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_54.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_55.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_56.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_57.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_58.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_59.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_60.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_61.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_63.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_65.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_66.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_68.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_69.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_71.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_72.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_73.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_74.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_75.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_76.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_77.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_78.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_79.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_80.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_81.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_82.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_83.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_84.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_85.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_86.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_87.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_88.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_89.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_90.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_91.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_93.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_94.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_95.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_97.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_98.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_99.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji/emoji_del.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/emoji_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/female.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/icon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/icon_prompt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/logo_bg_.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt/lt020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/lt001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/member.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/myPhone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/netcall-audio.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/netcall-checking.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/netcall-video.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/notice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/pen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/play0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/play1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/searchTeam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard-clear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard-cursor.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard-mic-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard-mic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard-state.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard-undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/whiteboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy010.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy011.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy012.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy013.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy014.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy015.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy016.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy017.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy018.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy019.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy020.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy021.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy023.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy025.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy026.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy027.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy028.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy029.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy030.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy031.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy032.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy033.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy034.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy035.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy036.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy037.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy038.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy039.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy/xxy040.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/images/xxy001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/font/context-menu-icons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/font/context-menu-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/font/context-menu-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/font/context-menu-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.contextMenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.contextMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.contextMenu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.contextMenu.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.contextMenu.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.contextMenu.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.ui.position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/contextMenu/jquery.ui.position.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/jquery.Jcrop.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/3rd/whiteboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/emoji.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/md5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/cloudMsg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/dialog_call_method.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/dialog_team.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/friend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/message.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/netcall.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/netcall_meeting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/netcall_ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/notification.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/personCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/session.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/sysMsg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/team.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/module/whiteboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/widget/minAlert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/widget/uiKit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-common/src/main/resources/static/js/widget/uiKit.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-stomp/spring-boot-stomp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-stomp/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-stomp/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-stomp/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-stomp/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -137,23 +640,59 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSocketConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#913#914#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+            <state relative-caret-position="195">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,10 +701,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/js/app.js">
+        <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/404.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/403.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -233,9 +781,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/repository/impl/UserRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/impl/OrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/java/io/xiaper/sharding/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/spring-boot-sharding/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/spring-boot-sharding/readme.md" />
         <option value="$PROJECT_DIR$/spring-boot-polling/readme.md" />
@@ -278,12 +823,15 @@
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/css/main.css" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/spring-boot-common/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/controller/RouteController.java" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/js/app.js" />
+        <option value="$PROJECT_DIR$/spring-boot-common/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/404.html" />
+        <option value="$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/403.html" />
       </list>
     </option>
   </component>
@@ -310,17 +858,54 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.springframework.security:spring-security-config:5.1.6.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.springframework.security:spring-security-config:5.1.6.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.springframework.security:spring-security-core:5.1.6.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+          <item name="org.springframework.security:spring-security-web:5.1.6.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spring-boot-mqttx" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="62" />
-    <option name="y" value="23" />
-    <option name="width" value="1254" />
-    <option name="height" value="901" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="92" />
+    <option name="y" value="121" />
+    <option name="width" value="1181" />
+    <option name="height" value="884" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -460,6 +1045,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im-in-action-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="spring-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="im-in-action-tutorial" type="b2602c69:ProjectViewProjectNode" />
@@ -1123,7 +1718,7 @@
       <workItem from="1570620842369" duration="1362000" />
       <workItem from="1570663446942" duration="3364000" />
       <workItem from="1571146706414" duration="3057000" />
-      <workItem from="1571149991146" duration="2120000" />
+      <workItem from="1571149991146" duration="5786000" />
     </task>
     <servers />
   </component>
@@ -1148,7 +1743,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307805000" />
+    <option name="totallyTimeSpent" value="311471000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1160,9 +1755,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="92" y="30" width="1307" height="853" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.21672772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.28300396" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1173,7 +1769,7 @@
       <window_info id="Structure" order="8" sideWeight="0.50208336" weight="0.1996337" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.4106583" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74908423" visible="true" weight="0.4754441" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.74908423" weight="0.22361547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1203,7 +1799,7 @@
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info anchor="right" id="Maven" order="12" weight="0.21367522" />
+      <window_info anchor="right" id="Maven" order="12" weight="0.18681319" />
       <window_info anchor="right" id="Flutter Inspector" order="13" />
       <window_info anchor="right" id="Flutter Outline" order="14" />
     </layout>
@@ -1256,41 +1852,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.1.9.RELEASE/spring-websocket-5.1.9.RELEASE.jar!/org/springframework/web/socket/config/annotation/WebSocketHandlerRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/static/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-websocket/src/main/resources/templates/binary.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-stomp/src/main/java/io/xiaper/mini/controller/RouteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-stomp/src/main/resources/static/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1410,17 +1971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="46" column="8" lean-forward="true" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1559,20 +2109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1584,13 +2120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1608,24 +2137,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690" />
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-security/2.1.8.RELEASE/spring-boot-starter-security-2.1.8.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="57" column="35" lean-forward="true" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-polling/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSocketConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        <state relative-caret-position="195">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/error/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
