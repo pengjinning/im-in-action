@@ -36,8 +36,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
+        // 允许frame嵌入。使得可以在frame.html中嵌入window.html
+        http.headers().frameOptions().disable();
+        //
         http.authorizeRequests()
-            .antMatchers("/", "/home").permitAll()
+            .antMatchers("/", "/index", "/css/**", "/js/**").permitAll()
             .anyRequest().authenticated()
             .and()
             .formLogin()

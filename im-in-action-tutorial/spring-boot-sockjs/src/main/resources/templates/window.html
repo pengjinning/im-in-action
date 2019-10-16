@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
     <meta charset="UTF-8">
@@ -11,16 +13,23 @@
 </head>
 
 <body>
+
     <div id="alert" class="hide">
-        <div id="alertInside"></div><a id="alertHide"><i class="icon icon-times"></i></a>
+        <div id="alertInside"></div>
+        <a id="alertHide"><i class="icon icon-times"></i></a>
     </div>
     <section id="pageChat">
         <div id="evaluationHolder"></div>
         <div id="evaluationMask"></div>
         <header class="header">
-            <div id="headLeft" class="pull-left"></div>
-            <div id="headRight" class="pull-right"><a id="btnCallAgent">转人工</a> <a id="btnRing"><i id="iconRing"
-                        class="icon"></i></a></div>
+            <div id="headLeft" class="pull-left">
+                <p style="margin-left: 10px;">
+                <!--[[${#httpServletRequest.remoteUser}]]-->
+                </p>
+            </div>
+            <div id="headRight" class="pull-right">
+                <a id="btnCallAgent">转人工</a> <a id="btnRing"><i id="iconRing" class="icon"></i></a>
+            </div>
             <div class="clearfix"></div>
         </header>
         <div class="body">

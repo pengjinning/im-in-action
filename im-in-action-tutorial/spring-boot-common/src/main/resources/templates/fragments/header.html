@@ -4,22 +4,73 @@
       xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
 
-    <div th:fragment="header-meta">
+    <div th:fragment="meta">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="email=no">
         <meta name="renderer" content="webkit">
         <meta name="keywords" content="ByteDesk.com" />
         <meta name="description" content="ByteDesk.com" />
         <meta name="author" content="ByteDesk.com">
         <link rel="icon" href="/favicon.ico">
+
+        <link href="/css/vendor/bootstrap/3.3.7/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
     </div>
 
 </head>
 
 <body>
 
-    <div th:fragment="header-sample">
+    <div th:fragment="navbar">
 
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">萝卜丝</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item dropdown" sec:authorize="isAuthenticated()">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown02"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                [[${#httpServletRequest.remoteUser}]]
+                                <!--<span sec:authentication="name"></span>-->
+                                <!--<span th:text="${user.nickname}"></span>-->
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown">
+                                <!--<a class="dropdown-item" href="#" sec:authentication="principal.authorities"></a>-->
+                                <a class="dropdown-item">个人资料</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" sec:authorize="isAuthenticated()">
+                            <a class="nav-link">
+                                <form th:action="@{/logout}" method="post">
+                                    <input type="submit" value="Sign Out"/>
+                                </form>
+                            </a>
+                        </li>
+                        <li class="nav-item" sec:authorize="isAnonymous()">
+                            <a class="nav-link" href="/login">登录</a>
+                        </li>
+<!--                        <li class="nav-item" sec:authorize="isAnonymous()">-->
+<!--                            <a class="nav-link" href="/about" target="_blank">关于</a>-->
+<!--                        </li>-->
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
 
     </div>
 

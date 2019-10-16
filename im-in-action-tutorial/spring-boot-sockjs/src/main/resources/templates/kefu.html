@@ -6,21 +6,19 @@
 
     <div th:replace="fragments/header :: meta"/>
 
-    <title>Hello SockJS</title>
+    <title>在线咨询 - 萝卜丝</title>
 
-<!--    <link href="/css/main.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="./css/frame.css">
 
 </head>
 <body>
 
     <div th:replace="fragments/header :: navbar"/>
 
-    <div class="main">
+    <div id="panelHolder">
 
-        <p><a th:href="@{/im}">IM</a></p>
-        <p><a th:href="@{/kefu}">在线客服</a></p>
-
-    </div> <!-- /main -->
+        <iframe id="iframePanel" class="fusion" src="/window"></iframe>
+    </div>
 
     <div th:replace="fragments/footer :: footer-div"/>
 

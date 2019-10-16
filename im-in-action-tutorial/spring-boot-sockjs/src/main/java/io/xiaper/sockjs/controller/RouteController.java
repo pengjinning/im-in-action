@@ -30,19 +30,7 @@ public class RouteController {
     @GetMapping("/")
     public String index() {
 
-        return "home";
-    }
-
-    @GetMapping("/window")
-    public String window() {
-
-        return "window";
-    }
-
-    @GetMapping("/frame")
-    public String frame() {
-
-        return "frame";
+        return "index";
     }
 
     @GetMapping("/login")
@@ -51,16 +39,29 @@ public class RouteController {
         return "login";
     }
 
-    @GetMapping("/home")
-    public String home() {
+    @GetMapping("/im")
+    public String im() {
 
-        return "home";
+        return "im";
     }
 
-    @GetMapping("/hello")
-    public String hello() {
+    @GetMapping("/kefu")
+    public String kefu() {
 
-        return "hello";
+        return "kefu";
     }
+
+    @GetMapping("/window")
+    public String window() {
+
+        return "window";
+    }
+
+    @GetMapping("/admin")
+    public String admin() {
+
+        return "admin";
+    }
+
 
 }

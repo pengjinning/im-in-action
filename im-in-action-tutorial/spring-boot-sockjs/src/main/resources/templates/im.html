@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<!--[if lte IE 7]> <html class="ie7"> <![endif]-->
-<!--[if IE 8]> <html class="ie8"> <![endif]-->
-<!--[if IE 9]> <html class="ie9"> <![endif]-->
-<!--[if !IE]><!-->
-<html>
-<!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
     <meta charset="UTF-8">
@@ -13,12 +10,15 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="email=no">
-    <title>在线咨询 - 萝卜丝</title>
+    <title>IM - 萝卜丝</title>
     <link rel="stylesheet" href="./css/frame.css">
 </head>
 
 <body>
     <div id="panelHolder">
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="退出登录"/>
+        </form>
         <iframe id="iframePanel" class="fusion" src="/window"></iframe>
     </div>
 </body>
