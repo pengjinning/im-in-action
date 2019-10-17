@@ -10,7 +10,7 @@
 	<packaging>pom</packaging>
 	<name>ByteDesk Spring Boot Projects</name>
 
-	<description>萝卜丝·bytedesk.org</description>
+	<description>虾婆·xiaper.io</description>
 
 	<properties>
 		<java.version>1.8</java.version>

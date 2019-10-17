@@ -3,31 +3,37 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
+
+    <div th:replace="fragments/header :: meta"/>
+
     <title>WebSocket Chat Application</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
     <link href="/css/style.css" rel="stylesheet">
-    <script src="/js/jquery-1.9.1.min.js"></script>
     <script src="/js/app.js"></script>
+
 </head>
 <body>
 
-<div id="main-content" class="container">
+    <div id="main-content" class="container">
 
-    <div class="row">
-        <div class="col-md-6">
-            <a href="/text" target="_blank">text</a>
+        <div class="row">
+            <div class="col-md-6">
+                <a href="/text" target="_blank">text</a>
+            </div>
+            <div class="col-md-6">
+                <a href="/binary" target="_blank">binary</a>
+            </div>
+            <div class="col-md-6">
+                <a href="/protobuf" target="_blank">protobuf</a>
+            </div>
+            <div class="col-md-6">
+                <a href="/performance" target="_blank">performance</a>
+            </div>
         </div>
-        <div class="col-md-6">
-            <a href="/binary" target="_blank">binary</a>
-        </div>
-        <div class="col-md-6">
-            <a href="/protobuf" target="_blank">protobuf</a>
-        </div>
-        <div class="col-md-6">
-            <a href="/performance" target="_blank">performance</a>
-        </div>
+
     </div>
 
-</div>
+    <div th:replace="fragments/footer :: footer-div"/>
+
 </body>
 </html>
