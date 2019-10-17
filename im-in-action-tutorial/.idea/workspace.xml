@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="" />
+    <list default="true" id="8e061425-0bb7-43a0-b6b4-4a9c6d76eca6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/spring-boot-websocket-stomp/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/netty-websocket/target/" />
@@ -115,12 +118,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-              <folding>
-                <element signature="e#2005#2006#0" expanded="true" />
-                <element signature="e#2055#2056#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -128,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -246,8 +245,8 @@
         <option value="$PROJECT_DIR$/spring-boot-common/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java" />
-        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -318,8 +317,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="230" />
-    <option name="y" value="184" />
+    <option name="x" value="282" />
+    <option name="y" value="118" />
     <option name="width" value="1309" />
     <option name="height" value="803" />
   </component>
@@ -1020,6 +1019,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.WebSocketServer" />
+      <item itemvalue="JUnit.SockjsApplicationTests" />
       <item itemvalue="Spring Boot.LongPollingApplication" />
       <item itemvalue="Spring Boot.PollingApplication" />
       <item itemvalue="Spring Boot.SSEWebFluxApplication" />
@@ -1045,7 +1045,6 @@
       <item itemvalue="Spring Boot.SpringBootWebsocketSockjsApplication" />
       <item itemvalue="Spring Boot.SocketIOApplication (1)" />
       <item itemvalue="Spring Boot.EchoApplication" />
-      <item itemvalue="JUnit.SockjsApplicationTests" />
     </list>
     <recent_temporary>
       <list>
@@ -1152,6 +1151,10 @@
       <workItem from="1571146706414" duration="3057000" />
       <workItem from="1571149991146" duration="5786000" />
       <workItem from="1571184447841" duration="10350000" />
+      <workItem from="1571216436518" duration="573000" />
+      <workItem from="1571270676910" duration="1219000" />
+      <workItem from="1571279932882" duration="1063000" />
+      <workItem from="1571282825395" duration="595000" />
     </task>
     <servers />
   </component>
@@ -1179,7 +1182,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321821000" />
+    <option name="totallyTimeSpent" value="325271000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1191,10 +1194,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="230" y="184" width="1309" height="803" extended-state="0" />
+    <frame x="282" y="118" width="1309" height="803" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.27308604" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989605" visible="true" weight="0.27229676" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1288,20 +1291,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/java/io/xiaper/websocket/handler/HttpRequestHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/resources/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-websocket/src/main/resources/bench.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2060">
@@ -1481,23 +1470,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/resources/templates/login.html" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-common/src/main/java/io/xiaper/common/config/WebSecurityConfig.java" />
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSocketConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1509,20 +1483,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/hello.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/home.html" />
+    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/hello.html" />
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/static/css/frame.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1641,13 +1603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/test/java/io/xiaper/sockjs/SockjsApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1658,14 +1613,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE.jar!/org/springframework/security/config/annotation/web/configurers/FormLoginConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.6.RELEASE/spring-security-config-5.1.6.RELEASE.jar!/org/springframework/security/config/annotation/web/builders/HttpSecurity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="135" column="54" selection-start-line="135" selection-start-column="54" selection-end-line="135" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/java/io/xiaper/sockjs/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
-          <folding>
-            <element signature="e#2005#2006#0" expanded="true" />
-            <element signature="e#2055#2056#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-boot-sockjs/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
