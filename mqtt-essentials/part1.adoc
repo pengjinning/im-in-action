@@ -1,0 +1,18 @@
+= MQTT Essentials: Part 1
+xiaper(c) 2019 jackning
+Version 2.0, 2019-06-19
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:sectnums:
+:toc: left
+:toclevels: 5
+:toc-title: 百万级并发架构
+:experimental:
+:description: 虾婆-开源即时通讯解决方案
+:keywords: 微服务 虾婆 SpringBoot Netty WebRTC Xiaper
+:imagesdir: ./img
+:sectlinks:
+
+== 1
+
