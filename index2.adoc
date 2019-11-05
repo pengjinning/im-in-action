@@ -84,6 +84,9 @@ Server-Send-Event
 
 ==== MQTT
 
+MQTT is intended as a transport, not a protocol.   It’s job is to get the data from one machine to another, not to define what that data is. 
+
+
 - 基本概念
 
 
