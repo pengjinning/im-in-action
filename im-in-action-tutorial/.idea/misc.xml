@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/netty-http/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-protobuf/pom.xml" />
         <option value="$PROJECT_DIR$/netty-stomp/pom.xml" />
+        <option value="$PROJECT_DIR$/netty4-demos/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
