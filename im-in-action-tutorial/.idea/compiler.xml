@@ -6,31 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="netty4-demos" />
+        <module name="spring-boot-sockjs" />
+        <module name="chatAppDemo" />
         <module name="netty-websocket" />
         <module name="spring-boot-streaming-reactive" />
         <module name="spring-boot-xmpp" />
         <module name="spring-boot-socketio" />
-        <module name="spring-boot-sharding" />
+        <module name="spring-boot-atmosphere" />
         <module name="spring-boot-polling" />
         <module name="spring-boot-cometd" />
-        <module name="chatAppDemo" />
         <module name="spring-boot-long-polling" />
+        <module name="spring-boot-mars" />
         <module name="spring-boot-common" />
         <module name="netty-im" />
         <module name="spring-boot-reactive" />
         <module name="spring-boot-protobuf" />
-        <module name="spring-boot-streaming" />
-        <module name="spring-boot-mqttx" />
-        <module name="spring-boot-sockjs" />
+        <module name="spring-boot-sharding" />
+        <module name="spring-boot-security" />
+        <module name="netty4-demos" />
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-websocket" />
         <module name="spring-boot-stomp" />
         <module name="spring-boot-dwr" />
-        <module name="spring-boot-atmosphere" />
+        <module name="spring-boot-streaming" />
         <module name="spring-boot-mini" />
         <module name="netty-http" />
-        <module name="spring-boot-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -53,6 +53,7 @@
       <module name="spring-boot-common" target="1.8" />
       <module name="spring-boot-dwr" target="1.8" />
       <module name="spring-boot-long-polling" target="1.8" />
+      <module name="spring-boot-mars" target="1.8" />
       <module name="spring-boot-mini" target="1.8" />
       <module name="spring-boot-mqttx" target="1.8" />
       <module name="spring-boot-piggyback" target="1.8" />
@@ -83,6 +84,7 @@
       <module name="spring-boot-common" options="-parameters" />
       <module name="spring-boot-dwr" options="-parameters" />
       <module name="spring-boot-long-polling" options="-parameters" />
+      <module name="spring-boot-mars" options="-parameters" />
       <module name="spring-boot-mini" options="-parameters" />
       <module name="spring-boot-mqttx" options="-parameters" />
       <module name="spring-boot-piggyback" options="-parameters" />

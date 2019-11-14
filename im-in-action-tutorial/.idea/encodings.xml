@@ -10,6 +10,7 @@
     <file url="file://$PROJECT_DIR$/spring-boot-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-dwr" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-long-polling" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mars" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mini" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mqttx" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-polling" charset="UTF-8" />

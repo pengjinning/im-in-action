@@ -13,8 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" filepath="$PROJECT_DIR$/spring-boot-common/spring-boot-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" filepath="$PROJECT_DIR$/spring-boot-dwr/spring-boot-dwr.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" filepath="$PROJECT_DIR$/spring-boot-long-polling/spring-boot-long-polling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-mars/spring-boot-mars.iml" filepath="$PROJECT_DIR$/spring-boot-mars/spring-boot-mars.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" filepath="$PROJECT_DIR$/spring-boot-mini/spring-boot-mini.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-mqttx/spring-boot-mqttx.iml" filepath="$PROJECT_DIR$/spring-boot-mqttx/spring-boot-mqttx.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" filepath="$PROJECT_DIR$/spring-boot-polling/spring-boot-polling.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" filepath="$PROJECT_DIR$/spring-boot-protobuf/spring-boot-protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" filepath="$PROJECT_DIR$/spring-boot-rabbitmq/spring-boot-rabbitmq.iml" />
