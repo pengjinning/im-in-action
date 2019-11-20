@@ -102,6 +102,8 @@ MQTT is intended as a transport, not a protocol.   It’s job is to get the data
 - openssl
 - username/password
 
+
+
 ==== 一对一
 
 文本
@@ -110,6 +112,8 @@ MQTT is intended as a transport, not a protocol.   It’s job is to get the data
 ==== 群聊
 
 建群
+
+==== 离线消息
 
 ==== 在线客服
 
@@ -154,6 +158,8 @@ MQTT is intended as a transport, not a protocol.   It’s job is to get the data
 ==== 群聊
 
 建群
+
+==== 离线消息
 
 ==== 在线客服
 
@@ -202,6 +208,8 @@ MQTT is intended as a transport, not a protocol.   It’s job is to get the data
 ==== 群聊
 
 建群
+
+==== 离线消息
 
 ==== 在线客服
 
@@ -281,6 +289,8 @@ https://stomp.github.io/[website]
 
 建群
 
+==== 离线消息
+
 ==== 在线客服
 
 工作组
@@ -322,6 +332,8 @@ https://stomp.github.io/[website]
 
 建群
 
+==== 离线消息
+
 ==== 在线客服
 
 工作组
@@ -362,6 +374,8 @@ https://stomp.github.io/[website]
 
 建群
 
+==== 离线消息
+
 ==== 在线客服
 
 工作组
@@ -400,6 +414,8 @@ https://stomp.github.io/[website]
 
 建群
 
+==== 离线消息
+
 ==== 在线客服
 
 工作组
@@ -435,6 +451,8 @@ https://stomp.github.io/[website]
 ==== 群聊
 
 建群
+
+==== 离线消息
 
 ==== 在线客服
 
@@ -516,6 +534,10 @@ SSL保护数据的原理可以分为三部分
 
 openssl
 
+- https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB[中间人攻击]
+
+
+
 ==== wireshark
 
 
@@ -534,8 +556,11 @@ openssl
 .存储加密
 11
 
-.端到端加密
-22
+
+==== 端到端加密
+
+.Signal
+
 
 
 === 敏感词
