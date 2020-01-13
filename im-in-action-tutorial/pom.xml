@@ -29,8 +29,8 @@
 		<module>spring-boot-common</module>
 		<module>spring-boot-dwr</module>
 		<module>spring-boot-long-polling</module>
-		<module>spring-boot-mars</module>
 		<module>spring-boot-mini</module>
+		<module>spring-boot-mqtt</module>
 
 		<module>spring-boot-polling</module>
 		<module>spring-boot-protobuf</module>
@@ -48,7 +48,6 @@
 		<module>spring-boot-streaming-reactive</module>
 
 		<module>spring-boot-websocket</module>
-		<module>spring-boot-xmpp</module>
 
 
 	</modules>
