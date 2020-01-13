@@ -30,7 +30,7 @@
 		<module>spring-boot-dwr</module>
 		<module>spring-boot-long-polling</module>
 		<module>spring-boot-mini</module>
-		<module>spring-boot-mqtt</module>
+		<module>spring-boot-netty</module>
 
 		<module>spring-boot-polling</module>
 		<module>spring-boot-protobuf</module>
