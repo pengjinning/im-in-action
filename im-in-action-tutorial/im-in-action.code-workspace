@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "im-in-action-tutorial",
+		"path": "."
+	}
+],
+  "settings": {
+    "java.configuration.updateBuildConfiguration": "automatic"
+  }
+}
