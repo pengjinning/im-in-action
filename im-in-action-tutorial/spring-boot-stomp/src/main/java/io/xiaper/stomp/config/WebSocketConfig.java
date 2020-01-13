@@ -1,4 +1,4 @@
-package io.xiaper.mini.config;
+package io.xiaper.stomp.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

@@ -7,7 +7,7 @@ import cn.hutool.core.util.ReUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.StaticLog;
-import io.xiaper.config.HttpConfig;
+import io.xiaper.mini.config.HttpConfig;
 import io.xiaper.websocket.handler.Request;
 import io.xiaper.websocket.handler.Response;
 import io.netty.handler.codec.http.HttpHeaderNames;

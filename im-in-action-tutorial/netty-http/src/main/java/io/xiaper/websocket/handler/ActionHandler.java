@@ -3,7 +3,7 @@ package io.xiaper.websocket.handler;
 import cn.hutool.core.lang.Singleton;
 import cn.hutool.log.Log;
 import cn.hutool.log.StaticLog;
-import io.xiaper.config.HttpConfig;
+import io.xiaper.mini.config.HttpConfig;
 import io.xiaper.action.Action;
 import io.xiaper.action.ErrorAction;
 import io.xiaper.action.FileAction;

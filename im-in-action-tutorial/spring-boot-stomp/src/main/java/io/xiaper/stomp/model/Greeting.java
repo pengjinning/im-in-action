@@ -1,4 +1,4 @@
-package io.xiaper.model;
+package io.xiaper.stomp.model;
 
 /**
  *

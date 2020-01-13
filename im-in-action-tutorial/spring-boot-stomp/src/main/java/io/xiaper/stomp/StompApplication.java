@@ -1,4 +1,4 @@
-package io.xiaper.mini;
+package io.xiaper.stomp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

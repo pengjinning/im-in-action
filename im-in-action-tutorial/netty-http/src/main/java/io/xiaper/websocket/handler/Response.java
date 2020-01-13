@@ -7,7 +7,7 @@ import cn.hutool.core.util.StrUtil;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.StaticLog;
-import io.xiaper.config.HttpConfig;
+import io.xiaper.mini.config.HttpConfig;
 import io.xiaper.listener.FileProgressiveFutureListener;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

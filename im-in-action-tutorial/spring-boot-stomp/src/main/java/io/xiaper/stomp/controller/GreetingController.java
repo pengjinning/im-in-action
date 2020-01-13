@@ -1,7 +1,7 @@
-package io.xiaper.mini.controller;
+package io.xiaper.stomp.controller;
 
-import io.xiaper.model.Greeting;
-import io.xiaper.model.HelloMessage;
+import io.xiaper.stomp.model.Greeting;
+import io.xiaper.stomp.model.HelloMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;

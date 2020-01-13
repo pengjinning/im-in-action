@@ -1,4 +1,4 @@
-package io.xiaper.config;
+package io.xiaper.mini.config;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.lang.Singleton;

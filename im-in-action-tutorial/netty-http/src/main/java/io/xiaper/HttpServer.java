@@ -4,7 +4,7 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.log.Log;
 import cn.hutool.log.StaticLog;
 import io.xiaper.action.ExampleAction;
-import io.xiaper.config.HttpConfig;
+import io.xiaper.mini.config.HttpConfig;
 import io.xiaper.websocket.handler.ActionHandler;
 import io.xiaper.websocket.handler.HttpChunkContentCompressor;
 import io.netty.bootstrap.ServerBootstrap;
